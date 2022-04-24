@@ -1,9 +1,9 @@
 # HybridFC: A Hybrid approach for fact checking over knowledge graphs
 
 ### Reproducing Results
-There are two options to repreoduce the results.
+There are two options to repreoduce the results. (1) using pre-generated data, and (2) Regenerate data from FactCheck output
 
-
+First step is to clone the project.
 ## 1) Cloning the project
 
 ``` html
