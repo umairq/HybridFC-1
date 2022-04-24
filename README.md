@@ -1,8 +1,5 @@
 # HybridFC: A Hybrid approach for fact checking over knowledge graphs
 
-### Reproducing Results
-There are two options to repreoduce the results. (1) using pre-generated data, and (2) Regenerate data from FactCheck output
-
 First step is to clone the project.
 ## 1) Cloning the project
 
@@ -10,6 +7,8 @@ First step is to clone the project.
 git clone https://github.com/umairq/HybridFC.git
 ``` 
 
+### Reproducing Results
+There are two options to repreoduce the results. (1) using pre-generated data, and (2) Regenerate data from FactCheck output
 
 ## 2) Using pre-generated data
 download and unzip data and embeddings files in the root folder of the project.
