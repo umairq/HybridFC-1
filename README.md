@@ -4,7 +4,7 @@ First step is to clone the project.
 ## Cloning the project
 
 ``` html
-git clone https://github.com/umairq/HybridFC.git
+git clone https://github.com/factcheckerr/HybridFC.git
 ``` 
 
 ## Reproducing Results
