@@ -67,7 +67,7 @@ ConEx, TransE, ComplEx, RDF2Vec, QMult
 Available models:
 full-Hybrid, KGE-only, text-KGE-Hybrid, path-only, text-path-Hybrid, KGE-path-Hybrid
 
-After computing evalua
+After computing evaluation results, the prediction files are saved in the dataset folder along with ground truth files. These files are then upload to GERBIL framework to reproduce AUROC curve scores.  
 
 ## Future plan:
 TODO
