@@ -73,7 +73,7 @@ full-Hybrid, KGE-only, text-KGE-Hybrid, path-only, text-path-Hybrid, KGE-path-Hy
 
 ## ReGenerate AUROC results:
 After computing evaluation results, the prediction files are saved in the "dataset/HYBRID_Storage" folder along with ground truth files.
-These files can be uploaded to [GERBIL](http://swc2017.aksw.org/gerbil/config) framework to reproduce AUROC curve scores.  
+These files can be uploaded to a live instance of [GERBIL](http://swc2017.aksw.org/gerbil/config) (by Roder et al.) framework to produce AUROC curve scores.  
 
 ## Future plan:
 TODO
