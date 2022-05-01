@@ -66,10 +66,14 @@ python evaluate_checkpoint_model.py --emb_type TransE --model full-Hybrid --num_
 
 comments:
 for differnt embeddings type(emb_type) or model type(model), you just need to change the parameters.
+
 Available embeddings types:
 ConEx, TransE, ComplEx, RDF2Vec, QMult
+
 Available models:
 full-Hybrid, KGE-only, text-KGE-Hybrid, path-only, text-path-Hybrid, KGE-path-Hybrid
+
+Note: model names are case sensitive. So please use exact names.
 
 ## ReGenerate AUROC results:
 After computing evaluation results, the prediction files are saved in the "dataset/HYBRID_Storage" folder along with ground truth files.
