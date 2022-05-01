@@ -68,7 +68,7 @@ comments:
 for differnt embeddings type(emb_type) or model type(model), you just need to change the parameters.
 
 Available embeddings types:
-ConEx, TransE, ComplEx, RDF2Vec, QMult
+ConEx, TransE, ComplEx, RDF2Vec (only for BPDP dataset), QMult
 
 Available models:
 full-Hybrid, KGE-only, text-KGE-Hybrid, path-only, text-path-Hybrid, KGE-path-Hybrid
