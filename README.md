@@ -12,7 +12,7 @@ cd HybridFC
 ## Reproducing Results
 There are two options to repreoduce the results. (1) using pre-generated data, and (2) Regenerate data from FactCheck output
 
-# 1) Using pre-generated data
+### 1) Using pre-generated data
 download and unzip data and embeddings files in the root folder of the project.
 
 ``` html
@@ -35,7 +35,7 @@ Note: if it gives permission denied error you can try running the following comm
 pip install --upgrade --no-cache-dir gdown
 ``` 
 
-# 2) Regenerate data from FactCheck output
+### 2) Regenerate data from FactCheck output
 In case you don't want to use pre-generated data, follow this step:
 
 As an input user needs output of [FactCheck](https://github.com/dice-group/FactCheck/tree/develop-for-FROCKG-branch) in json format.
