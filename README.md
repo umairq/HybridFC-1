@@ -61,7 +61,7 @@ conda activate hfc2
 python main.py --emb_type TransE --model full-Hybrid --num_workers 32 --min_num_epochs 100 --max_num_epochs 1000 --check_val_every_n_epochs 10 --eval_dataset FactBench 
 
 # computing evaluation files from saved model in "dataset/Hybrid_Stroage" directory
-python evaluate_checkpoint_model.py
+python evaluate_checkpoint_model.py --emb_type TransE --model full-Hybrid --num_workers 32 --min_num_epochs 100 --max_num_epochs 1000 --check_val_every_n_epochs 10 --eval_dataset FactBench
 ``` 
 
 comments:
