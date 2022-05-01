@@ -44,7 +44,7 @@ run FactCheck on [FactBench dataset](https://github.com/DeFacto/FactBench).
 
 Put the result json file in dataset folder.
 
-Details are in [overall_process folder](https://github.com/umairq/HybridFC/tree/main/overall_process)
+Further details are in readme file in [overall_process folder](https://github.com/factcheckerr/HybridFC/tree/master/overall_process)
 
 ## Running experiments
 
