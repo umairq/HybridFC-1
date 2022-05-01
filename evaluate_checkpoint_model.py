@@ -116,9 +116,9 @@ for cc in clss:
         args.model = cls
         # args.subpath = cc
         hybrid_app = False
-
+        args.path_dataset_folder = 'dataset/'
         if args.model == "full-hybrid":
-            args.path_dataset_folder += '/data/copaal/'
+            args.path_dataset_folder += 'data/copaal/'
             hybrid_app = True
             args.subpath = cc
 
