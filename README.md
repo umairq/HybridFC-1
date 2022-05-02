@@ -1,8 +1,12 @@
 # HybridFC: A Hybrid approach for fact checking over knowledge graphs
+This open-source project contains the Python implementation of our approach HybridFC. This project is designed to ease real-world applications of fact-checking over knowledge graphs and produce better results. With this aim, we rely on:
+1. [PytorchLightning](https://www.pytorchlightning.ai/) to perform training via multi-CPUs, GPUs, TPUs or  computing cluster, 
+2. [Pre-trained-KG-embeddings](https://embeddings.cc/) to get pre-trained KG embeddings for DBpedia, and
+3. [Elastic-search](https://www.elastic.co/blog/loading-wikipedia) to load text corpus (wikipedia) on elastic search for text-based module.
 
-First step is to clone the project.
-## Cloning the project
 
+## Installation
+First clone the repository:
 ``` html
 git clone https://github.com/factcheckerr/HybridFC.git
 
