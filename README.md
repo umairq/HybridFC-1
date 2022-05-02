@@ -10,7 +10,8 @@ cd HybridFC
 ``` 
 
 ## Reproducing Results
-There are two options to repreoduce the results. (1) using pre-generated data, and (2) Regenerate data from FactCheck output
+There are two options to repreoduce the results. (1) using pre-generated data, and (2) Regenerate data from scratch.
+Please chose any 1 of the these 2 options.
 
 ### 1) Re-Using pre-generated data
 download and unzip data and embeddings files in the root folder of the project.
