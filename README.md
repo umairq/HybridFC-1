@@ -78,7 +78,7 @@ python evaluate_checkpoint_model.py --emb_type TransE --model full-Hybrid --num_
 for differnt embeddings type(emb_type) or model type(model), you just need to change the parameters.
 
 Available embeddings types:
-ConEx, TransE, ComplEx, RDF2Vec (only for BPDP dataset), QMult
+[ConEx](https://arxiv.org/pdf/2008.03130.pdf), [TransE](https://everest.hds.utc.fr/lib/exe/fetch.php?media=en:cr_paper_nips13.pdf), [ComplEx](https://arxiv.org/abs/2008.03130), [RDF2Vec](https://madoc.bib.uni-mannheim.de/41307/1/Ristoski_RDF2Vec.pdf) (only for BPDP dataset), [QMult](https://arxiv.org/pdf/2106.15230.pdf).
 
 Available models:
 full-Hybrid, KGE-only, text-KGE-Hybrid, path-only, text-path-Hybrid, KGE-path-Hybrid
