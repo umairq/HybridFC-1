@@ -74,7 +74,7 @@ python main.py --emb_type TransE --model full-Hybrid --num_workers 32 --min_num_
 python evaluate_checkpoint_model.py --emb_type TransE --model full-Hybrid --num_workers 32 --min_num_epochs 100 --max_num_epochs 1000 --check_val_every_n_epochs 10 --eval_dataset FactBench
 ``` 
 
-### comments:
+##### comments:
 for differnt embeddings type(emb_type) or model type(model), you just need to change the parameters.
 
 Available embeddings types:
