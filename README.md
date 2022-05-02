@@ -1,8 +1,10 @@
 # HybridFC: A Hybrid approach for fact checking over knowledge graphs
 This open-source project contains the Python implementation of our approach HybridFC. This project is designed to ease real-world applications of fact-checking over knowledge graphs and produce better results. With this aim, we rely on:
+
 1. [PytorchLightning](https://www.pytorchlightning.ai/) to perform training via multi-CPUs, GPUs, TPUs or  computing cluster, 
-2. [Pre-trained-KG-embeddings](https://embeddings.cc/) to get pre-trained KG embeddings for DBpedia, and
-3. [Elastic-search](https://www.elastic.co/blog/loading-wikipedia) to load text corpus (wikipedia) on elastic search for text-based module.
+2. [Pre-trained-KG-embeddings](https://embeddings.cc/) to get pre-trained KG embeddings for knowledge graphs for knowledge graph-based component, 
+3. [Elastic-search](https://www.elastic.co/blog/loading-wikipedia) to load text corpus (wikipedia) on elastic search for text-based component, and
+4. [Path-based-approach](https://github.com/dice-group/COPAAL/tree/develop) to calculate output score for the path-based component.
 
 
 ## Installation
