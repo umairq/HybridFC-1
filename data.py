@@ -71,6 +71,8 @@ class Data:
         # uncomment it later when needed
         if bpdp_dataset:
             if full_hybrid:
+                if data_dir == 'dataset/data/copaal':
+                    data_dir = 'dataset/data/bpdp/data/copaal/'
                 self.save_all_resources(self.entities, data_dir, "combined/",
                                         True)
             else:

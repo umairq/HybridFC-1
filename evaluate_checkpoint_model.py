@@ -82,7 +82,7 @@ def save_data(dataset, data_dir="", training="test",  scores=[], method="hybrid"
 def restore_checkpoint(self, model: "pl.LightningModule", ckpt_path: Optional[str] = None):
     return  model.load_from_checkpoint(ckpt_path)
 
-epochs = 200
+
 datasets_class = ["domain/","domainrange/","mix/","property/","random/","range/"]
 # cls2 = datasets_class[2]
 
