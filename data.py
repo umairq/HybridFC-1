@@ -9,8 +9,14 @@ class Data:
         emb_folder = ""
         if bpdp_dataset == True:
             emb_folder = "bpdp/"
-            self.train_set = list((self.load_data(data_dir+"train/", data_type="train")))
-            self.test_data = list((self.load_data(data_dir+"test/", data_type="test")))
+            if full_hybrid:
+                data_dir = "dataset/data/bpdp/data/copaal/"
+                self.train_set = list((self.load_data(data_dir + "train/", data_type="train")))
+                self.test_data = list((self.load_data(data_dir + "test/", data_type="test")))
+            else:
+                data_dir = "dataset/data/bpdp/"
+                self.train_set = list((self.load_data(data_dir+"train/", data_type="train")))
+                self.test_data = list((self.load_data(data_dir+"test/", data_type="test")))
         elif complete_dataset==True: # for the entire dataset
             self.train_set = list((self.load_data(data_dir+"complete_dataset/", data_type="train")))
             self.test_data = list((self.load_data(data_dir+"complete_dataset/", data_type="test")))
@@ -71,7 +77,7 @@ class Data:
         # uncomment it later when needed
         if bpdp_dataset:
             if full_hybrid:
-                if data_dir == 'dataset/data/copaal':
+                if data_dir == 'dataset/data/copaal/':
                     data_dir = 'dataset/data/bpdp/data/copaal/'
                 self.save_all_resources(self.entities, data_dir, "combined/",
                                         True)

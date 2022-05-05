@@ -8,7 +8,7 @@ def argparse_default(description=None):
     # Paths.
     parser.add_argument("--path_dataset_folder", type=str, default='dataset')
     parser.add_argument("--storage_path", type=str, default='HYBRID_Storage')
-    parser.add_argument("--eval_dataset", type=str, default='FactBench',
+    parser.add_argument("--eval_dataset", type=str, default='BPDP',
                         help="Available datasets: FactBench, BPDP")
     parser.add_argument("--subpath", type=str, default='mix/')
     parser.add_argument("--prop", type=str, default=None)
@@ -22,7 +22,7 @@ def argparse_default(description=None):
                         help="Available models:full-Hybrid, KGE-only, text-KGE-Hybrid, path-only, text-path-Hybrid, KGE-path-Hybrid")
                         # help="Available models:Hybrid, ConEx, TransE, Hybrid, ComplEx, RDF2Vec")
 
-    parser.add_argument("--emb_type", type=str, default='TransE',
+    parser.add_argument("--emb_type", type=str, default='ComplEx',
                         help="Available KG embeddings: ConEx, TransE, ComplEx, RDF2Vec, QMult")
 
     # Hyperparameters pertaining to number of parameters.
