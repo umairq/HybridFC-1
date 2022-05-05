@@ -25,9 +25,9 @@ download and unzip data and embeddings files in the root folder of the project.
 ``` html
 pip install gdown
 
-wget https://zenodo.org/record/6519446/files/dataset.zip?download=1
+wget https://zenodo.org/record/6519446/files/dataset.zip
 
-wget https://zenodo.org/record/6519446/files/Embeddings.zip?download=1
+wget https://zenodo.org/record/6519446/files/Embeddings.zip
 
 
 unzip dataset.zip
