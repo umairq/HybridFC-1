@@ -25,9 +25,9 @@ download and unzip data and embeddings files in the root folder of the project.
 ``` html
 pip install gdown
 
-wget https://zenodo.org/record/6519446/files/dataset.zip
+wget https://zenodo.org/record/6523389/files/dataset.zip
 
-wget https://zenodo.org/record/6519446/files/Embeddings.zip
+wget https://zenodo.org/record/6523438/files/Embeddings.zip
 
 
 unzip dataset.zip
@@ -36,11 +36,7 @@ unzip Embeddings.zip
 ``` 
 
 
-Note: if it gives permission denied error you can try running the following command
-
-``` html
-pip install --upgrade --no-cache-dir gdown
-``` 
+Note: if it gives permission denied error you can try running the commands with "sudo"
 
 ### 2) Regenerate data from scratch (FactCheck output)
 In case you don't want to use pre-generated data, follow this step:
