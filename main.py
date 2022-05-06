@@ -8,7 +8,7 @@ def argparse_default(description=None):
     # Paths.
     parser.add_argument("--path_dataset_folder", type=str, default='dataset')
     parser.add_argument("--storage_path", type=str, default='HYBRID_Storage')
-    parser.add_argument("--eval_dataset", type=str, default='BPDP',
+    parser.add_argument("--eval_dataset", type=str, default='FactBench',
                         help="Available datasets: FactBench, BPDP")
     parser.add_argument("--subpath", type=str, default='bpdp/',
                         help="Available subpaths: bpdp/, domain/, domainrange/, mix/, property/, random/, range/,")
@@ -29,8 +29,8 @@ def argparse_default(description=None):
     # Hyperparameters pertaining to number of parameters.
     parser.add_argument('--embedding_dim', type=int, default=100)
     parser.add_argument('--sentence_dim', type=int, default=768)
-    parser.add_argument("--max_num_epochs", type=int, default=1000)
-    parser.add_argument("--min_num_epochs", type=int, default=200)
+    parser.add_argument("--max_num_epochs", type=int, default=20)
+    parser.add_argument("--min_num_epochs", type=int, default=20)
     # parser.add_argument('--batch_size', type=int, default=345)
     # parser.add_argument('--val_batch_size', type=int, default=345)
     # parser.add_argument('--negative_sample_ratio', type=int, default=0)
