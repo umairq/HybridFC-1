@@ -137,7 +137,8 @@ for cc in clss:
             chkpnts = os.listdir(os.path.dirname(os.path.abspath("dataset"))+ "/dataset/HYBRID_Storage/" + flder)
             for chk in chkpnts:
                 if chk.startswith("sample") and chk.__contains__("-"+cc.replace("/","")+"=") \
-                        and (chk.lower()).__contains__(cls) and chk.__contains__("--"+args.emb_type+""):
+                        and (chk.lower()).__contains__(cls) and chk.__contains__("--"+args.emb_type+"")\
+                        and (chk.lower()).__contains__(cc.lower()):
                     print(chk)
                     file_name = chk #"sample-"+cls.replace("/","")+"=0--"+cls2.replace("/","")+"=0-epoch=09-val_loss=0.00.ckpt"
                     pth = os.path.dirname(os.path.abspath(file_name)).replace("comparison","")+"/dataset/HYBRID_Storage/"+flder+"/"+file_name

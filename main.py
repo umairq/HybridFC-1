@@ -10,7 +10,8 @@ def argparse_default(description=None):
     parser.add_argument("--storage_path", type=str, default='HYBRID_Storage')
     parser.add_argument("--eval_dataset", type=str, default='BPDP',
                         help="Available datasets: FactBench, BPDP")
-    parser.add_argument("--subpath", type=str, default='mix/')
+    parser.add_argument("--subpath", type=str, default='bpdp/',
+                        help="Available subpaths: bpdp/, domain/, domainrange/, mix/, property/, random/, range/,")
     parser.add_argument("--prop", type=str, default=None)
     parser.add_argument("--cmp_dataset", type=bool, default=False)
     # parser.add_argument("--auto_scale_batch_size", type=bool, default=True)
