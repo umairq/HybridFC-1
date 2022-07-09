@@ -105,7 +105,7 @@ if args.eval_dataset == "BPDP":
 
 
 for cc in clss:
-    methods = ["full-hybrid","text-kge-hybrid","kge-only" ]
+    methods = ["full-Hybrid", "KGE-only", "text-only", "path-only", "text-KGE-Hybrid", "text-path-Hybrid", "KGE-path-Hybrid"]
     df_test = pd.DataFrame()
     df_train = pd.DataFrame()
     for cls in methods:
@@ -117,10 +117,19 @@ for cc in clss:
         # args.subpath = cc
         hybrid_app = False
         args.path_dataset_folder = 'dataset/'
-        if args.model == "full-hybrid":
+        args.subpath = cc
+        # if args.model == "full-hybrid":
+        #     args.path_dataset_folder += 'data/copaal/'
+        #     hybrid_app = True
+
+
+        if str(args.model).lower().__contains__("hybrid"):# == "kge-path-hybrid":
             args.path_dataset_folder += 'data/copaal/'
             hybrid_app = True
-            args.subpath = cc
+        elif str(args.model).lower().__contains__("path"):
+            args.path_dataset_folder += 'data/copaal/'
+            hybrid_app = True
+
 
         args.dataset = Data(data_dir=args.path_dataset_folder,
                             subpath=args.subpath,
@@ -140,8 +149,8 @@ for cc in clss:
                 if cc.__contains__("/"):
                     cc_change= cc[:-1].lower()
                 if chk.startswith("sample") and chk.__contains__("-"+cc.replace("/","")+"=") \
-                        and (chk.lower()).__contains__(cls) and chk.__contains__("--"+args.emb_type+"")\
-                        and (chk.lower()).__contains__(cc_change):
+                        and (chk.lower()).__contains__(cls.lower()) and (chk.lower()).__contains__("--"+str(args.emb_type).lower()+"")\
+                        and (chk.lower()).__contains__(cc_change.lower()):
                     print(chk)
                     file_name = chk #"sample-"+cls.replace("/","")+"=0--"+cls2.replace("/","")+"=0-epoch=09-val_loss=0.00.ckpt"
                     pth = os.path.dirname(os.path.abspath(file_name)).replace("comparison","")+"/dataset/HYBRID_Storage/"+flder+"/"+file_name
