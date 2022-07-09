@@ -50,21 +50,29 @@ def argparse_default(description=None):
 
 if __name__ == '__main__':
     args = argparse_default()
-    if args.eval_dataset == "FactBench":
-        datasets_class = [ "property/","range/", "domain/", "domainrange/", "mix/", "random/"]
-        for cls in datasets_class:
-            args = argparse_default()
-            args.subpath = cls
-            exc = Execute(args)
-            exc.start()
-            exit(1)
-    elif args.eval_dataset=="BPDP":
-        exc = Execute(args)
-        exc.start()
-        exit(1)
-    else:
-        print("Please specify the dataset")
-        exit(1)
+
+    available_models = ["full-Hybrid", "KGE-only", "text-only", "path-only", "text-KGE-Hybrid", "text-path-Hybrid", "KGE-path-Hybrid"]
+    max_epochs = [20,50,100,200,500]
+    for epoc in max_epochs:
+        for mdl in available_models:
+            print("model started:::::::::::::"+mdl)
+            if args.eval_dataset == "FactBench":
+                datasets_class = [ "property/","range/", "domain/", "domainrange/", "mix/", "random/"]
+                for cls in datasets_class:
+                    args = argparse_default()
+                    args.max_num_epochs = epoc
+                    args.model = mdl
+                    args.subpath = cls
+                    exc = Execute(args)
+                    exc.start()
+                    # exit(1)
+            elif args.eval_dataset=="BPDP":
+                exc = Execute(args)
+                exc.start()
+                exit(1)
+            else:
+                print("Please specify the dataset")
+                exit(1)
 
 
 
