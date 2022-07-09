@@ -137,7 +137,7 @@ class TextModel(BaseKGE):
             emb_sen = self.sentence_embeddings_test(sen_idx)
             # ver_score = self.copaal_veracity_score_test(sen_idx)
         sentence_embedding = self.sentence_classification_layer(emb_sen)
-        z = torch.cat([sentence_embedding], 2)
+        z = torch.cat([sentence_embedding], 1)
         return torch.sigmoid(self.final_classification_layer(z))
 
 
