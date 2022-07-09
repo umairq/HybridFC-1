@@ -3,12 +3,19 @@ import logging
 import datetime
 from scipy import stats
 import matplotlib.pyplot as plt
+
+from nn_models.path_KGE_hybrid_model import PathKGEHybridModel
+from nn_models.path_model import PathModel
 from nn_models.text_KGE_hybrid_model import TextKGEHybridModel
 from nn_models.complex import ConEx
 from nn_models.KGE_model import KGEModel
 from nn_models.full_hybrid_model import FullHybridModel
 import pytorch_lightning as pl
 from typing import AnyStr, Tuple
+
+from nn_models.text_model import TextModel
+from nn_models.text_path_hybrid_model import TextPathHybridModel
+
 
 def calculate_wilcoxen_score(df_data , typ):
     stats.probplot(df_data["emb-only"], dist="norm", plot=plt)
@@ -138,14 +145,37 @@ def select_model(args) -> Tuple[pl.LightningModule, AnyStr]:
         form_of_labelling = 'TriplePrediction'
 
     elif str(args.model).lower() == 'path-only':
-        model = ConEx(args=args)
+        model = PathModel(args=args)
         form_of_labelling = 'TriplePrediction'
+
+    elif str(args.model).lower() == 'text-only':
+        model = TextModel(args=args)
+        form_of_labelling = 'TriplePrediction'
+
     elif str(args.model).lower() == 'kge-only':
         model = KGEModel(args=args)
         form_of_labelling = 'TriplePrediction'
+
     elif str(args.model).lower() == 'full-hybrid':
         model = FullHybridModel(args=args)
         form_of_labelling = 'TriplePrediction'
+
+    elif str(args.model).lower() == 'kge-path-hybrid':
+        model = PathKGEHybridModel(args=args)
+        form_of_labelling = 'TriplePrediction'
+
+    elif str(args.model).lower() == 'path-kge-hybrid':
+        model = PathKGEHybridModel(args=args)
+        form_of_labelling = 'TriplePrediction'
+
+    elif str(args.model).lower() == 'text-path-hybrid':
+        model = TextPathHybridModel(args=args)
+        form_of_labelling = 'TriplePrediction'
+
+    elif str(args.model).lower() == 'path-text-hybrid':
+        model = TextPathHybridModel(args=args)
+        form_of_labelling = 'TriplePrediction'
+
     else:
         raise ValueError
     return model, form_of_labelling

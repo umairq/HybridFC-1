@@ -20,7 +20,7 @@ def argparse_default(description=None):
 
     # Models.
     parser.add_argument("--model", type=str, default='full-Hybrid',
-                        help="Available models:full-Hybrid, KGE-only, text-KGE-Hybrid, path-only, text-path-Hybrid, KGE-path-Hybrid")
+                        help="Available models:full-Hybrid, KGE-only,text-only, text-KGE-Hybrid, path-only, text-path-Hybrid, KGE-path-Hybrid")
                         # help="Available models:Hybrid, ConEx, TransE, Hybrid, ComplEx, RDF2Vec")
 
     parser.add_argument("--emb_type", type=str, default='ComplEx',
@@ -51,13 +51,13 @@ def argparse_default(description=None):
 if __name__ == '__main__':
     args = argparse_default()
     if args.eval_dataset == "FactBench":
-        datasets_class = [ "range/","property/", "domain/", "domainrange/", "mix/", "random/"]
+        datasets_class = [ "property/","range/", "domain/", "domainrange/", "mix/", "random/"]
         for cls in datasets_class:
             args = argparse_default()
             args.subpath = cls
             exc = Execute(args)
             exc.start()
-            # exit(1)
+            exit(1)
     elif args.eval_dataset=="BPDP":
         exc = Execute(args)
         exc.start()
