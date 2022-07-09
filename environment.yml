@@ -28,8 +28,7 @@ dependencies:
     - scikit-learn==0.24.1
     - scipy==1.6.1
     - threadpoolctl==2.1.0
-#    - torch==1.8.0
-    - torch torchvision torchaudio --extra-index-url https://download.pytorch.org/whl/cu113
+    - torch==1.8.0
     - typing-extensions==3.7.4.3
     - sentence-transformers==2.1.0
     - pandas==1.4.0
@@ -37,4 +36,7 @@ dependencies:
     - matplotlib==3.5.0
     - SPARQLWrapper==1.8.5
     - networkx==2.6.3
+    - --extra-index-url https://download.pytorch.org/whl/cu113
+    - torchaudio
+
 prefix: /home/anaconda3/envs/hfc2
