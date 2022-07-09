@@ -203,6 +203,9 @@ for cc in clss:
                     save_data(args.dataset,
                               os.path.dirname(os.path.abspath("dataset")) + "/dataset/HYBRID_Storage/" + flder + "/"+chk.split("epoch=")[1].split("-val_loss")[0],
                               "test", pred, method)
+                    os.remove(os.path.dirname(os.path.abspath("dataset"))+ "/dataset/HYBRID_Storage/" + flder +"/"+chk)
+                    os.remove(
+                        os.path.dirname(os.path.abspath("dataset")) + "/dataset/HYBRID_Storage/" + flder + "/model.pt")
                     # exit(1)
 
 # # stats test
