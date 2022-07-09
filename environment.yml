@@ -36,7 +36,6 @@ dependencies:
     - matplotlib==3.5.0
     - SPARQLWrapper==1.8.5
     - networkx==2.6.3
-    - --extra-index-url https://download.pytorch.org/whl/cu113
-    - torchaudio
-
+#if cuda issue with pytorch following command is needed in extra to execute seperately
+#pip3 install torch torchvision torchaudio --extra-index-url https://download.pytorch.org/whl/cu113
 prefix: /home/anaconda3/envs/hfc2

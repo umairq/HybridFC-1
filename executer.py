@@ -34,7 +34,7 @@ class Execute:
         if str(args.model).lower().__contains__("hybrid"):# == "kge-path-hybrid":
             args.path_dataset_folder += '/data/copaal'
             hybrid_app = True
-        if str(args.model).lower().__contains__("path"):
+        elif str(args.model).lower().__contains__("path"):
             args.path_dataset_folder += '/data/copaal'
             hybrid_app = True
 
