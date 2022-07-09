@@ -5,7 +5,7 @@ from torch.nn import functional as F
 from torchmetrics.functional import accuracy
 from typing import List, Any, Tuple
 from torch.nn.init import xavier_normal_
-from torch.tensor import Tensor as tf
+from torch import Tensor as tf
 import torch.nn as nn
 from numpy.random import RandomState
 from torch.utils.data import DataLoader

@@ -28,7 +28,8 @@ dependencies:
     - scikit-learn==0.24.1
     - scipy==1.6.1
     - threadpoolctl==2.1.0
-    - torch==1.8.0
+#    - torch==1.8.0
+    - torch torchvision torchaudio --extra-index-url https://download.pytorch.org/whl/cu113
     - typing-extensions==3.7.4.3
     - sentence-transformers==2.1.0
     - pandas==1.4.0
