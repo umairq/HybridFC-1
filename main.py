@@ -8,7 +8,7 @@ def argparse_default(description=None):
     # Paths.
     parser.add_argument("--path_dataset_folder", type=str, default='dataset')
     parser.add_argument("--storage_path", type=str, default='HYBRID_Storage')
-    parser.add_argument("--eval_dataset", type=str, default='FactBench',
+    parser.add_argument("--eval_dataset", type=str, default='BPDP',
                         help="Available datasets: FactBench, BPDP")
     parser.add_argument("--subpath", type=str, default='bpdp/',
                         help="Available subpaths: bpdp/, domain/, domainrange/, mix/, property/, random/, range/,")
@@ -67,9 +67,12 @@ if __name__ == '__main__':
                     exc.start()
                     # exit(1)
             elif args.eval_dataset=="BPDP":
+                args = argparse_default()
+                args.max_num_epochs = epoc
+                args.model = mdl
                 exc = Execute(args)
                 exc.start()
-                exit(1)
+                # exit(1)
             else:
                 print("Please specify the dataset")
                 exit(1)
