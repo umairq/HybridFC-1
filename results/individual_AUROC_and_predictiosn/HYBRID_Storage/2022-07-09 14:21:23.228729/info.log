@@ -1,0 +1,50 @@
+2022-07-09 14:21:23,229 - text-only - INFO - --- Parameters are parsed for training ---
+2022-07-09 14:21:23,915 - text-only - INFO -  Standard training starts: TextModel-labeling:TriplePrediction
+2022-07-09 14:21:23,916 - text-only - INFO - TextModel(
+  (loss): BCELoss()
+  (sentence_embeddings_train): Embedding(1061, 2304)
+  (sentence_embeddings_test): Embedding(979, 2304)
+  (sentence_embeddings_valid): Embedding(52, 2304)
+  (sentence_classification_layer): Sequential(
+    (0): Linear(in_features=2304, out_features=2560, bias=True)
+    (1): BatchNorm1d(2560, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU()
+    (3): Dropout(p=0.5, inplace=False)
+    (4): Linear(in_features=2560, out_features=2560, bias=True)
+  )
+  (final_classification_layer): Sequential(
+    (0): Linear(in_features=2560, out_features=2560, bias=True)
+    (1): BatchNorm1d(2560, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU()
+    (3): Dropout(p=0.5, inplace=False)
+    (4): Linear(in_features=2560, out_features=1, bias=True)
+  )
+)
+2022-07-09 14:25:30,106 - text-only - INFO - Evaluation of Train data: TriplePrediction
+2022-07-09 14:25:30,108 - text-only - INFO - Num of triples 1061
+2022-07-09 14:25:30,217 - text-only - INFO - 0.7351555136663525
+2022-07-09 14:25:30,225 - text-only - INFO -               precision    recall  f1-score   support
+
+           0       0.67      1.00      0.80       561
+           1       0.99      0.44      0.61       500
+
+    accuracy                           0.74      1061
+   macro avg       0.83      0.72      0.71      1061
+weighted avg       0.82      0.74      0.71      1061
+
+2022-07-09 14:25:30,226 - text-only - INFO - Evaluation of Test data: TriplePrediction
+2022-07-09 14:25:30,227 - text-only - INFO - Num of triples 979
+2022-07-09 14:25:30,299 - text-only - INFO - 0.7160367722165475
+2022-07-09 14:25:30,306 - text-only - INFO -               precision    recall  f1-score   support
+
+           0       0.65      0.97      0.78       510
+           1       0.93      0.44      0.60       469
+
+    accuracy                           0.72       979
+   macro avg       0.79      0.70      0.69       979
+weighted avg       0.79      0.72      0.69       979
+
+2022-07-09 14:25:30,307 - text-only - INFO - --- Training is completed  ---
+2022-07-09 14:25:30,308 - text-only - INFO - Store full model.
+2022-07-09 14:25:30,470 - text-only - INFO - Stored data.
+2022-07-09 14:25:30,471 - text-only - INFO - Total Runtime:4.121 minutes

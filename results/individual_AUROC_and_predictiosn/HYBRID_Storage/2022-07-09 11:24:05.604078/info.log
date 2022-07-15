@@ -1,0 +1,1178 @@
+2022-07-09 11:24:05,604 - text-path-Hybrid - INFO - --- Parameters are parsed for training ---
+2022-07-09 11:24:06,459 - text-path-Hybrid - INFO -  Standard training starts: TextPathHybridModel-labeling:TriplePrediction
+2022-07-09 11:24:06,460 - text-path-Hybrid - INFO - TextPathHybridModel(
+  (loss): BCELoss()
+  (entity_embeddings): Embedding(1614, 100)
+  (relation_embeddings): Embedding(8, 100)
+  (sentence_embeddings_train): Embedding(1061, 2304)
+  (sentence_embeddings_test): Embedding(979, 2304)
+  (sentence_embeddings_valid): Embedding(52, 2304)
+  (copaal_veracity_score_train): Embedding(1061, 1)
+  (copaal_veracity_score_test): Embedding(979, 1)
+  (copaal_veracity_score_valid): Embedding(52, 1)
+  (sentence_classification_layer): Sequential(
+    (0): Linear(in_features=2304, out_features=2560, bias=True)
+    (1): BatchNorm1d(2560, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU()
+    (3): Dropout(p=0.5, inplace=False)
+    (4): Linear(in_features=2560, out_features=2560, bias=True)
+  )
+  (path_classification_layer): Sequential(
+    (0): Linear(in_features=1, out_features=2560, bias=True)
+    (1): BatchNorm1d(2560, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU()
+    (3): Dropout(p=0.5, inplace=False)
+    (4): Linear(in_features=2560, out_features=2560, bias=True)
+  )
+  (final_classification_layer): Sequential(
+    (0): Linear(in_features=5120, out_features=2560, bias=True)
+    (1): BatchNorm1d(2560, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU()
+    (3): Dropout(p=0.5, inplace=False)
+    (4): Linear(in_features=2560, out_features=1, bias=True)
+  )
+)
+2022-07-09 11:24:31,867 - text-path-Hybrid - INFO - Evaluation of Train data: TriplePrediction
+2022-07-09 11:24:31,868 - text-path-Hybrid - INFO - Num of triples 1061
+2022-07-09 11:24:32,028 - text-path-Hybrid - INFO - 0.8265786993402451
+2022-07-09 11:24:32,035 - text-path-Hybrid - INFO -               precision    recall  f1-score   support
+
+           0       0.76      0.98      0.86       561
+           1       0.96      0.66      0.78       500
+
+    accuracy                           0.83      1061
+   macro avg       0.86      0.82      0.82      1061
+weighted avg       0.86      0.83      0.82      1061
+
+2022-07-09 11:24:32,036 - text-path-Hybrid - INFO - Evaluation of Test data: TriplePrediction
+2022-07-09 11:24:32,036 - text-path-Hybrid - INFO - Num of triples 979
+2022-07-09 11:24:32,141 - text-path-Hybrid - INFO - 0.7865168539325843
+2022-07-09 11:24:32,147 - text-path-Hybrid - INFO -               precision    recall  f1-score   support
+
+           0       0.74      0.92      0.82       510
+           1       0.88      0.64      0.74       469
+
+    accuracy                           0.79       979
+   macro avg       0.81      0.78      0.78       979
+weighted avg       0.81      0.79      0.78       979
+
+2022-07-09 11:24:32,148 - text-path-Hybrid - INFO - --- Training is completed  ---
+2022-07-09 11:24:32,148 - text-path-Hybrid - INFO - Store full model.
+2022-07-09 11:24:32,381 - text-path-Hybrid - INFO - Stored data.
+2022-07-09 11:24:32,381 - text-path-Hybrid - INFO - Total Runtime:0.446 minutes
+2022-07-09 11:53:39,658 - text-path-Hybrid - INFO - --- Parameters are parsed for training ---
+2022-07-09 11:53:40,488 - text-path-Hybrid - INFO -  Standard training starts: TextPathHybridModel-labeling:TriplePrediction
+2022-07-09 11:53:40,489 - text-path-Hybrid - INFO - TextPathHybridModel(
+  (loss): BCELoss()
+  (entity_embeddings): Embedding(1707, 100)
+  (relation_embeddings): Embedding(8, 100)
+  (sentence_embeddings_train): Embedding(1032, 2304)
+  (sentence_embeddings_test): Embedding(947, 2304)
+  (sentence_embeddings_valid): Embedding(50, 2304)
+  (copaal_veracity_score_train): Embedding(1032, 1)
+  (copaal_veracity_score_test): Embedding(947, 1)
+  (copaal_veracity_score_valid): Embedding(50, 1)
+  (sentence_classification_layer): Sequential(
+    (0): Linear(in_features=2304, out_features=2560, bias=True)
+    (1): BatchNorm1d(2560, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU()
+    (3): Dropout(p=0.5, inplace=False)
+    (4): Linear(in_features=2560, out_features=2560, bias=True)
+  )
+  (path_classification_layer): Sequential(
+    (0): Linear(in_features=1, out_features=2560, bias=True)
+    (1): BatchNorm1d(2560, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU()
+    (3): Dropout(p=0.5, inplace=False)
+    (4): Linear(in_features=2560, out_features=2560, bias=True)
+  )
+  (final_classification_layer): Sequential(
+    (0): Linear(in_features=5120, out_features=2560, bias=True)
+    (1): BatchNorm1d(2560, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU()
+    (3): Dropout(p=0.5, inplace=False)
+    (4): Linear(in_features=2560, out_features=1, bias=True)
+  )
+)
+2022-07-09 11:54:33,723 - text-path-Hybrid - INFO - Evaluation of Train data: TriplePrediction
+2022-07-09 11:54:33,724 - text-path-Hybrid - INFO - Num of triples 1032
+2022-07-09 11:54:33,877 - text-path-Hybrid - INFO - 0.8042635658914729
+2022-07-09 11:54:33,883 - text-path-Hybrid - INFO -               precision    recall  f1-score   support
+
+           0       0.74      0.95      0.83       532
+           1       0.93      0.65      0.76       500
+
+    accuracy                           0.80      1032
+   macro avg       0.83      0.80      0.80      1032
+weighted avg       0.83      0.80      0.80      1032
+
+2022-07-09 11:54:33,884 - text-path-Hybrid - INFO - Evaluation of Test data: TriplePrediction
+2022-07-09 11:54:33,885 - text-path-Hybrid - INFO - Num of triples 947
+2022-07-09 11:54:33,999 - text-path-Hybrid - INFO - 0.7676874340021119
+2022-07-09 11:54:34,006 - text-path-Hybrid - INFO -               precision    recall  f1-score   support
+
+           0       0.71      0.90      0.80       478
+           1       0.87      0.63      0.73       469
+
+    accuracy                           0.77       947
+   macro avg       0.79      0.77      0.76       947
+weighted avg       0.79      0.77      0.76       947
+
+2022-07-09 11:54:34,006 - text-path-Hybrid - INFO - --- Training is completed  ---
+2022-07-09 11:54:34,007 - text-path-Hybrid - INFO - Store full model.
+2022-07-09 11:54:34,278 - text-path-Hybrid - INFO - Stored data.
+2022-07-09 11:54:34,278 - text-path-Hybrid - INFO - Total Runtime:0.910 minutes
+2022-07-09 11:54:36,762 - text-path-Hybrid - INFO - --- Parameters are parsed for training ---
+2022-07-09 11:54:37,516 - text-path-Hybrid - INFO -  Standard training starts: TextPathHybridModel-labeling:TriplePrediction
+2022-07-09 11:54:37,517 - text-path-Hybrid - INFO - TextPathHybridModel(
+  (loss): BCELoss()
+  (entity_embeddings): Embedding(1512, 100)
+  (relation_embeddings): Embedding(8, 100)
+  (sentence_embeddings_train): Embedding(999, 2304)
+  (sentence_embeddings_test): Embedding(935, 2304)
+  (sentence_embeddings_valid): Embedding(50, 2304)
+  (copaal_veracity_score_train): Embedding(999, 1)
+  (copaal_veracity_score_test): Embedding(935, 1)
+  (copaal_veracity_score_valid): Embedding(50, 1)
+  (sentence_classification_layer): Sequential(
+    (0): Linear(in_features=2304, out_features=2560, bias=True)
+    (1): BatchNorm1d(2560, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU()
+    (3): Dropout(p=0.5, inplace=False)
+    (4): Linear(in_features=2560, out_features=2560, bias=True)
+  )
+  (path_classification_layer): Sequential(
+    (0): Linear(in_features=1, out_features=2560, bias=True)
+    (1): BatchNorm1d(2560, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU()
+    (3): Dropout(p=0.5, inplace=False)
+    (4): Linear(in_features=2560, out_features=2560, bias=True)
+  )
+  (final_classification_layer): Sequential(
+    (0): Linear(in_features=5120, out_features=2560, bias=True)
+    (1): BatchNorm1d(2560, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU()
+    (3): Dropout(p=0.5, inplace=False)
+    (4): Linear(in_features=2560, out_features=1, bias=True)
+  )
+)
+2022-07-09 11:55:28,866 - text-path-Hybrid - INFO - Evaluation of Train data: TriplePrediction
+2022-07-09 11:55:28,867 - text-path-Hybrid - INFO - Num of triples 999
+2022-07-09 11:55:29,044 - text-path-Hybrid - INFO - 0.8018018018018018
+2022-07-09 11:55:29,050 - text-path-Hybrid - INFO -               precision    recall  f1-score   support
+
+           0       0.73      0.95      0.83       499
+           1       0.93      0.66      0.77       500
+
+    accuracy                           0.80       999
+   macro avg       0.83      0.80      0.80       999
+weighted avg       0.83      0.80      0.80       999
+
+2022-07-09 11:55:29,051 - text-path-Hybrid - INFO - Evaluation of Test data: TriplePrediction
+2022-07-09 11:55:29,052 - text-path-Hybrid - INFO - Num of triples 935
+2022-07-09 11:55:29,180 - text-path-Hybrid - INFO - 0.7647058823529411
+2022-07-09 11:55:29,187 - text-path-Hybrid - INFO -               precision    recall  f1-score   support
+
+           0       0.71      0.89      0.79       466
+           1       0.86      0.64      0.73       469
+
+    accuracy                           0.76       935
+   macro avg       0.78      0.77      0.76       935
+weighted avg       0.78      0.76      0.76       935
+
+2022-07-09 11:55:29,187 - text-path-Hybrid - INFO - --- Training is completed  ---
+2022-07-09 11:55:29,188 - text-path-Hybrid - INFO - Store full model.
+2022-07-09 11:55:29,413 - text-path-Hybrid - INFO - Stored data.
+2022-07-09 11:55:29,414 - text-path-Hybrid - INFO - Total Runtime:0.878 minutes
+2022-07-09 11:55:31,182 - text-path-Hybrid - INFO - --- Parameters are parsed for training ---
+2022-07-09 11:55:31,946 - text-path-Hybrid - INFO -  Standard training starts: TextPathHybridModel-labeling:TriplePrediction
+2022-07-09 11:55:31,947 - text-path-Hybrid - INFO - TextPathHybridModel(
+  (loss): BCELoss()
+  (entity_embeddings): Embedding(1519, 100)
+  (relation_embeddings): Embedding(8, 100)
+  (sentence_embeddings_train): Embedding(1000, 2304)
+  (sentence_embeddings_test): Embedding(935, 2304)
+  (sentence_embeddings_valid): Embedding(50, 2304)
+  (copaal_veracity_score_train): Embedding(1000, 1)
+  (copaal_veracity_score_test): Embedding(935, 1)
+  (copaal_veracity_score_valid): Embedding(50, 1)
+  (sentence_classification_layer): Sequential(
+    (0): Linear(in_features=2304, out_features=2560, bias=True)
+    (1): BatchNorm1d(2560, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU()
+    (3): Dropout(p=0.5, inplace=False)
+    (4): Linear(in_features=2560, out_features=2560, bias=True)
+  )
+  (path_classification_layer): Sequential(
+    (0): Linear(in_features=1, out_features=2560, bias=True)
+    (1): BatchNorm1d(2560, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU()
+    (3): Dropout(p=0.5, inplace=False)
+    (4): Linear(in_features=2560, out_features=2560, bias=True)
+  )
+  (final_classification_layer): Sequential(
+    (0): Linear(in_features=5120, out_features=2560, bias=True)
+    (1): BatchNorm1d(2560, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU()
+    (3): Dropout(p=0.5, inplace=False)
+    (4): Linear(in_features=2560, out_features=1, bias=True)
+  )
+)
+2022-07-09 11:56:24,252 - text-path-Hybrid - INFO - Evaluation of Train data: TriplePrediction
+2022-07-09 11:56:24,253 - text-path-Hybrid - INFO - Num of triples 1000
+2022-07-09 11:56:24,411 - text-path-Hybrid - INFO - 0.799
+2022-07-09 11:56:24,418 - text-path-Hybrid - INFO -               precision    recall  f1-score   support
+
+           0       0.73      0.94      0.82       500
+           1       0.91      0.66      0.77       500
+
+    accuracy                           0.80      1000
+   macro avg       0.82      0.80      0.80      1000
+weighted avg       0.82      0.80      0.80      1000
+
+2022-07-09 11:56:24,419 - text-path-Hybrid - INFO - Evaluation of Test data: TriplePrediction
+2022-07-09 11:56:24,419 - text-path-Hybrid - INFO - Num of triples 935
+2022-07-09 11:56:24,533 - text-path-Hybrid - INFO - 0.7679144385026738
+2022-07-09 11:56:24,539 - text-path-Hybrid - INFO -               precision    recall  f1-score   support
+
+           0       0.71      0.89      0.79       466
+           1       0.86      0.64      0.74       469
+
+    accuracy                           0.77       935
+   macro avg       0.79      0.77      0.76       935
+weighted avg       0.79      0.77      0.76       935
+
+2022-07-09 11:56:24,540 - text-path-Hybrid - INFO - --- Training is completed  ---
+2022-07-09 11:56:24,540 - text-path-Hybrid - INFO - Store full model.
+2022-07-09 11:56:24,779 - text-path-Hybrid - INFO - Stored data.
+2022-07-09 11:56:24,779 - text-path-Hybrid - INFO - Total Runtime:0.893 minutes
+2022-07-09 11:56:26,550 - text-path-Hybrid - INFO - --- Parameters are parsed for training ---
+2022-07-09 11:56:27,308 - text-path-Hybrid - INFO -  Standard training starts: TextPathHybridModel-labeling:TriplePrediction
+2022-07-09 11:56:27,309 - text-path-Hybrid - INFO - TextPathHybridModel(
+  (loss): BCELoss()
+  (entity_embeddings): Embedding(1503, 100)
+  (relation_embeddings): Embedding(8, 100)
+  (sentence_embeddings_train): Embedding(990, 2304)
+  (sentence_embeddings_test): Embedding(939, 2304)
+  (sentence_embeddings_valid): Embedding(50, 2304)
+  (copaal_veracity_score_train): Embedding(990, 1)
+  (copaal_veracity_score_test): Embedding(939, 1)
+  (copaal_veracity_score_valid): Embedding(50, 1)
+  (sentence_classification_layer): Sequential(
+    (0): Linear(in_features=2304, out_features=2560, bias=True)
+    (1): BatchNorm1d(2560, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU()
+    (3): Dropout(p=0.5, inplace=False)
+    (4): Linear(in_features=2560, out_features=2560, bias=True)
+  )
+  (path_classification_layer): Sequential(
+    (0): Linear(in_features=1, out_features=2560, bias=True)
+    (1): BatchNorm1d(2560, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU()
+    (3): Dropout(p=0.5, inplace=False)
+    (4): Linear(in_features=2560, out_features=2560, bias=True)
+  )
+  (final_classification_layer): Sequential(
+    (0): Linear(in_features=5120, out_features=2560, bias=True)
+    (1): BatchNorm1d(2560, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU()
+    (3): Dropout(p=0.5, inplace=False)
+    (4): Linear(in_features=2560, out_features=1, bias=True)
+  )
+)
+2022-07-09 11:57:19,312 - text-path-Hybrid - INFO - Evaluation of Train data: TriplePrediction
+2022-07-09 11:57:19,313 - text-path-Hybrid - INFO - Num of triples 990
+2022-07-09 11:57:19,481 - text-path-Hybrid - INFO - 0.8111111111111111
+2022-07-09 11:57:19,488 - text-path-Hybrid - INFO -               precision    recall  f1-score   support
+
+           0       0.73      0.97      0.84       490
+           1       0.96      0.65      0.78       500
+
+    accuracy                           0.81       990
+   macro avg       0.85      0.81      0.81       990
+weighted avg       0.85      0.81      0.81       990
+
+2022-07-09 11:57:19,489 - text-path-Hybrid - INFO - Evaluation of Test data: TriplePrediction
+2022-07-09 11:57:19,489 - text-path-Hybrid - INFO - Num of triples 939
+2022-07-09 11:57:19,605 - text-path-Hybrid - INFO - 0.7742279020234292
+2022-07-09 11:57:19,611 - text-path-Hybrid - INFO -               precision    recall  f1-score   support
+
+           0       0.71      0.91      0.80       470
+           1       0.88      0.63      0.74       469
+
+    accuracy                           0.77       939
+   macro avg       0.80      0.77      0.77       939
+weighted avg       0.80      0.77      0.77       939
+
+2022-07-09 11:57:19,612 - text-path-Hybrid - INFO - --- Training is completed  ---
+2022-07-09 11:57:19,612 - text-path-Hybrid - INFO - Store full model.
+2022-07-09 11:57:19,853 - text-path-Hybrid - INFO - Stored data.
+2022-07-09 11:57:19,853 - text-path-Hybrid - INFO - Total Runtime:0.888 minutes
+2022-07-09 11:57:21,665 - text-path-Hybrid - INFO - --- Parameters are parsed for training ---
+2022-07-09 11:57:22,466 - text-path-Hybrid - INFO -  Standard training starts: TextPathHybridModel-labeling:TriplePrediction
+2022-07-09 11:57:22,467 - text-path-Hybrid - INFO - TextPathHybridModel(
+  (loss): BCELoss()
+  (entity_embeddings): Embedding(1584, 100)
+  (relation_embeddings): Embedding(8, 100)
+  (sentence_embeddings_train): Embedding(1025, 2304)
+  (sentence_embeddings_test): Embedding(972, 2304)
+  (sentence_embeddings_valid): Embedding(52, 2304)
+  (copaal_veracity_score_train): Embedding(1025, 1)
+  (copaal_veracity_score_test): Embedding(972, 1)
+  (copaal_veracity_score_valid): Embedding(52, 1)
+  (sentence_classification_layer): Sequential(
+    (0): Linear(in_features=2304, out_features=2560, bias=True)
+    (1): BatchNorm1d(2560, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU()
+    (3): Dropout(p=0.5, inplace=False)
+    (4): Linear(in_features=2560, out_features=2560, bias=True)
+  )
+  (path_classification_layer): Sequential(
+    (0): Linear(in_features=1, out_features=2560, bias=True)
+    (1): BatchNorm1d(2560, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU()
+    (3): Dropout(p=0.5, inplace=False)
+    (4): Linear(in_features=2560, out_features=2560, bias=True)
+  )
+  (final_classification_layer): Sequential(
+    (0): Linear(in_features=5120, out_features=2560, bias=True)
+    (1): BatchNorm1d(2560, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU()
+    (3): Dropout(p=0.5, inplace=False)
+    (4): Linear(in_features=2560, out_features=1, bias=True)
+  )
+)
+2022-07-09 11:58:15,851 - text-path-Hybrid - INFO - Evaluation of Train data: TriplePrediction
+2022-07-09 11:58:15,852 - text-path-Hybrid - INFO - Num of triples 1025
+2022-07-09 11:58:16,005 - text-path-Hybrid - INFO - 0.7521951219512195
+2022-07-09 11:58:16,011 - text-path-Hybrid - INFO -               precision    recall  f1-score   support
+
+           0       0.71      0.87      0.78       525
+           1       0.83      0.62      0.71       500
+
+    accuracy                           0.75      1025
+   macro avg       0.77      0.75      0.75      1025
+weighted avg       0.77      0.75      0.75      1025
+
+2022-07-09 11:58:16,012 - text-path-Hybrid - INFO - Evaluation of Test data: TriplePrediction
+2022-07-09 11:58:16,013 - text-path-Hybrid - INFO - Num of triples 972
+2022-07-09 11:58:16,102 - text-path-Hybrid - INFO - 0.7139917695473251
+2022-07-09 11:58:16,108 - text-path-Hybrid - INFO -               precision    recall  f1-score   support
+
+           0       0.69      0.82      0.75       503
+           1       0.75      0.60      0.67       469
+
+    accuracy                           0.71       972
+   macro avg       0.72      0.71      0.71       972
+weighted avg       0.72      0.71      0.71       972
+
+2022-07-09 11:58:16,109 - text-path-Hybrid - INFO - --- Training is completed  ---
+2022-07-09 11:58:16,110 - text-path-Hybrid - INFO - Store full model.
+2022-07-09 11:58:16,357 - text-path-Hybrid - INFO - Stored data.
+2022-07-09 11:58:16,358 - text-path-Hybrid - INFO - Total Runtime:0.912 minutes
+2022-07-09 11:58:18,316 - text-path-Hybrid - INFO - --- Parameters are parsed for training ---
+2022-07-09 11:58:19,109 - text-path-Hybrid - INFO -  Standard training starts: TextPathHybridModel-labeling:TriplePrediction
+2022-07-09 11:58:19,110 - text-path-Hybrid - INFO - TextPathHybridModel(
+  (loss): BCELoss()
+  (entity_embeddings): Embedding(1614, 100)
+  (relation_embeddings): Embedding(8, 100)
+  (sentence_embeddings_train): Embedding(1061, 2304)
+  (sentence_embeddings_test): Embedding(979, 2304)
+  (sentence_embeddings_valid): Embedding(52, 2304)
+  (copaal_veracity_score_train): Embedding(1061, 1)
+  (copaal_veracity_score_test): Embedding(979, 1)
+  (copaal_veracity_score_valid): Embedding(52, 1)
+  (sentence_classification_layer): Sequential(
+    (0): Linear(in_features=2304, out_features=2560, bias=True)
+    (1): BatchNorm1d(2560, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU()
+    (3): Dropout(p=0.5, inplace=False)
+    (4): Linear(in_features=2560, out_features=2560, bias=True)
+  )
+  (path_classification_layer): Sequential(
+    (0): Linear(in_features=1, out_features=2560, bias=True)
+    (1): BatchNorm1d(2560, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU()
+    (3): Dropout(p=0.5, inplace=False)
+    (4): Linear(in_features=2560, out_features=2560, bias=True)
+  )
+  (final_classification_layer): Sequential(
+    (0): Linear(in_features=5120, out_features=2560, bias=True)
+    (1): BatchNorm1d(2560, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU()
+    (3): Dropout(p=0.5, inplace=False)
+    (4): Linear(in_features=2560, out_features=1, bias=True)
+  )
+)
+2022-07-09 11:59:12,411 - text-path-Hybrid - INFO - Evaluation of Train data: TriplePrediction
+2022-07-09 11:59:12,412 - text-path-Hybrid - INFO - Num of triples 1061
+2022-07-09 11:59:12,517 - text-path-Hybrid - INFO - 0.8265786993402451
+2022-07-09 11:59:12,523 - text-path-Hybrid - INFO -               precision    recall  f1-score   support
+
+           0       0.76      0.98      0.86       561
+           1       0.96      0.66      0.78       500
+
+    accuracy                           0.83      1061
+   macro avg       0.86      0.82      0.82      1061
+weighted avg       0.86      0.83      0.82      1061
+
+2022-07-09 11:59:12,524 - text-path-Hybrid - INFO - Evaluation of Test data: TriplePrediction
+2022-07-09 11:59:12,525 - text-path-Hybrid - INFO - Num of triples 979
+2022-07-09 11:59:12,588 - text-path-Hybrid - INFO - 0.7865168539325843
+2022-07-09 11:59:12,594 - text-path-Hybrid - INFO -               precision    recall  f1-score   support
+
+           0       0.74      0.92      0.82       510
+           1       0.88      0.64      0.74       469
+
+    accuracy                           0.79       979
+   macro avg       0.81      0.78      0.78       979
+weighted avg       0.81      0.79      0.78       979
+
+2022-07-09 11:59:12,595 - text-path-Hybrid - INFO - --- Training is completed  ---
+2022-07-09 11:59:12,596 - text-path-Hybrid - INFO - Store full model.
+2022-07-09 11:59:12,831 - text-path-Hybrid - INFO - Stored data.
+2022-07-09 11:59:12,831 - text-path-Hybrid - INFO - Total Runtime:0.909 minutes
+2022-07-09 12:54:27,207 - text-path-Hybrid - INFO - --- Parameters are parsed for training ---
+2022-07-09 12:54:28,025 - text-path-Hybrid - INFO -  Standard training starts: TextPathHybridModel-labeling:TriplePrediction
+2022-07-09 12:54:28,026 - text-path-Hybrid - INFO - TextPathHybridModel(
+  (loss): BCELoss()
+  (entity_embeddings): Embedding(1707, 100)
+  (relation_embeddings): Embedding(8, 100)
+  (sentence_embeddings_train): Embedding(1032, 2304)
+  (sentence_embeddings_test): Embedding(947, 2304)
+  (sentence_embeddings_valid): Embedding(50, 2304)
+  (copaal_veracity_score_train): Embedding(1032, 1)
+  (copaal_veracity_score_test): Embedding(947, 1)
+  (copaal_veracity_score_valid): Embedding(50, 1)
+  (sentence_classification_layer): Sequential(
+    (0): Linear(in_features=2304, out_features=2560, bias=True)
+    (1): BatchNorm1d(2560, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU()
+    (3): Dropout(p=0.5, inplace=False)
+    (4): Linear(in_features=2560, out_features=2560, bias=True)
+  )
+  (path_classification_layer): Sequential(
+    (0): Linear(in_features=1, out_features=2560, bias=True)
+    (1): BatchNorm1d(2560, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU()
+    (3): Dropout(p=0.5, inplace=False)
+    (4): Linear(in_features=2560, out_features=2560, bias=True)
+  )
+  (final_classification_layer): Sequential(
+    (0): Linear(in_features=5120, out_features=2560, bias=True)
+    (1): BatchNorm1d(2560, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU()
+    (3): Dropout(p=0.5, inplace=False)
+    (4): Linear(in_features=2560, out_features=1, bias=True)
+  )
+)
+2022-07-09 12:56:20,314 - text-path-Hybrid - INFO - Evaluation of Train data: TriplePrediction
+2022-07-09 12:56:20,315 - text-path-Hybrid - INFO - Num of triples 1032
+2022-07-09 12:56:20,487 - text-path-Hybrid - INFO - 0.8013565891472868
+2022-07-09 12:56:20,494 - text-path-Hybrid - INFO -               precision    recall  f1-score   support
+
+           0       0.74      0.95      0.83       532
+           1       0.92      0.65      0.76       500
+
+    accuracy                           0.80      1032
+   macro avg       0.83      0.80      0.80      1032
+weighted avg       0.83      0.80      0.80      1032
+
+2022-07-09 12:56:20,495 - text-path-Hybrid - INFO - Evaluation of Test data: TriplePrediction
+2022-07-09 12:56:20,496 - text-path-Hybrid - INFO - Num of triples 947
+2022-07-09 12:56:20,615 - text-path-Hybrid - INFO - 0.764519535374868
+2022-07-09 12:56:20,621 - text-path-Hybrid - INFO -               precision    recall  f1-score   support
+
+           0       0.71      0.90      0.79       478
+           1       0.86      0.63      0.73       469
+
+    accuracy                           0.76       947
+   macro avg       0.78      0.76      0.76       947
+weighted avg       0.78      0.76      0.76       947
+
+2022-07-09 12:56:20,622 - text-path-Hybrid - INFO - --- Training is completed  ---
+2022-07-09 12:56:20,623 - text-path-Hybrid - INFO - Store full model.
+2022-07-09 12:56:20,908 - text-path-Hybrid - INFO - Stored data.
+2022-07-09 12:56:20,909 - text-path-Hybrid - INFO - Total Runtime:1.895 minutes
+2022-07-09 12:56:23,308 - text-path-Hybrid - INFO - --- Parameters are parsed for training ---
+2022-07-09 12:56:24,076 - text-path-Hybrid - INFO -  Standard training starts: TextPathHybridModel-labeling:TriplePrediction
+2022-07-09 12:56:24,077 - text-path-Hybrid - INFO - TextPathHybridModel(
+  (loss): BCELoss()
+  (entity_embeddings): Embedding(1512, 100)
+  (relation_embeddings): Embedding(8, 100)
+  (sentence_embeddings_train): Embedding(999, 2304)
+  (sentence_embeddings_test): Embedding(935, 2304)
+  (sentence_embeddings_valid): Embedding(50, 2304)
+  (copaal_veracity_score_train): Embedding(999, 1)
+  (copaal_veracity_score_test): Embedding(935, 1)
+  (copaal_veracity_score_valid): Embedding(50, 1)
+  (sentence_classification_layer): Sequential(
+    (0): Linear(in_features=2304, out_features=2560, bias=True)
+    (1): BatchNorm1d(2560, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU()
+    (3): Dropout(p=0.5, inplace=False)
+    (4): Linear(in_features=2560, out_features=2560, bias=True)
+  )
+  (path_classification_layer): Sequential(
+    (0): Linear(in_features=1, out_features=2560, bias=True)
+    (1): BatchNorm1d(2560, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU()
+    (3): Dropout(p=0.5, inplace=False)
+    (4): Linear(in_features=2560, out_features=2560, bias=True)
+  )
+  (final_classification_layer): Sequential(
+    (0): Linear(in_features=5120, out_features=2560, bias=True)
+    (1): BatchNorm1d(2560, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU()
+    (3): Dropout(p=0.5, inplace=False)
+    (4): Linear(in_features=2560, out_features=1, bias=True)
+  )
+)
+2022-07-09 12:58:06,983 - text-path-Hybrid - INFO - Evaluation of Train data: TriplePrediction
+2022-07-09 12:58:06,985 - text-path-Hybrid - INFO - Num of triples 999
+2022-07-09 12:58:07,147 - text-path-Hybrid - INFO - 0.7897897897897898
+2022-07-09 12:58:07,153 - text-path-Hybrid - INFO -               precision    recall  f1-score   support
+
+           0       0.73      0.92      0.81       499
+           1       0.89      0.66      0.76       500
+
+    accuracy                           0.79       999
+   macro avg       0.81      0.79      0.79       999
+weighted avg       0.81      0.79      0.79       999
+
+2022-07-09 12:58:07,155 - text-path-Hybrid - INFO - Evaluation of Test data: TriplePrediction
+2022-07-09 12:58:07,155 - text-path-Hybrid - INFO - Num of triples 935
+2022-07-09 12:58:07,272 - text-path-Hybrid - INFO - 0.7593582887700535
+2022-07-09 12:58:07,279 - text-path-Hybrid - INFO -               precision    recall  f1-score   support
+
+           0       0.71      0.88      0.78       466
+           1       0.84      0.64      0.73       469
+
+    accuracy                           0.76       935
+   macro avg       0.77      0.76      0.76       935
+weighted avg       0.78      0.76      0.76       935
+
+2022-07-09 12:58:07,279 - text-path-Hybrid - INFO - --- Training is completed  ---
+2022-07-09 12:58:07,280 - text-path-Hybrid - INFO - Store full model.
+2022-07-09 12:58:07,527 - text-path-Hybrid - INFO - Stored data.
+2022-07-09 12:58:07,528 - text-path-Hybrid - INFO - Total Runtime:1.737 minutes
+2022-07-09 12:58:09,291 - text-path-Hybrid - INFO - --- Parameters are parsed for training ---
+2022-07-09 12:58:10,047 - text-path-Hybrid - INFO -  Standard training starts: TextPathHybridModel-labeling:TriplePrediction
+2022-07-09 12:58:10,048 - text-path-Hybrid - INFO - TextPathHybridModel(
+  (loss): BCELoss()
+  (entity_embeddings): Embedding(1519, 100)
+  (relation_embeddings): Embedding(8, 100)
+  (sentence_embeddings_train): Embedding(1000, 2304)
+  (sentence_embeddings_test): Embedding(935, 2304)
+  (sentence_embeddings_valid): Embedding(50, 2304)
+  (copaal_veracity_score_train): Embedding(1000, 1)
+  (copaal_veracity_score_test): Embedding(935, 1)
+  (copaal_veracity_score_valid): Embedding(50, 1)
+  (sentence_classification_layer): Sequential(
+    (0): Linear(in_features=2304, out_features=2560, bias=True)
+    (1): BatchNorm1d(2560, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU()
+    (3): Dropout(p=0.5, inplace=False)
+    (4): Linear(in_features=2560, out_features=2560, bias=True)
+  )
+  (path_classification_layer): Sequential(
+    (0): Linear(in_features=1, out_features=2560, bias=True)
+    (1): BatchNorm1d(2560, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU()
+    (3): Dropout(p=0.5, inplace=False)
+    (4): Linear(in_features=2560, out_features=2560, bias=True)
+  )
+  (final_classification_layer): Sequential(
+    (0): Linear(in_features=5120, out_features=2560, bias=True)
+    (1): BatchNorm1d(2560, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU()
+    (3): Dropout(p=0.5, inplace=False)
+    (4): Linear(in_features=2560, out_features=1, bias=True)
+  )
+)
+2022-07-09 12:59:53,514 - text-path-Hybrid - INFO - Evaluation of Train data: TriplePrediction
+2022-07-09 12:59:53,516 - text-path-Hybrid - INFO - Num of triples 1000
+2022-07-09 12:59:53,676 - text-path-Hybrid - INFO - 0.805
+2022-07-09 12:59:53,683 - text-path-Hybrid - INFO -               precision    recall  f1-score   support
+
+           0       0.74      0.95      0.83       500
+           1       0.93      0.66      0.77       500
+
+    accuracy                           0.81      1000
+   macro avg       0.83      0.80      0.80      1000
+weighted avg       0.83      0.81      0.80      1000
+
+2022-07-09 12:59:53,684 - text-path-Hybrid - INFO - Evaluation of Test data: TriplePrediction
+2022-07-09 12:59:53,685 - text-path-Hybrid - INFO - Num of triples 935
+2022-07-09 12:59:53,803 - text-path-Hybrid - INFO - 0.7668449197860963
+2022-07-09 12:59:53,810 - text-path-Hybrid - INFO -               precision    recall  f1-score   support
+
+           0       0.71      0.90      0.79       466
+           1       0.86      0.64      0.73       469
+
+    accuracy                           0.77       935
+   macro avg       0.79      0.77      0.76       935
+weighted avg       0.79      0.77      0.76       935
+
+2022-07-09 12:59:53,811 - text-path-Hybrid - INFO - --- Training is completed  ---
+2022-07-09 12:59:53,811 - text-path-Hybrid - INFO - Store full model.
+2022-07-09 12:59:54,053 - text-path-Hybrid - INFO - Stored data.
+2022-07-09 12:59:54,054 - text-path-Hybrid - INFO - Total Runtime:1.746 minutes
+2022-07-09 12:59:55,819 - text-path-Hybrid - INFO - --- Parameters are parsed for training ---
+2022-07-09 12:59:56,570 - text-path-Hybrid - INFO -  Standard training starts: TextPathHybridModel-labeling:TriplePrediction
+2022-07-09 12:59:56,571 - text-path-Hybrid - INFO - TextPathHybridModel(
+  (loss): BCELoss()
+  (entity_embeddings): Embedding(1503, 100)
+  (relation_embeddings): Embedding(8, 100)
+  (sentence_embeddings_train): Embedding(990, 2304)
+  (sentence_embeddings_test): Embedding(939, 2304)
+  (sentence_embeddings_valid): Embedding(50, 2304)
+  (copaal_veracity_score_train): Embedding(990, 1)
+  (copaal_veracity_score_test): Embedding(939, 1)
+  (copaal_veracity_score_valid): Embedding(50, 1)
+  (sentence_classification_layer): Sequential(
+    (0): Linear(in_features=2304, out_features=2560, bias=True)
+    (1): BatchNorm1d(2560, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU()
+    (3): Dropout(p=0.5, inplace=False)
+    (4): Linear(in_features=2560, out_features=2560, bias=True)
+  )
+  (path_classification_layer): Sequential(
+    (0): Linear(in_features=1, out_features=2560, bias=True)
+    (1): BatchNorm1d(2560, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU()
+    (3): Dropout(p=0.5, inplace=False)
+    (4): Linear(in_features=2560, out_features=2560, bias=True)
+  )
+  (final_classification_layer): Sequential(
+    (0): Linear(in_features=5120, out_features=2560, bias=True)
+    (1): BatchNorm1d(2560, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU()
+    (3): Dropout(p=0.5, inplace=False)
+    (4): Linear(in_features=2560, out_features=1, bias=True)
+  )
+)
+2022-07-09 13:01:38,146 - text-path-Hybrid - INFO - Evaluation of Train data: TriplePrediction
+2022-07-09 13:01:38,148 - text-path-Hybrid - INFO - Num of triples 990
+2022-07-09 13:01:38,302 - text-path-Hybrid - INFO - 0.796969696969697
+2022-07-09 13:01:38,309 - text-path-Hybrid - INFO -               precision    recall  f1-score   support
+
+           0       0.73      0.93      0.82       490
+           1       0.91      0.66      0.77       500
+
+    accuracy                           0.80       990
+   macro avg       0.82      0.80      0.79       990
+weighted avg       0.82      0.80      0.79       990
+
+2022-07-09 13:01:38,310 - text-path-Hybrid - INFO - Evaluation of Test data: TriplePrediction
+2022-07-09 13:01:38,311 - text-path-Hybrid - INFO - Num of triples 939
+2022-07-09 13:01:38,424 - text-path-Hybrid - INFO - 0.7657082002129926
+2022-07-09 13:01:38,431 - text-path-Hybrid - INFO -               precision    recall  f1-score   support
+
+           0       0.71      0.89      0.79       470
+           1       0.85      0.64      0.73       469
+
+    accuracy                           0.77       939
+   macro avg       0.78      0.77      0.76       939
+weighted avg       0.78      0.77      0.76       939
+
+2022-07-09 13:01:38,431 - text-path-Hybrid - INFO - --- Training is completed  ---
+2022-07-09 13:01:38,432 - text-path-Hybrid - INFO - Store full model.
+2022-07-09 13:01:38,674 - text-path-Hybrid - INFO - Stored data.
+2022-07-09 13:01:38,674 - text-path-Hybrid - INFO - Total Runtime:1.714 minutes
+2022-07-09 13:01:40,564 - text-path-Hybrid - INFO - --- Parameters are parsed for training ---
+2022-07-09 13:01:41,357 - text-path-Hybrid - INFO -  Standard training starts: TextPathHybridModel-labeling:TriplePrediction
+2022-07-09 13:01:41,358 - text-path-Hybrid - INFO - TextPathHybridModel(
+  (loss): BCELoss()
+  (entity_embeddings): Embedding(1584, 100)
+  (relation_embeddings): Embedding(8, 100)
+  (sentence_embeddings_train): Embedding(1025, 2304)
+  (sentence_embeddings_test): Embedding(972, 2304)
+  (sentence_embeddings_valid): Embedding(52, 2304)
+  (copaal_veracity_score_train): Embedding(1025, 1)
+  (copaal_veracity_score_test): Embedding(972, 1)
+  (copaal_veracity_score_valid): Embedding(52, 1)
+  (sentence_classification_layer): Sequential(
+    (0): Linear(in_features=2304, out_features=2560, bias=True)
+    (1): BatchNorm1d(2560, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU()
+    (3): Dropout(p=0.5, inplace=False)
+    (4): Linear(in_features=2560, out_features=2560, bias=True)
+  )
+  (path_classification_layer): Sequential(
+    (0): Linear(in_features=1, out_features=2560, bias=True)
+    (1): BatchNorm1d(2560, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU()
+    (3): Dropout(p=0.5, inplace=False)
+    (4): Linear(in_features=2560, out_features=2560, bias=True)
+  )
+  (final_classification_layer): Sequential(
+    (0): Linear(in_features=5120, out_features=2560, bias=True)
+    (1): BatchNorm1d(2560, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU()
+    (3): Dropout(p=0.5, inplace=False)
+    (4): Linear(in_features=2560, out_features=1, bias=True)
+  )
+)
+2022-07-09 13:03:25,639 - text-path-Hybrid - INFO - Evaluation of Train data: TriplePrediction
+2022-07-09 13:03:25,641 - text-path-Hybrid - INFO - Num of triples 1025
+2022-07-09 13:03:25,804 - text-path-Hybrid - INFO - 0.7502439024390244
+2022-07-09 13:03:25,811 - text-path-Hybrid - INFO -               precision    recall  f1-score   support
+
+           0       0.71      0.86      0.78       525
+           1       0.81      0.64      0.71       500
+
+    accuracy                           0.75      1025
+   macro avg       0.76      0.75      0.75      1025
+weighted avg       0.76      0.75      0.75      1025
+
+2022-07-09 13:03:25,812 - text-path-Hybrid - INFO - Evaluation of Test data: TriplePrediction
+2022-07-09 13:03:25,813 - text-path-Hybrid - INFO - Num of triples 972
+2022-07-09 13:03:25,930 - text-path-Hybrid - INFO - 0.7098765432098766
+2022-07-09 13:03:25,937 - text-path-Hybrid - INFO -               precision    recall  f1-score   support
+
+           0       0.69      0.80      0.74       503
+           1       0.74      0.62      0.67       469
+
+    accuracy                           0.71       972
+   macro avg       0.71      0.71      0.71       972
+weighted avg       0.71      0.71      0.71       972
+
+2022-07-09 13:03:25,938 - text-path-Hybrid - INFO - --- Training is completed  ---
+2022-07-09 13:03:25,939 - text-path-Hybrid - INFO - Store full model.
+2022-07-09 13:03:26,193 - text-path-Hybrid - INFO - Stored data.
+2022-07-09 13:03:26,194 - text-path-Hybrid - INFO - Total Runtime:1.760 minutes
+2022-07-09 13:03:28,119 - text-path-Hybrid - INFO - --- Parameters are parsed for training ---
+2022-07-09 13:03:28,908 - text-path-Hybrid - INFO -  Standard training starts: TextPathHybridModel-labeling:TriplePrediction
+2022-07-09 13:03:28,909 - text-path-Hybrid - INFO - TextPathHybridModel(
+  (loss): BCELoss()
+  (entity_embeddings): Embedding(1614, 100)
+  (relation_embeddings): Embedding(8, 100)
+  (sentence_embeddings_train): Embedding(1061, 2304)
+  (sentence_embeddings_test): Embedding(979, 2304)
+  (sentence_embeddings_valid): Embedding(52, 2304)
+  (copaal_veracity_score_train): Embedding(1061, 1)
+  (copaal_veracity_score_test): Embedding(979, 1)
+  (copaal_veracity_score_valid): Embedding(52, 1)
+  (sentence_classification_layer): Sequential(
+    (0): Linear(in_features=2304, out_features=2560, bias=True)
+    (1): BatchNorm1d(2560, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU()
+    (3): Dropout(p=0.5, inplace=False)
+    (4): Linear(in_features=2560, out_features=2560, bias=True)
+  )
+  (path_classification_layer): Sequential(
+    (0): Linear(in_features=1, out_features=2560, bias=True)
+    (1): BatchNorm1d(2560, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU()
+    (3): Dropout(p=0.5, inplace=False)
+    (4): Linear(in_features=2560, out_features=2560, bias=True)
+  )
+  (final_classification_layer): Sequential(
+    (0): Linear(in_features=5120, out_features=2560, bias=True)
+    (1): BatchNorm1d(2560, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU()
+    (3): Dropout(p=0.5, inplace=False)
+    (4): Linear(in_features=2560, out_features=1, bias=True)
+  )
+)
+2022-07-09 13:05:11,881 - text-path-Hybrid - INFO - Evaluation of Train data: TriplePrediction
+2022-07-09 13:05:11,882 - text-path-Hybrid - INFO - Num of triples 1061
+2022-07-09 13:05:12,055 - text-path-Hybrid - INFO - 0.825636192271442
+2022-07-09 13:05:12,062 - text-path-Hybrid - INFO -               precision    recall  f1-score   support
+
+           0       0.76      0.97      0.86       561
+           1       0.96      0.66      0.78       500
+
+    accuracy                           0.83      1061
+   macro avg       0.86      0.82      0.82      1061
+weighted avg       0.85      0.83      0.82      1061
+
+2022-07-09 13:05:12,063 - text-path-Hybrid - INFO - Evaluation of Test data: TriplePrediction
+2022-07-09 13:05:12,064 - text-path-Hybrid - INFO - Num of triples 979
+2022-07-09 13:05:12,181 - text-path-Hybrid - INFO - 0.7854954034729316
+2022-07-09 13:05:12,188 - text-path-Hybrid - INFO -               precision    recall  f1-score   support
+
+           0       0.74      0.92      0.82       510
+           1       0.88      0.64      0.74       469
+
+    accuracy                           0.79       979
+   macro avg       0.81      0.78      0.78       979
+weighted avg       0.80      0.79      0.78       979
+
+2022-07-09 13:05:12,189 - text-path-Hybrid - INFO - --- Training is completed  ---
+2022-07-09 13:05:12,190 - text-path-Hybrid - INFO - Store full model.
+2022-07-09 13:05:12,439 - text-path-Hybrid - INFO - Stored data.
+2022-07-09 13:05:12,440 - text-path-Hybrid - INFO - Total Runtime:1.739 minutes
+2022-07-09 15:14:10,947 - text-path-Hybrid - INFO - --- Parameters are parsed for training ---
+2022-07-09 15:14:11,778 - text-path-Hybrid - INFO -  Standard training starts: TextPathHybridModel-labeling:TriplePrediction
+2022-07-09 15:14:11,779 - text-path-Hybrid - INFO - TextPathHybridModel(
+  (loss): BCELoss()
+  (entity_embeddings): Embedding(1707, 100)
+  (relation_embeddings): Embedding(8, 100)
+  (sentence_embeddings_train): Embedding(1032, 2304)
+  (sentence_embeddings_test): Embedding(947, 2304)
+  (sentence_embeddings_valid): Embedding(50, 2304)
+  (copaal_veracity_score_train): Embedding(1032, 1)
+  (copaal_veracity_score_test): Embedding(947, 1)
+  (copaal_veracity_score_valid): Embedding(50, 1)
+  (sentence_classification_layer): Sequential(
+    (0): Linear(in_features=2304, out_features=2560, bias=True)
+    (1): BatchNorm1d(2560, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU()
+    (3): Dropout(p=0.5, inplace=False)
+    (4): Linear(in_features=2560, out_features=2560, bias=True)
+  )
+  (path_classification_layer): Sequential(
+    (0): Linear(in_features=1, out_features=2560, bias=True)
+    (1): BatchNorm1d(2560, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU()
+    (3): Dropout(p=0.5, inplace=False)
+    (4): Linear(in_features=2560, out_features=2560, bias=True)
+  )
+  (final_classification_layer): Sequential(
+    (0): Linear(in_features=5120, out_features=2560, bias=True)
+    (1): BatchNorm1d(2560, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU()
+    (3): Dropout(p=0.5, inplace=False)
+    (4): Linear(in_features=2560, out_features=1, bias=True)
+  )
+)
+2022-07-09 15:18:18,466 - text-path-Hybrid - INFO - Evaluation of Train data: TriplePrediction
+2022-07-09 15:18:18,468 - text-path-Hybrid - INFO - Num of triples 1032
+2022-07-09 15:18:18,627 - text-path-Hybrid - INFO - 0.8052325581395349
+2022-07-09 15:18:18,634 - text-path-Hybrid - INFO -               precision    recall  f1-score   support
+
+           0       0.74      0.96      0.84       532
+           1       0.94      0.64      0.76       500
+
+    accuracy                           0.81      1032
+   macro avg       0.84      0.80      0.80      1032
+weighted avg       0.84      0.81      0.80      1032
+
+2022-07-09 15:18:18,635 - text-path-Hybrid - INFO - Evaluation of Test data: TriplePrediction
+2022-07-09 15:18:18,636 - text-path-Hybrid - INFO - Num of triples 947
+2022-07-09 15:18:18,751 - text-path-Hybrid - INFO - 0.7666314677930306
+2022-07-09 15:18:18,757 - text-path-Hybrid - INFO -               precision    recall  f1-score   support
+
+           0       0.71      0.91      0.80       478
+           1       0.87      0.62      0.72       469
+
+    accuracy                           0.77       947
+   macro avg       0.79      0.77      0.76       947
+weighted avg       0.79      0.77      0.76       947
+
+2022-07-09 15:18:18,758 - text-path-Hybrid - INFO - --- Training is completed  ---
+2022-07-09 15:18:18,759 - text-path-Hybrid - INFO - Store full model.
+2022-07-09 15:18:19,019 - text-path-Hybrid - INFO - Stored data.
+2022-07-09 15:18:19,020 - text-path-Hybrid - INFO - Total Runtime:4.135 minutes
+2022-07-09 15:18:20,789 - text-path-Hybrid - INFO - --- Parameters are parsed for training ---
+2022-07-09 15:18:21,543 - text-path-Hybrid - INFO -  Standard training starts: TextPathHybridModel-labeling:TriplePrediction
+2022-07-09 15:18:21,544 - text-path-Hybrid - INFO - TextPathHybridModel(
+  (loss): BCELoss()
+  (entity_embeddings): Embedding(1512, 100)
+  (relation_embeddings): Embedding(8, 100)
+  (sentence_embeddings_train): Embedding(999, 2304)
+  (sentence_embeddings_test): Embedding(935, 2304)
+  (sentence_embeddings_valid): Embedding(50, 2304)
+  (copaal_veracity_score_train): Embedding(999, 1)
+  (copaal_veracity_score_test): Embedding(935, 1)
+  (copaal_veracity_score_valid): Embedding(50, 1)
+  (sentence_classification_layer): Sequential(
+    (0): Linear(in_features=2304, out_features=2560, bias=True)
+    (1): BatchNorm1d(2560, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU()
+    (3): Dropout(p=0.5, inplace=False)
+    (4): Linear(in_features=2560, out_features=2560, bias=True)
+  )
+  (path_classification_layer): Sequential(
+    (0): Linear(in_features=1, out_features=2560, bias=True)
+    (1): BatchNorm1d(2560, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU()
+    (3): Dropout(p=0.5, inplace=False)
+    (4): Linear(in_features=2560, out_features=2560, bias=True)
+  )
+  (final_classification_layer): Sequential(
+    (0): Linear(in_features=5120, out_features=2560, bias=True)
+    (1): BatchNorm1d(2560, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU()
+    (3): Dropout(p=0.5, inplace=False)
+    (4): Linear(in_features=2560, out_features=1, bias=True)
+  )
+)
+2022-07-09 15:22:28,585 - text-path-Hybrid - INFO - Evaluation of Train data: TriplePrediction
+2022-07-09 15:22:28,586 - text-path-Hybrid - INFO - Num of triples 999
+2022-07-09 15:22:28,742 - text-path-Hybrid - INFO - 0.7897897897897898
+2022-07-09 15:22:28,749 - text-path-Hybrid - INFO -               precision    recall  f1-score   support
+
+           0       0.73      0.92      0.81       499
+           1       0.89      0.66      0.76       500
+
+    accuracy                           0.79       999
+   macro avg       0.81      0.79      0.79       999
+weighted avg       0.81      0.79      0.79       999
+
+2022-07-09 15:22:28,750 - text-path-Hybrid - INFO - Evaluation of Test data: TriplePrediction
+2022-07-09 15:22:28,751 - text-path-Hybrid - INFO - Num of triples 935
+2022-07-09 15:22:28,864 - text-path-Hybrid - INFO - 0.7593582887700535
+2022-07-09 15:22:28,871 - text-path-Hybrid - INFO -               precision    recall  f1-score   support
+
+           0       0.71      0.88      0.78       466
+           1       0.84      0.64      0.73       469
+
+    accuracy                           0.76       935
+   macro avg       0.77      0.76      0.76       935
+weighted avg       0.78      0.76      0.76       935
+
+2022-07-09 15:22:28,872 - text-path-Hybrid - INFO - --- Training is completed  ---
+2022-07-09 15:22:28,873 - text-path-Hybrid - INFO - Store full model.
+2022-07-09 15:22:29,116 - text-path-Hybrid - INFO - Stored data.
+2022-07-09 15:22:29,117 - text-path-Hybrid - INFO - Total Runtime:4.139 minutes
+2022-07-09 15:22:30,891 - text-path-Hybrid - INFO - --- Parameters are parsed for training ---
+2022-07-09 15:22:31,640 - text-path-Hybrid - INFO -  Standard training starts: TextPathHybridModel-labeling:TriplePrediction
+2022-07-09 15:22:31,641 - text-path-Hybrid - INFO - TextPathHybridModel(
+  (loss): BCELoss()
+  (entity_embeddings): Embedding(1519, 100)
+  (relation_embeddings): Embedding(8, 100)
+  (sentence_embeddings_train): Embedding(1000, 2304)
+  (sentence_embeddings_test): Embedding(935, 2304)
+  (sentence_embeddings_valid): Embedding(50, 2304)
+  (copaal_veracity_score_train): Embedding(1000, 1)
+  (copaal_veracity_score_test): Embedding(935, 1)
+  (copaal_veracity_score_valid): Embedding(50, 1)
+  (sentence_classification_layer): Sequential(
+    (0): Linear(in_features=2304, out_features=2560, bias=True)
+    (1): BatchNorm1d(2560, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU()
+    (3): Dropout(p=0.5, inplace=False)
+    (4): Linear(in_features=2560, out_features=2560, bias=True)
+  )
+  (path_classification_layer): Sequential(
+    (0): Linear(in_features=1, out_features=2560, bias=True)
+    (1): BatchNorm1d(2560, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU()
+    (3): Dropout(p=0.5, inplace=False)
+    (4): Linear(in_features=2560, out_features=2560, bias=True)
+  )
+  (final_classification_layer): Sequential(
+    (0): Linear(in_features=5120, out_features=2560, bias=True)
+    (1): BatchNorm1d(2560, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU()
+    (3): Dropout(p=0.5, inplace=False)
+    (4): Linear(in_features=2560, out_features=1, bias=True)
+  )
+)
+2022-07-09 15:27:03,451 - text-path-Hybrid - INFO - Evaluation of Train data: TriplePrediction
+2022-07-09 15:27:03,452 - text-path-Hybrid - INFO - Num of triples 1000
+2022-07-09 15:27:03,625 - text-path-Hybrid - INFO - 0.811
+2022-07-09 15:27:03,632 - text-path-Hybrid - INFO -               precision    recall  f1-score   support
+
+           0       0.74      0.97      0.84       500
+           1       0.95      0.66      0.78       500
+
+    accuracy                           0.81      1000
+   macro avg       0.84      0.81      0.81      1000
+weighted avg       0.84      0.81      0.81      1000
+
+2022-07-09 15:27:03,633 - text-path-Hybrid - INFO - Evaluation of Test data: TriplePrediction
+2022-07-09 15:27:03,634 - text-path-Hybrid - INFO - Num of triples 935
+2022-07-09 15:27:03,748 - text-path-Hybrid - INFO - 0.7711229946524064
+2022-07-09 15:27:03,755 - text-path-Hybrid - INFO -               precision    recall  f1-score   support
+
+           0       0.71      0.91      0.80       466
+           1       0.87      0.64      0.74       469
+
+    accuracy                           0.77       935
+   macro avg       0.79      0.77      0.77       935
+weighted avg       0.79      0.77      0.77       935
+
+2022-07-09 15:27:03,756 - text-path-Hybrid - INFO - --- Training is completed  ---
+2022-07-09 15:27:03,757 - text-path-Hybrid - INFO - Store full model.
+2022-07-09 15:27:03,991 - text-path-Hybrid - INFO - Stored data.
+2022-07-09 15:27:03,992 - text-path-Hybrid - INFO - Total Runtime:4.552 minutes
+2022-07-09 15:27:05,796 - text-path-Hybrid - INFO - --- Parameters are parsed for training ---
+2022-07-09 15:27:06,561 - text-path-Hybrid - INFO -  Standard training starts: TextPathHybridModel-labeling:TriplePrediction
+2022-07-09 15:27:06,562 - text-path-Hybrid - INFO - TextPathHybridModel(
+  (loss): BCELoss()
+  (entity_embeddings): Embedding(1503, 100)
+  (relation_embeddings): Embedding(8, 100)
+  (sentence_embeddings_train): Embedding(990, 2304)
+  (sentence_embeddings_test): Embedding(939, 2304)
+  (sentence_embeddings_valid): Embedding(50, 2304)
+  (copaal_veracity_score_train): Embedding(990, 1)
+  (copaal_veracity_score_test): Embedding(939, 1)
+  (copaal_veracity_score_valid): Embedding(50, 1)
+  (sentence_classification_layer): Sequential(
+    (0): Linear(in_features=2304, out_features=2560, bias=True)
+    (1): BatchNorm1d(2560, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU()
+    (3): Dropout(p=0.5, inplace=False)
+    (4): Linear(in_features=2560, out_features=2560, bias=True)
+  )
+  (path_classification_layer): Sequential(
+    (0): Linear(in_features=1, out_features=2560, bias=True)
+    (1): BatchNorm1d(2560, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU()
+    (3): Dropout(p=0.5, inplace=False)
+    (4): Linear(in_features=2560, out_features=2560, bias=True)
+  )
+  (final_classification_layer): Sequential(
+    (0): Linear(in_features=5120, out_features=2560, bias=True)
+    (1): BatchNorm1d(2560, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU()
+    (3): Dropout(p=0.5, inplace=False)
+    (4): Linear(in_features=2560, out_features=1, bias=True)
+  )
+)
+2022-07-09 15:31:25,313 - text-path-Hybrid - INFO - Evaluation of Train data: TriplePrediction
+2022-07-09 15:31:25,314 - text-path-Hybrid - INFO - Num of triples 990
+2022-07-09 15:31:25,470 - text-path-Hybrid - INFO - 0.8101010101010101
+2022-07-09 15:31:25,477 - text-path-Hybrid - INFO -               precision    recall  f1-score   support
+
+           0       0.73      0.97      0.83       490
+           1       0.95      0.66      0.78       500
+
+    accuracy                           0.81       990
+   macro avg       0.84      0.81      0.81       990
+weighted avg       0.84      0.81      0.81       990
+
+2022-07-09 15:31:25,478 - text-path-Hybrid - INFO - Evaluation of Test data: TriplePrediction
+2022-07-09 15:31:25,479 - text-path-Hybrid - INFO - Num of triples 939
+2022-07-09 15:31:25,594 - text-path-Hybrid - INFO - 0.7731629392971247
+2022-07-09 15:31:25,601 - text-path-Hybrid - INFO -               precision    recall  f1-score   support
+
+           0       0.71      0.91      0.80       470
+           1       0.88      0.64      0.74       469
+
+    accuracy                           0.77       939
+   macro avg       0.80      0.77      0.77       939
+weighted avg       0.80      0.77      0.77       939
+
+2022-07-09 15:31:25,602 - text-path-Hybrid - INFO - --- Training is completed  ---
+2022-07-09 15:31:25,603 - text-path-Hybrid - INFO - Store full model.
+2022-07-09 15:31:25,847 - text-path-Hybrid - INFO - Stored data.
+2022-07-09 15:31:25,848 - text-path-Hybrid - INFO - Total Runtime:4.334 minutes
+2022-07-09 15:31:27,710 - text-path-Hybrid - INFO - --- Parameters are parsed for training ---
+2022-07-09 15:31:28,501 - text-path-Hybrid - INFO -  Standard training starts: TextPathHybridModel-labeling:TriplePrediction
+2022-07-09 15:31:28,503 - text-path-Hybrid - INFO - TextPathHybridModel(
+  (loss): BCELoss()
+  (entity_embeddings): Embedding(1584, 100)
+  (relation_embeddings): Embedding(8, 100)
+  (sentence_embeddings_train): Embedding(1025, 2304)
+  (sentence_embeddings_test): Embedding(972, 2304)
+  (sentence_embeddings_valid): Embedding(52, 2304)
+  (copaal_veracity_score_train): Embedding(1025, 1)
+  (copaal_veracity_score_test): Embedding(972, 1)
+  (copaal_veracity_score_valid): Embedding(52, 1)
+  (sentence_classification_layer): Sequential(
+    (0): Linear(in_features=2304, out_features=2560, bias=True)
+    (1): BatchNorm1d(2560, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU()
+    (3): Dropout(p=0.5, inplace=False)
+    (4): Linear(in_features=2560, out_features=2560, bias=True)
+  )
+  (path_classification_layer): Sequential(
+    (0): Linear(in_features=1, out_features=2560, bias=True)
+    (1): BatchNorm1d(2560, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU()
+    (3): Dropout(p=0.5, inplace=False)
+    (4): Linear(in_features=2560, out_features=2560, bias=True)
+  )
+  (final_classification_layer): Sequential(
+    (0): Linear(in_features=5120, out_features=2560, bias=True)
+    (1): BatchNorm1d(2560, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU()
+    (3): Dropout(p=0.5, inplace=False)
+    (4): Linear(in_features=2560, out_features=1, bias=True)
+  )
+)
+2022-07-09 15:35:44,193 - text-path-Hybrid - INFO - Evaluation of Train data: TriplePrediction
+2022-07-09 15:35:44,195 - text-path-Hybrid - INFO - Num of triples 1025
+2022-07-09 15:35:44,355 - text-path-Hybrid - INFO - 0.7521951219512195
+2022-07-09 15:35:44,363 - text-path-Hybrid - INFO -               precision    recall  f1-score   support
+
+           0       0.70      0.89      0.79       525
+           1       0.84      0.61      0.71       500
+
+    accuracy                           0.75      1025
+   macro avg       0.77      0.75      0.75      1025
+weighted avg       0.77      0.75      0.75      1025
+
+2022-07-09 15:35:44,364 - text-path-Hybrid - INFO - Evaluation of Test data: TriplePrediction
+2022-07-09 15:35:44,365 - text-path-Hybrid - INFO - Num of triples 972
+2022-07-09 15:35:44,485 - text-path-Hybrid - INFO - 0.7160493827160493
+2022-07-09 15:35:44,492 - text-path-Hybrid - INFO -               precision    recall  f1-score   support
+
+           0       0.69      0.83      0.75       503
+           1       0.77      0.59      0.67       469
+
+    accuracy                           0.72       972
+   macro avg       0.73      0.71      0.71       972
+weighted avg       0.73      0.72      0.71       972
+
+2022-07-09 15:35:44,493 - text-path-Hybrid - INFO - --- Training is completed  ---
+2022-07-09 15:35:44,494 - text-path-Hybrid - INFO - Store full model.
+2022-07-09 15:35:44,747 - text-path-Hybrid - INFO - Stored data.
+2022-07-09 15:35:44,748 - text-path-Hybrid - INFO - Total Runtime:4.284 minutes
+2022-07-09 15:35:46,750 - text-path-Hybrid - INFO - --- Parameters are parsed for training ---
+2022-07-09 15:35:47,525 - text-path-Hybrid - INFO -  Standard training starts: TextPathHybridModel-labeling:TriplePrediction
+2022-07-09 15:35:47,527 - text-path-Hybrid - INFO - TextPathHybridModel(
+  (loss): BCELoss()
+  (entity_embeddings): Embedding(1614, 100)
+  (relation_embeddings): Embedding(8, 100)
+  (sentence_embeddings_train): Embedding(1061, 2304)
+  (sentence_embeddings_test): Embedding(979, 2304)
+  (sentence_embeddings_valid): Embedding(52, 2304)
+  (copaal_veracity_score_train): Embedding(1061, 1)
+  (copaal_veracity_score_test): Embedding(979, 1)
+  (copaal_veracity_score_valid): Embedding(52, 1)
+  (sentence_classification_layer): Sequential(
+    (0): Linear(in_features=2304, out_features=2560, bias=True)
+    (1): BatchNorm1d(2560, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU()
+    (3): Dropout(p=0.5, inplace=False)
+    (4): Linear(in_features=2560, out_features=2560, bias=True)
+  )
+  (path_classification_layer): Sequential(
+    (0): Linear(in_features=1, out_features=2560, bias=True)
+    (1): BatchNorm1d(2560, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU()
+    (3): Dropout(p=0.5, inplace=False)
+    (4): Linear(in_features=2560, out_features=2560, bias=True)
+  )
+  (final_classification_layer): Sequential(
+    (0): Linear(in_features=5120, out_features=2560, bias=True)
+    (1): BatchNorm1d(2560, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU()
+    (3): Dropout(p=0.5, inplace=False)
+    (4): Linear(in_features=2560, out_features=1, bias=True)
+  )
+)
+2022-07-09 15:40:28,101 - text-path-Hybrid - INFO - Evaluation of Train data: TriplePrediction
+2022-07-09 15:40:28,103 - text-path-Hybrid - INFO - Num of triples 1061
+2022-07-09 15:40:28,274 - text-path-Hybrid - INFO - 0.8284637134778511
+2022-07-09 15:40:28,282 - text-path-Hybrid - INFO -               precision    recall  f1-score   support
+
+           0       0.76      0.98      0.86       561
+           1       0.96      0.66      0.78       500
+
+    accuracy                           0.83      1061
+   macro avg       0.86      0.82      0.82      1061
+weighted avg       0.86      0.83      0.82      1061
+
+2022-07-09 15:40:28,283 - text-path-Hybrid - INFO - Evaluation of Test data: TriplePrediction
+2022-07-09 15:40:28,284 - text-path-Hybrid - INFO - Num of triples 979
+2022-07-09 15:40:28,403 - text-path-Hybrid - INFO - 0.7885597548518897
+2022-07-09 15:40:28,410 - text-path-Hybrid - INFO -               precision    recall  f1-score   support
+
+           0       0.74      0.92      0.82       510
+           1       0.89      0.64      0.74       469
+
+    accuracy                           0.79       979
+   macro avg       0.81      0.78      0.78       979
+weighted avg       0.81      0.79      0.78       979
+
+2022-07-09 15:40:28,412 - text-path-Hybrid - INFO - --- Training is completed  ---
+2022-07-09 15:40:28,412 - text-path-Hybrid - INFO - Store full model.
+2022-07-09 15:40:28,649 - text-path-Hybrid - INFO - Stored data.
+2022-07-09 15:40:28,650 - text-path-Hybrid - INFO - Total Runtime:4.698 minutes

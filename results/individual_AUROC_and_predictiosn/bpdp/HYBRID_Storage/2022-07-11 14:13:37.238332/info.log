@@ -1,0 +1,220 @@
+2022-07-11 14:13:37,239 - KGE-only - INFO - --- Parameters are parsed for training ---
+2022-07-11 14:13:37,248 - KGE-only - INFO -  Standard training starts: KGEModel-labeling:TriplePrediction
+2022-07-11 14:13:37,248 - KGE-only - INFO - KGEModel(
+  (loss): BCELoss()
+  (entity_embeddings): Embedding(250, 100)
+  (relation_embeddings): Embedding(2, 100)
+  (shallom): Sequential(
+    (0): Linear(in_features=300, out_features=100, bias=True)
+    (1): Dropout(p=0.5, inplace=False)
+    (2): BatchNorm1d(100, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (3): Dropout(p=0.5, inplace=False)
+    (4): ReLU(inplace=True)
+    (5): Dropout(p=0.5, inplace=False)
+    (6): Linear(in_features=100, out_features=1, bias=True)
+  )
+)
+2022-07-11 14:13:42,865 - KGE-only - INFO - Evaluation of Train data: TriplePrediction
+2022-07-11 14:13:42,865 - KGE-only - INFO - Num of triples 206
+2022-07-11 14:13:42,868 - KGE-only - INFO - 0.5631067961165048
+2022-07-11 14:13:42,873 - KGE-only - INFO -               precision    recall  f1-score   support
+
+           0       0.59      0.40      0.48       103
+           1       0.55      0.73      0.62       103
+
+    accuracy                           0.56       206
+   macro avg       0.57      0.56      0.55       206
+weighted avg       0.57      0.56      0.55       206
+
+2022-07-11 14:13:42,873 - KGE-only - INFO - Evaluation of Test data: TriplePrediction
+2022-07-11 14:13:42,873 - KGE-only - INFO - Num of triples 195
+2022-07-11 14:13:42,876 - KGE-only - INFO - 0.5076923076923077
+2022-07-11 14:13:42,881 - KGE-only - INFO -               precision    recall  f1-score   support
+
+           0       0.52      0.33      0.40        98
+           1       0.50      0.69      0.58        97
+
+    accuracy                           0.51       195
+   macro avg       0.51      0.51      0.49       195
+weighted avg       0.51      0.51      0.49       195
+
+2022-07-11 14:13:42,881 - KGE-only - INFO - --- Training is completed  ---
+2022-07-11 14:13:42,881 - KGE-only - INFO - Store full model.
+2022-07-11 14:13:42,894 - KGE-only - INFO - Stored data.
+2022-07-11 14:13:42,894 - KGE-only - INFO - Total Runtime:0.094 minutes
+2022-07-11 14:14:45,661 - KGE-only - INFO - --- Parameters are parsed for training ---
+2022-07-11 14:14:45,669 - KGE-only - INFO -  Standard training starts: KGEModel-labeling:TriplePrediction
+2022-07-11 14:14:45,669 - KGE-only - INFO - KGEModel(
+  (loss): BCELoss()
+  (entity_embeddings): Embedding(250, 100)
+  (relation_embeddings): Embedding(2, 100)
+  (shallom): Sequential(
+    (0): Linear(in_features=300, out_features=100, bias=True)
+    (1): Dropout(p=0.5, inplace=False)
+    (2): BatchNorm1d(100, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (3): Dropout(p=0.5, inplace=False)
+    (4): ReLU(inplace=True)
+    (5): Dropout(p=0.5, inplace=False)
+    (6): Linear(in_features=100, out_features=1, bias=True)
+  )
+)
+2022-07-11 14:15:00,543 - KGE-only - INFO - Evaluation of Train data: TriplePrediction
+2022-07-11 14:15:00,543 - KGE-only - INFO - Num of triples 206
+2022-07-11 14:15:00,545 - KGE-only - INFO - 0.5194174757281553
+2022-07-11 14:15:00,550 - KGE-only - INFO -               precision    recall  f1-score   support
+
+           0       0.51      0.99      0.67       103
+           1       0.83      0.05      0.09       103
+
+    accuracy                           0.52       206
+   macro avg       0.67      0.52      0.38       206
+weighted avg       0.67      0.52      0.38       206
+
+2022-07-11 14:15:00,551 - KGE-only - INFO - Evaluation of Test data: TriplePrediction
+2022-07-11 14:15:00,551 - KGE-only - INFO - Num of triples 195
+2022-07-11 14:15:00,553 - KGE-only - INFO - 0.49230769230769234
+2022-07-11 14:15:00,557 - KGE-only - INFO -               precision    recall  f1-score   support
+
+           0       0.50      0.96      0.66        98
+           1       0.33      0.02      0.04        97
+
+    accuracy                           0.49       195
+   macro avg       0.42      0.49      0.35       195
+weighted avg       0.42      0.49      0.35       195
+
+2022-07-11 14:15:00,557 - KGE-only - INFO - --- Training is completed  ---
+2022-07-11 14:15:00,558 - KGE-only - INFO - Store full model.
+2022-07-11 14:15:00,570 - KGE-only - INFO - Stored data.
+2022-07-11 14:15:00,570 - KGE-only - INFO - Total Runtime:0.248 minutes
+2022-07-11 14:17:23,689 - KGE-only - INFO - --- Parameters are parsed for training ---
+2022-07-11 14:17:23,697 - KGE-only - INFO -  Standard training starts: KGEModel-labeling:TriplePrediction
+2022-07-11 14:17:23,697 - KGE-only - INFO - KGEModel(
+  (loss): BCELoss()
+  (entity_embeddings): Embedding(250, 100)
+  (relation_embeddings): Embedding(2, 100)
+  (shallom): Sequential(
+    (0): Linear(in_features=300, out_features=100, bias=True)
+    (1): Dropout(p=0.5, inplace=False)
+    (2): BatchNorm1d(100, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (3): Dropout(p=0.5, inplace=False)
+    (4): ReLU(inplace=True)
+    (5): Dropout(p=0.5, inplace=False)
+    (6): Linear(in_features=100, out_features=1, bias=True)
+  )
+)
+2022-07-11 14:17:56,139 - KGE-only - INFO - Evaluation of Train data: TriplePrediction
+2022-07-11 14:17:56,140 - KGE-only - INFO - Num of triples 206
+2022-07-11 14:17:56,142 - KGE-only - INFO - 0.6747572815533981
+2022-07-11 14:17:56,147 - KGE-only - INFO -               precision    recall  f1-score   support
+
+           0       0.67      0.68      0.68       103
+           1       0.68      0.67      0.67       103
+
+    accuracy                           0.67       206
+   macro avg       0.67      0.67      0.67       206
+weighted avg       0.67      0.67      0.67       206
+
+2022-07-11 14:17:56,148 - KGE-only - INFO - Evaluation of Test data: TriplePrediction
+2022-07-11 14:17:56,148 - KGE-only - INFO - Num of triples 195
+2022-07-11 14:17:56,150 - KGE-only - INFO - 0.5948717948717949
+2022-07-11 14:17:56,154 - KGE-only - INFO -               precision    recall  f1-score   support
+
+           0       0.59      0.61      0.60        98
+           1       0.60      0.58      0.59        97
+
+    accuracy                           0.59       195
+   macro avg       0.59      0.59      0.59       195
+weighted avg       0.59      0.59      0.59       195
+
+2022-07-11 14:17:56,154 - KGE-only - INFO - --- Training is completed  ---
+2022-07-11 14:17:56,155 - KGE-only - INFO - Store full model.
+2022-07-11 14:17:56,172 - KGE-only - INFO - Stored data.
+2022-07-11 14:17:56,172 - KGE-only - INFO - Total Runtime:0.541 minutes
+2022-07-11 14:22:31,659 - KGE-only - INFO - --- Parameters are parsed for training ---
+2022-07-11 14:22:31,667 - KGE-only - INFO -  Standard training starts: KGEModel-labeling:TriplePrediction
+2022-07-11 14:22:31,667 - KGE-only - INFO - KGEModel(
+  (loss): BCELoss()
+  (entity_embeddings): Embedding(250, 100)
+  (relation_embeddings): Embedding(2, 100)
+  (shallom): Sequential(
+    (0): Linear(in_features=300, out_features=100, bias=True)
+    (1): Dropout(p=0.5, inplace=False)
+    (2): BatchNorm1d(100, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (3): Dropout(p=0.5, inplace=False)
+    (4): ReLU(inplace=True)
+    (5): Dropout(p=0.5, inplace=False)
+    (6): Linear(in_features=100, out_features=1, bias=True)
+  )
+)
+2022-07-11 14:23:34,568 - KGE-only - INFO - Evaluation of Train data: TriplePrediction
+2022-07-11 14:23:34,568 - KGE-only - INFO - Num of triples 206
+2022-07-11 14:23:34,571 - KGE-only - INFO - 0.6310679611650486
+2022-07-11 14:23:34,576 - KGE-only - INFO -               precision    recall  f1-score   support
+
+           0       0.74      0.41      0.53       103
+           1       0.59      0.85      0.70       103
+
+    accuracy                           0.63       206
+   macro avg       0.66      0.63      0.61       206
+weighted avg       0.66      0.63      0.61       206
+
+2022-07-11 14:23:34,576 - KGE-only - INFO - Evaluation of Test data: TriplePrediction
+2022-07-11 14:23:34,576 - KGE-only - INFO - Num of triples 195
+2022-07-11 14:23:34,578 - KGE-only - INFO - 0.5538461538461539
+2022-07-11 14:23:34,583 - KGE-only - INFO -               precision    recall  f1-score   support
+
+           0       0.60      0.33      0.42        98
+           1       0.54      0.78      0.64        97
+
+    accuracy                           0.55       195
+   macro avg       0.57      0.56      0.53       195
+weighted avg       0.57      0.55      0.53       195
+
+2022-07-11 14:23:34,583 - KGE-only - INFO - --- Training is completed  ---
+2022-07-11 14:23:34,583 - KGE-only - INFO - Store full model.
+2022-07-11 14:23:34,597 - KGE-only - INFO - Stored data.
+2022-07-11 14:23:34,597 - KGE-only - INFO - Total Runtime:1.049 minutes
+2022-07-11 14:33:25,418 - KGE-only - INFO - --- Parameters are parsed for training ---
+2022-07-11 14:33:25,425 - KGE-only - INFO -  Standard training starts: KGEModel-labeling:TriplePrediction
+2022-07-11 14:33:25,426 - KGE-only - INFO - KGEModel(
+  (loss): BCELoss()
+  (entity_embeddings): Embedding(250, 100)
+  (relation_embeddings): Embedding(2, 100)
+  (shallom): Sequential(
+    (0): Linear(in_features=300, out_features=100, bias=True)
+    (1): Dropout(p=0.5, inplace=False)
+    (2): BatchNorm1d(100, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (3): Dropout(p=0.5, inplace=False)
+    (4): ReLU(inplace=True)
+    (5): Dropout(p=0.5, inplace=False)
+    (6): Linear(in_features=100, out_features=1, bias=True)
+  )
+)
+2022-07-11 14:36:07,960 - KGE-only - INFO - Evaluation of Train data: TriplePrediction
+2022-07-11 14:36:07,961 - KGE-only - INFO - Num of triples 206
+2022-07-11 14:36:07,964 - KGE-only - INFO - 0.5679611650485437
+2022-07-11 14:36:07,969 - KGE-only - INFO -               precision    recall  f1-score   support
+
+           0       0.57      0.55      0.56       103
+           1       0.57      0.58      0.57       103
+
+    accuracy                           0.57       206
+   macro avg       0.57      0.57      0.57       206
+weighted avg       0.57      0.57      0.57       206
+
+2022-07-11 14:36:07,969 - KGE-only - INFO - Evaluation of Test data: TriplePrediction
+2022-07-11 14:36:07,969 - KGE-only - INFO - Num of triples 195
+2022-07-11 14:36:07,971 - KGE-only - INFO - 0.5076923076923077
+2022-07-11 14:36:07,976 - KGE-only - INFO -               precision    recall  f1-score   support
+
+           0       0.51      0.49      0.50        98
+           1       0.50      0.53      0.52        97
+
+    accuracy                           0.51       195
+   macro avg       0.51      0.51      0.51       195
+weighted avg       0.51      0.51      0.51       195
+
+2022-07-11 14:36:07,977 - KGE-only - INFO - --- Training is completed  ---
+2022-07-11 14:36:07,977 - KGE-only - INFO - Store full model.
+2022-07-11 14:36:07,991 - KGE-only - INFO - Stored data.
+2022-07-11 14:36:07,992 - KGE-only - INFO - Total Runtime:2.710 minutes

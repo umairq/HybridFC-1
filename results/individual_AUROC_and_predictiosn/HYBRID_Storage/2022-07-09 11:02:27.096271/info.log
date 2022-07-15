@@ -1,0 +1,1250 @@
+2022-07-09 11:02:27,097 - text-only - INFO - --- Parameters are parsed for training ---
+2022-07-09 11:02:27,730 - text-only - INFO -  Standard training starts: TextModel-labeling:TriplePrediction
+2022-07-09 11:02:27,731 - text-only - INFO - TextModel(
+  (loss): BCELoss()
+  (sentence_embeddings_train): Embedding(1061, 2304)
+  (sentence_embeddings_test): Embedding(979, 2304)
+  (sentence_embeddings_valid): Embedding(52, 2304)
+  (sentence_classification_layer): Sequential(
+    (0): Linear(in_features=2304, out_features=2560, bias=True)
+    (1): BatchNorm1d(2560, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU()
+    (3): Dropout(p=0.5, inplace=False)
+    (4): Linear(in_features=2560, out_features=2560, bias=True)
+  )
+  (final_classification_layer): Sequential(
+    (0): Linear(in_features=2560, out_features=2560, bias=True)
+    (1): BatchNorm1d(2560, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU()
+    (3): Dropout(p=0.5, inplace=False)
+    (4): Linear(in_features=2560, out_features=1, bias=True)
+  )
+)
+2022-07-09 11:02:38,947 - text-only - INFO - Evaluation of Train data: TriplePrediction
+2022-07-09 11:02:38,948 - text-only - INFO - Num of triples 1061
+2022-07-09 11:02:39,052 - text-only - INFO - 0.528746465598492
+2022-07-09 11:02:39,058 - text-only - INFO -               precision    recall  f1-score   support
+
+           0       0.53      1.00      0.69       561
+           1       0.00      0.00      0.00       500
+
+    accuracy                           0.53      1061
+   macro avg       0.26      0.50      0.35      1061
+weighted avg       0.28      0.53      0.37      1061
+
+2022-07-09 11:02:39,059 - text-only - INFO - Evaluation of Test data: TriplePrediction
+2022-07-09 11:02:39,059 - text-only - INFO - Num of triples 979
+2022-07-09 11:02:39,129 - text-only - INFO - 0.5209397344228804
+2022-07-09 11:02:39,135 - text-only - INFO -               precision    recall  f1-score   support
+
+           0       0.52      1.00      0.69       510
+           1       0.00      0.00      0.00       469
+
+    accuracy                           0.52       979
+   macro avg       0.26      0.50      0.34       979
+weighted avg       0.27      0.52      0.36       979
+
+2022-07-09 11:02:39,135 - text-only - INFO - --- Training is completed  ---
+2022-07-09 11:02:39,136 - text-only - INFO - Store full model.
+2022-07-09 11:02:39,278 - text-only - INFO - Stored data.
+2022-07-09 11:02:39,279 - text-only - INFO - Total Runtime:0.203 minutes
+2022-07-09 11:13:26,460 - text-only - INFO - --- Parameters are parsed for training ---
+2022-07-09 11:13:27,215 - text-only - INFO -  Standard training starts: TextModel-labeling:TriplePrediction
+2022-07-09 11:13:27,215 - text-only - INFO - TextModel(
+  (loss): BCELoss()
+  (sentence_embeddings_train): Embedding(1032, 2304)
+  (sentence_embeddings_test): Embedding(947, 2304)
+  (sentence_embeddings_valid): Embedding(50, 2304)
+  (sentence_classification_layer): Sequential(
+    (0): Linear(in_features=2304, out_features=2560, bias=True)
+    (1): BatchNorm1d(2560, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU()
+    (3): Dropout(p=0.5, inplace=False)
+    (4): Linear(in_features=2560, out_features=2560, bias=True)
+  )
+  (final_classification_layer): Sequential(
+    (0): Linear(in_features=2560, out_features=2560, bias=True)
+    (1): BatchNorm1d(2560, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU()
+    (3): Dropout(p=0.5, inplace=False)
+    (4): Linear(in_features=2560, out_features=1, bias=True)
+  )
+)
+2022-07-09 11:13:50,327 - text-only - INFO - Evaluation of Train data: TriplePrediction
+2022-07-09 11:13:50,327 - text-only - INFO - Num of triples 1032
+2022-07-09 11:13:50,435 - text-only - INFO - 0.6957364341085271
+2022-07-09 11:13:50,442 - text-only - INFO -               precision    recall  f1-score   support
+
+           0       0.63      0.98      0.77       532
+           1       0.95      0.39      0.56       500
+
+    accuracy                           0.70      1032
+   macro avg       0.79      0.69      0.66      1032
+weighted avg       0.78      0.70      0.67      1032
+
+2022-07-09 11:13:50,442 - text-only - INFO - Evaluation of Test data: TriplePrediction
+2022-07-09 11:13:50,442 - text-only - INFO - Num of triples 947
+2022-07-09 11:13:50,511 - text-only - INFO - 0.6789862724392819
+2022-07-09 11:13:50,517 - text-only - INFO -               precision    recall  f1-score   support
+
+           0       0.62      0.96      0.75       478
+           1       0.90      0.40      0.55       469
+
+    accuracy                           0.68       947
+   macro avg       0.76      0.68      0.65       947
+weighted avg       0.76      0.68      0.65       947
+
+2022-07-09 11:13:50,518 - text-only - INFO - --- Training is completed  ---
+2022-07-09 11:13:50,518 - text-only - INFO - Store full model.
+2022-07-09 11:13:50,669 - text-only - INFO - Stored data.
+2022-07-09 11:13:50,669 - text-only - INFO - Total Runtime:0.403 minutes
+2022-07-09 11:13:51,404 - text-only - INFO - --- Parameters are parsed for training ---
+2022-07-09 11:13:52,060 - text-only - INFO -  Standard training starts: TextModel-labeling:TriplePrediction
+2022-07-09 11:13:52,061 - text-only - INFO - TextModel(
+  (loss): BCELoss()
+  (sentence_embeddings_train): Embedding(999, 2304)
+  (sentence_embeddings_test): Embedding(935, 2304)
+  (sentence_embeddings_valid): Embedding(50, 2304)
+  (sentence_classification_layer): Sequential(
+    (0): Linear(in_features=2304, out_features=2560, bias=True)
+    (1): BatchNorm1d(2560, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU()
+    (3): Dropout(p=0.5, inplace=False)
+    (4): Linear(in_features=2560, out_features=2560, bias=True)
+  )
+  (final_classification_layer): Sequential(
+    (0): Linear(in_features=2560, out_features=2560, bias=True)
+    (1): BatchNorm1d(2560, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU()
+    (3): Dropout(p=0.5, inplace=False)
+    (4): Linear(in_features=2560, out_features=1, bias=True)
+  )
+)
+2022-07-09 11:14:15,450 - text-only - INFO - Evaluation of Train data: TriplePrediction
+2022-07-09 11:14:15,451 - text-only - INFO - Num of triples 999
+2022-07-09 11:14:15,563 - text-only - INFO - 0.7207207207207207
+2022-07-09 11:14:15,570 - text-only - INFO -               precision    recall  f1-score   support
+
+           0       0.64      1.00      0.78       499
+           1       1.00      0.44      0.61       500
+
+    accuracy                           0.72       999
+   macro avg       0.82      0.72      0.70       999
+weighted avg       0.82      0.72      0.70       999
+
+2022-07-09 11:14:15,570 - text-only - INFO - Evaluation of Test data: TriplePrediction
+2022-07-09 11:14:15,570 - text-only - INFO - Num of triples 935
+2022-07-09 11:14:15,645 - text-only - INFO - 0.704812834224599
+2022-07-09 11:14:15,651 - text-only - INFO -               precision    recall  f1-score   support
+
+           0       0.63      0.97      0.77       466
+           1       0.94      0.44      0.60       469
+
+    accuracy                           0.70       935
+   macro avg       0.78      0.71      0.68       935
+weighted avg       0.79      0.70      0.68       935
+
+2022-07-09 11:14:15,652 - text-only - INFO - --- Training is completed  ---
+2022-07-09 11:14:15,652 - text-only - INFO - Store full model.
+2022-07-09 11:14:15,794 - text-only - INFO - Stored data.
+2022-07-09 11:14:15,795 - text-only - INFO - Total Runtime:0.407 minutes
+2022-07-09 11:14:16,524 - text-only - INFO - --- Parameters are parsed for training ---
+2022-07-09 11:14:17,143 - text-only - INFO -  Standard training starts: TextModel-labeling:TriplePrediction
+2022-07-09 11:14:17,143 - text-only - INFO - TextModel(
+  (loss): BCELoss()
+  (sentence_embeddings_train): Embedding(1000, 2304)
+  (sentence_embeddings_test): Embedding(935, 2304)
+  (sentence_embeddings_valid): Embedding(50, 2304)
+  (sentence_classification_layer): Sequential(
+    (0): Linear(in_features=2304, out_features=2560, bias=True)
+    (1): BatchNorm1d(2560, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU()
+    (3): Dropout(p=0.5, inplace=False)
+    (4): Linear(in_features=2560, out_features=2560, bias=True)
+  )
+  (final_classification_layer): Sequential(
+    (0): Linear(in_features=2560, out_features=2560, bias=True)
+    (1): BatchNorm1d(2560, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU()
+    (3): Dropout(p=0.5, inplace=False)
+    (4): Linear(in_features=2560, out_features=1, bias=True)
+  )
+)
+2022-07-09 11:14:40,456 - text-only - INFO - Evaluation of Train data: TriplePrediction
+2022-07-09 11:14:40,457 - text-only - INFO - Num of triples 1000
+2022-07-09 11:14:40,531 - text-only - INFO - 0.717
+2022-07-09 11:14:40,537 - text-only - INFO -               precision    recall  f1-score   support
+
+           0       0.64      0.99      0.78       500
+           1       0.99      0.44      0.61       500
+
+    accuracy                           0.72      1000
+   macro avg       0.81      0.72      0.69      1000
+weighted avg       0.81      0.72      0.69      1000
+
+2022-07-09 11:14:40,538 - text-only - INFO - Evaluation of Test data: TriplePrediction
+2022-07-09 11:14:40,538 - text-only - INFO - Num of triples 935
+2022-07-09 11:14:40,611 - text-only - INFO - 0.7005347593582888
+2022-07-09 11:14:40,618 - text-only - INFO -               precision    recall  f1-score   support
+
+           0       0.63      0.96      0.76       466
+           1       0.92      0.44      0.60       469
+
+    accuracy                           0.70       935
+   macro avg       0.78      0.70      0.68       935
+weighted avg       0.78      0.70      0.68       935
+
+2022-07-09 11:14:40,618 - text-only - INFO - --- Training is completed  ---
+2022-07-09 11:14:40,618 - text-only - INFO - Store full model.
+2022-07-09 11:14:40,758 - text-only - INFO - Stored data.
+2022-07-09 11:14:40,758 - text-only - INFO - Total Runtime:0.404 minutes
+2022-07-09 11:14:41,488 - text-only - INFO - --- Parameters are parsed for training ---
+2022-07-09 11:14:42,107 - text-only - INFO -  Standard training starts: TextModel-labeling:TriplePrediction
+2022-07-09 11:14:42,108 - text-only - INFO - TextModel(
+  (loss): BCELoss()
+  (sentence_embeddings_train): Embedding(990, 2304)
+  (sentence_embeddings_test): Embedding(939, 2304)
+  (sentence_embeddings_valid): Embedding(50, 2304)
+  (sentence_classification_layer): Sequential(
+    (0): Linear(in_features=2304, out_features=2560, bias=True)
+    (1): BatchNorm1d(2560, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU()
+    (3): Dropout(p=0.5, inplace=False)
+    (4): Linear(in_features=2560, out_features=2560, bias=True)
+  )
+  (final_classification_layer): Sequential(
+    (0): Linear(in_features=2560, out_features=2560, bias=True)
+    (1): BatchNorm1d(2560, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU()
+    (3): Dropout(p=0.5, inplace=False)
+    (4): Linear(in_features=2560, out_features=1, bias=True)
+  )
+)
+2022-07-09 11:15:06,865 - text-only - INFO - Evaluation of Train data: TriplePrediction
+2022-07-09 11:15:06,866 - text-only - INFO - Num of triples 990
+2022-07-09 11:15:06,969 - text-only - INFO - 0.7181818181818181
+2022-07-09 11:15:06,975 - text-only - INFO -               precision    recall  f1-score   support
+
+           0       0.64      1.00      0.78       490
+           1       1.00      0.44      0.61       500
+
+    accuracy                           0.72       990
+   macro avg       0.82      0.72      0.70       990
+weighted avg       0.82      0.72      0.69       990
+
+2022-07-09 11:15:06,976 - text-only - INFO - Evaluation of Test data: TriplePrediction
+2022-07-09 11:15:06,976 - text-only - INFO - Num of triples 939
+2022-07-09 11:15:07,046 - text-only - INFO - 0.7060702875399361
+2022-07-09 11:15:07,053 - text-only - INFO -               precision    recall  f1-score   support
+
+           0       0.64      0.97      0.77       470
+           1       0.94      0.44      0.60       469
+
+    accuracy                           0.71       939
+   macro avg       0.79      0.71      0.68       939
+weighted avg       0.79      0.71      0.68       939
+
+2022-07-09 11:15:07,053 - text-only - INFO - --- Training is completed  ---
+2022-07-09 11:15:07,053 - text-only - INFO - Store full model.
+2022-07-09 11:15:07,199 - text-only - INFO - Stored data.
+2022-07-09 11:15:07,199 - text-only - INFO - Total Runtime:0.429 minutes
+2022-07-09 11:15:07,941 - text-only - INFO - --- Parameters are parsed for training ---
+2022-07-09 11:15:08,587 - text-only - INFO -  Standard training starts: TextModel-labeling:TriplePrediction
+2022-07-09 11:15:08,588 - text-only - INFO - TextModel(
+  (loss): BCELoss()
+  (sentence_embeddings_train): Embedding(1025, 2304)
+  (sentence_embeddings_test): Embedding(972, 2304)
+  (sentence_embeddings_valid): Embedding(52, 2304)
+  (sentence_classification_layer): Sequential(
+    (0): Linear(in_features=2304, out_features=2560, bias=True)
+    (1): BatchNorm1d(2560, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU()
+    (3): Dropout(p=0.5, inplace=False)
+    (4): Linear(in_features=2560, out_features=2560, bias=True)
+  )
+  (final_classification_layer): Sequential(
+    (0): Linear(in_features=2560, out_features=2560, bias=True)
+    (1): BatchNorm1d(2560, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU()
+    (3): Dropout(p=0.5, inplace=False)
+    (4): Linear(in_features=2560, out_features=1, bias=True)
+  )
+)
+2022-07-09 11:15:32,774 - text-only - INFO - Evaluation of Train data: TriplePrediction
+2022-07-09 11:15:32,774 - text-only - INFO - Num of triples 1025
+2022-07-09 11:15:32,878 - text-only - INFO - 0.688780487804878
+2022-07-09 11:15:32,885 - text-only - INFO -               precision    recall  f1-score   support
+
+           0       0.63      0.98      0.76       525
+           1       0.94      0.39      0.55       500
+
+    accuracy                           0.69      1025
+   macro avg       0.78      0.68      0.66      1025
+weighted avg       0.78      0.69      0.66      1025
+
+2022-07-09 11:15:32,886 - text-only - INFO - Evaluation of Test data: TriplePrediction
+2022-07-09 11:15:32,886 - text-only - INFO - Num of triples 972
+2022-07-09 11:15:32,958 - text-only - INFO - 0.6790123456790124
+2022-07-09 11:15:32,964 - text-only - INFO -               precision    recall  f1-score   support
+
+           0       0.62      0.95      0.75       503
+           1       0.88      0.39      0.54       469
+
+    accuracy                           0.68       972
+   macro avg       0.75      0.67      0.65       972
+weighted avg       0.75      0.68      0.65       972
+
+2022-07-09 11:15:32,965 - text-only - INFO - --- Training is completed  ---
+2022-07-09 11:15:32,966 - text-only - INFO - Store full model.
+2022-07-09 11:15:33,106 - text-only - INFO - Stored data.
+2022-07-09 11:15:33,107 - text-only - INFO - Total Runtime:0.419 minutes
+2022-07-09 11:15:34,444 - text-only - INFO - --- Parameters are parsed for training ---
+2022-07-09 11:15:35,114 - text-only - INFO -  Standard training starts: TextModel-labeling:TriplePrediction
+2022-07-09 11:15:35,115 - text-only - INFO - TextModel(
+  (loss): BCELoss()
+  (sentence_embeddings_train): Embedding(1061, 2304)
+  (sentence_embeddings_test): Embedding(979, 2304)
+  (sentence_embeddings_valid): Embedding(52, 2304)
+  (sentence_classification_layer): Sequential(
+    (0): Linear(in_features=2304, out_features=2560, bias=True)
+    (1): BatchNorm1d(2560, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU()
+    (3): Dropout(p=0.5, inplace=False)
+    (4): Linear(in_features=2560, out_features=2560, bias=True)
+  )
+  (final_classification_layer): Sequential(
+    (0): Linear(in_features=2560, out_features=2560, bias=True)
+    (1): BatchNorm1d(2560, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU()
+    (3): Dropout(p=0.5, inplace=False)
+    (4): Linear(in_features=2560, out_features=1, bias=True)
+  )
+)
+2022-07-09 11:15:59,539 - text-only - INFO - Evaluation of Train data: TriplePrediction
+2022-07-09 11:15:59,540 - text-only - INFO - Num of triples 1061
+2022-07-09 11:15:59,649 - text-only - INFO - 0.7360980207351555
+2022-07-09 11:15:59,655 - text-only - INFO -               precision    recall  f1-score   support
+
+           0       0.67      1.00      0.80       561
+           1       1.00      0.44      0.61       500
+
+    accuracy                           0.74      1061
+   macro avg       0.83      0.72      0.71      1061
+weighted avg       0.82      0.74      0.71      1061
+
+2022-07-09 11:15:59,656 - text-only - INFO - Evaluation of Test data: TriplePrediction
+2022-07-09 11:15:59,657 - text-only - INFO - Num of triples 979
+2022-07-09 11:15:59,730 - text-only - INFO - 0.7191011235955056
+2022-07-09 11:15:59,737 - text-only - INFO -               precision    recall  f1-score   support
+
+           0       0.65      0.97      0.78       510
+           1       0.94      0.44      0.60       469
+
+    accuracy                           0.72       979
+   macro avg       0.80      0.71      0.69       979
+weighted avg       0.79      0.72      0.70       979
+
+2022-07-09 11:15:59,737 - text-only - INFO - --- Training is completed  ---
+2022-07-09 11:15:59,738 - text-only - INFO - Store full model.
+2022-07-09 11:15:59,887 - text-only - INFO - Stored data.
+2022-07-09 11:15:59,887 - text-only - INFO - Total Runtime:0.424 minutes
+2022-07-09 11:37:44,689 - text-only - INFO - --- Parameters are parsed for training ---
+2022-07-09 11:37:45,397 - text-only - INFO -  Standard training starts: TextModel-labeling:TriplePrediction
+2022-07-09 11:37:45,398 - text-only - INFO - TextModel(
+  (loss): BCELoss()
+  (sentence_embeddings_train): Embedding(1032, 2304)
+  (sentence_embeddings_test): Embedding(947, 2304)
+  (sentence_embeddings_valid): Embedding(50, 2304)
+  (sentence_classification_layer): Sequential(
+    (0): Linear(in_features=2304, out_features=2560, bias=True)
+    (1): BatchNorm1d(2560, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU()
+    (3): Dropout(p=0.5, inplace=False)
+    (4): Linear(in_features=2560, out_features=2560, bias=True)
+  )
+  (final_classification_layer): Sequential(
+    (0): Linear(in_features=2560, out_features=2560, bias=True)
+    (1): BatchNorm1d(2560, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU()
+    (3): Dropout(p=0.5, inplace=False)
+    (4): Linear(in_features=2560, out_features=1, bias=True)
+  )
+)
+2022-07-09 11:38:32,145 - text-only - INFO - Evaluation of Train data: TriplePrediction
+2022-07-09 11:38:32,146 - text-only - INFO - Num of triples 1032
+2022-07-09 11:38:32,272 - text-only - INFO - 0.6967054263565892
+2022-07-09 11:38:32,279 - text-only - INFO -               precision    recall  f1-score   support
+
+           0       0.64      0.95      0.76       532
+           1       0.89      0.43      0.58       500
+
+    accuracy                           0.70      1032
+   macro avg       0.76      0.69      0.67      1032
+weighted avg       0.76      0.70      0.67      1032
+
+2022-07-09 11:38:32,280 - text-only - INFO - Evaluation of Test data: TriplePrediction
+2022-07-09 11:38:32,280 - text-only - INFO - Num of triples 947
+2022-07-09 11:38:32,349 - text-only - INFO - 0.6800422386483632
+2022-07-09 11:38:32,356 - text-only - INFO -               precision    recall  f1-score   support
+
+           0       0.62      0.93      0.75       478
+           1       0.85      0.43      0.57       469
+
+    accuracy                           0.68       947
+   macro avg       0.74      0.68      0.66       947
+weighted avg       0.74      0.68      0.66       947
+
+2022-07-09 11:38:32,357 - text-only - INFO - --- Training is completed  ---
+2022-07-09 11:38:32,357 - text-only - INFO - Store full model.
+2022-07-09 11:38:32,513 - text-only - INFO - Stored data.
+2022-07-09 11:38:32,513 - text-only - INFO - Total Runtime:0.797 minutes
+2022-07-09 11:38:33,283 - text-only - INFO - --- Parameters are parsed for training ---
+2022-07-09 11:38:33,895 - text-only - INFO -  Standard training starts: TextModel-labeling:TriplePrediction
+2022-07-09 11:38:33,895 - text-only - INFO - TextModel(
+  (loss): BCELoss()
+  (sentence_embeddings_train): Embedding(999, 2304)
+  (sentence_embeddings_test): Embedding(935, 2304)
+  (sentence_embeddings_valid): Embedding(50, 2304)
+  (sentence_classification_layer): Sequential(
+    (0): Linear(in_features=2304, out_features=2560, bias=True)
+    (1): BatchNorm1d(2560, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU()
+    (3): Dropout(p=0.5, inplace=False)
+    (4): Linear(in_features=2560, out_features=2560, bias=True)
+  )
+  (final_classification_layer): Sequential(
+    (0): Linear(in_features=2560, out_features=2560, bias=True)
+    (1): BatchNorm1d(2560, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU()
+    (3): Dropout(p=0.5, inplace=False)
+    (4): Linear(in_features=2560, out_features=1, bias=True)
+  )
+)
+2022-07-09 11:39:20,254 - text-only - INFO - Evaluation of Train data: TriplePrediction
+2022-07-09 11:39:20,255 - text-only - INFO - Num of triples 999
+2022-07-09 11:39:20,368 - text-only - INFO - 0.7207207207207207
+2022-07-09 11:39:20,374 - text-only - INFO -               precision    recall  f1-score   support
+
+           0       0.64      1.00      0.78       499
+           1       1.00      0.44      0.61       500
+
+    accuracy                           0.72       999
+   macro avg       0.82      0.72      0.70       999
+weighted avg       0.82      0.72      0.70       999
+
+2022-07-09 11:39:20,375 - text-only - INFO - Evaluation of Test data: TriplePrediction
+2022-07-09 11:39:20,375 - text-only - INFO - Num of triples 935
+2022-07-09 11:39:20,443 - text-only - INFO - 0.704812834224599
+2022-07-09 11:39:20,449 - text-only - INFO -               precision    recall  f1-score   support
+
+           0       0.63      0.97      0.77       466
+           1       0.94      0.44      0.60       469
+
+    accuracy                           0.70       935
+   macro avg       0.78      0.71      0.68       935
+weighted avg       0.79      0.70      0.68       935
+
+2022-07-09 11:39:20,450 - text-only - INFO - --- Training is completed  ---
+2022-07-09 11:39:20,450 - text-only - INFO - Store full model.
+2022-07-09 11:39:20,587 - text-only - INFO - Stored data.
+2022-07-09 11:39:20,587 - text-only - INFO - Total Runtime:0.788 minutes
+2022-07-09 11:39:21,324 - text-only - INFO - --- Parameters are parsed for training ---
+2022-07-09 11:39:21,940 - text-only - INFO -  Standard training starts: TextModel-labeling:TriplePrediction
+2022-07-09 11:39:21,941 - text-only - INFO - TextModel(
+  (loss): BCELoss()
+  (sentence_embeddings_train): Embedding(1000, 2304)
+  (sentence_embeddings_test): Embedding(935, 2304)
+  (sentence_embeddings_valid): Embedding(50, 2304)
+  (sentence_classification_layer): Sequential(
+    (0): Linear(in_features=2304, out_features=2560, bias=True)
+    (1): BatchNorm1d(2560, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU()
+    (3): Dropout(p=0.5, inplace=False)
+    (4): Linear(in_features=2560, out_features=2560, bias=True)
+  )
+  (final_classification_layer): Sequential(
+    (0): Linear(in_features=2560, out_features=2560, bias=True)
+    (1): BatchNorm1d(2560, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU()
+    (3): Dropout(p=0.5, inplace=False)
+    (4): Linear(in_features=2560, out_features=1, bias=True)
+  )
+)
+2022-07-09 11:40:08,495 - text-only - INFO - Evaluation of Train data: TriplePrediction
+2022-07-09 11:40:08,496 - text-only - INFO - Num of triples 1000
+2022-07-09 11:40:08,600 - text-only - INFO - 0.721
+2022-07-09 11:40:08,607 - text-only - INFO -               precision    recall  f1-score   support
+
+           0       0.64      1.00      0.78       500
+           1       1.00      0.44      0.61       500
+
+    accuracy                           0.72      1000
+   macro avg       0.82      0.72      0.70      1000
+weighted avg       0.82      0.72      0.70      1000
+
+2022-07-09 11:40:08,607 - text-only - INFO - Evaluation of Test data: TriplePrediction
+2022-07-09 11:40:08,608 - text-only - INFO - Num of triples 935
+2022-07-09 11:40:08,676 - text-only - INFO - 0.704812834224599
+2022-07-09 11:40:08,682 - text-only - INFO -               precision    recall  f1-score   support
+
+           0       0.63      0.97      0.77       466
+           1       0.94      0.44      0.60       469
+
+    accuracy                           0.70       935
+   macro avg       0.78      0.71      0.68       935
+weighted avg       0.79      0.70      0.68       935
+
+2022-07-09 11:40:08,683 - text-only - INFO - --- Training is completed  ---
+2022-07-09 11:40:08,683 - text-only - INFO - Store full model.
+2022-07-09 11:40:08,829 - text-only - INFO - Stored data.
+2022-07-09 11:40:08,830 - text-only - INFO - Total Runtime:0.792 minutes
+2022-07-09 11:40:09,592 - text-only - INFO - --- Parameters are parsed for training ---
+2022-07-09 11:40:10,207 - text-only - INFO -  Standard training starts: TextModel-labeling:TriplePrediction
+2022-07-09 11:40:10,208 - text-only - INFO - TextModel(
+  (loss): BCELoss()
+  (sentence_embeddings_train): Embedding(990, 2304)
+  (sentence_embeddings_test): Embedding(939, 2304)
+  (sentence_embeddings_valid): Embedding(50, 2304)
+  (sentence_classification_layer): Sequential(
+    (0): Linear(in_features=2304, out_features=2560, bias=True)
+    (1): BatchNorm1d(2560, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU()
+    (3): Dropout(p=0.5, inplace=False)
+    (4): Linear(in_features=2560, out_features=2560, bias=True)
+  )
+  (final_classification_layer): Sequential(
+    (0): Linear(in_features=2560, out_features=2560, bias=True)
+    (1): BatchNorm1d(2560, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU()
+    (3): Dropout(p=0.5, inplace=False)
+    (4): Linear(in_features=2560, out_features=1, bias=True)
+  )
+)
+2022-07-09 11:40:57,034 - text-only - INFO - Evaluation of Train data: TriplePrediction
+2022-07-09 11:40:57,035 - text-only - INFO - Num of triples 990
+2022-07-09 11:40:57,147 - text-only - INFO - 0.7181818181818181
+2022-07-09 11:40:57,154 - text-only - INFO -               precision    recall  f1-score   support
+
+           0       0.64      1.00      0.78       490
+           1       1.00      0.44      0.61       500
+
+    accuracy                           0.72       990
+   macro avg       0.82      0.72      0.70       990
+weighted avg       0.82      0.72      0.69       990
+
+2022-07-09 11:40:57,155 - text-only - INFO - Evaluation of Test data: TriplePrediction
+2022-07-09 11:40:57,155 - text-only - INFO - Num of triples 939
+2022-07-09 11:40:57,226 - text-only - INFO - 0.7060702875399361
+2022-07-09 11:40:57,232 - text-only - INFO -               precision    recall  f1-score   support
+
+           0       0.64      0.97      0.77       470
+           1       0.94      0.44      0.60       469
+
+    accuracy                           0.71       939
+   macro avg       0.79      0.71      0.68       939
+weighted avg       0.79      0.71      0.68       939
+
+2022-07-09 11:40:57,233 - text-only - INFO - --- Training is completed  ---
+2022-07-09 11:40:57,233 - text-only - INFO - Store full model.
+2022-07-09 11:40:57,380 - text-only - INFO - Stored data.
+2022-07-09 11:40:57,381 - text-only - INFO - Total Runtime:0.796 minutes
+2022-07-09 11:40:58,127 - text-only - INFO - --- Parameters are parsed for training ---
+2022-07-09 11:40:58,776 - text-only - INFO -  Standard training starts: TextModel-labeling:TriplePrediction
+2022-07-09 11:40:58,776 - text-only - INFO - TextModel(
+  (loss): BCELoss()
+  (sentence_embeddings_train): Embedding(1025, 2304)
+  (sentence_embeddings_test): Embedding(972, 2304)
+  (sentence_embeddings_valid): Embedding(52, 2304)
+  (sentence_classification_layer): Sequential(
+    (0): Linear(in_features=2304, out_features=2560, bias=True)
+    (1): BatchNorm1d(2560, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU()
+    (3): Dropout(p=0.5, inplace=False)
+    (4): Linear(in_features=2560, out_features=2560, bias=True)
+  )
+  (final_classification_layer): Sequential(
+    (0): Linear(in_features=2560, out_features=2560, bias=True)
+    (1): BatchNorm1d(2560, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU()
+    (3): Dropout(p=0.5, inplace=False)
+    (4): Linear(in_features=2560, out_features=1, bias=True)
+  )
+)
+2022-07-09 11:42:06,533 - text-only - INFO - Evaluation of Train data: TriplePrediction
+2022-07-09 11:42:06,534 - text-only - INFO - Num of triples 1025
+2022-07-09 11:42:06,650 - text-only - INFO - 0.6878048780487804
+2022-07-09 11:42:06,656 - text-only - INFO -               precision    recall  f1-score   support
+
+           0       0.63      0.93      0.75       525
+           1       0.85      0.43      0.58       500
+
+    accuracy                           0.69      1025
+   macro avg       0.74      0.68      0.66      1025
+weighted avg       0.74      0.69      0.67      1025
+
+2022-07-09 11:42:06,657 - text-only - INFO - Evaluation of Test data: TriplePrediction
+2022-07-09 11:42:06,658 - text-only - INFO - Num of triples 972
+2022-07-09 11:42:06,729 - text-only - INFO - 0.6738683127572016
+2022-07-09 11:42:06,735 - text-only - INFO -               precision    recall  f1-score   support
+
+           0       0.63      0.90      0.74       503
+           1       0.80      0.43      0.56       469
+
+    accuracy                           0.67       972
+   macro avg       0.71      0.67      0.65       972
+weighted avg       0.71      0.67      0.65       972
+
+2022-07-09 11:42:06,736 - text-only - INFO - --- Training is completed  ---
+2022-07-09 11:42:06,737 - text-only - INFO - Store full model.
+2022-07-09 11:42:06,881 - text-only - INFO - Stored data.
+2022-07-09 11:42:06,882 - text-only - INFO - Total Runtime:1.146 minutes
+2022-07-09 11:42:07,716 - text-only - INFO - --- Parameters are parsed for training ---
+2022-07-09 11:42:08,351 - text-only - INFO -  Standard training starts: TextModel-labeling:TriplePrediction
+2022-07-09 11:42:08,352 - text-only - INFO - TextModel(
+  (loss): BCELoss()
+  (sentence_embeddings_train): Embedding(1061, 2304)
+  (sentence_embeddings_test): Embedding(979, 2304)
+  (sentence_embeddings_valid): Embedding(52, 2304)
+  (sentence_classification_layer): Sequential(
+    (0): Linear(in_features=2304, out_features=2560, bias=True)
+    (1): BatchNorm1d(2560, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU()
+    (3): Dropout(p=0.5, inplace=False)
+    (4): Linear(in_features=2560, out_features=2560, bias=True)
+  )
+  (final_classification_layer): Sequential(
+    (0): Linear(in_features=2560, out_features=2560, bias=True)
+    (1): BatchNorm1d(2560, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU()
+    (3): Dropout(p=0.5, inplace=False)
+    (4): Linear(in_features=2560, out_features=1, bias=True)
+  )
+)
+2022-07-09 11:42:54,831 - text-only - INFO - Evaluation of Train data: TriplePrediction
+2022-07-09 11:42:54,832 - text-only - INFO - Num of triples 1061
+2022-07-09 11:42:54,956 - text-only - INFO - 0.7360980207351555
+2022-07-09 11:42:54,965 - text-only - INFO -               precision    recall  f1-score   support
+
+           0       0.67      1.00      0.80       561
+           1       1.00      0.44      0.61       500
+
+    accuracy                           0.74      1061
+   macro avg       0.83      0.72      0.71      1061
+weighted avg       0.82      0.74      0.71      1061
+
+2022-07-09 11:42:54,966 - text-only - INFO - Evaluation of Test data: TriplePrediction
+2022-07-09 11:42:54,967 - text-only - INFO - Num of triples 979
+2022-07-09 11:42:55,040 - text-only - INFO - 0.7191011235955056
+2022-07-09 11:42:55,046 - text-only - INFO -               precision    recall  f1-score   support
+
+           0       0.65      0.97      0.78       510
+           1       0.94      0.44      0.60       469
+
+    accuracy                           0.72       979
+   macro avg       0.80      0.71      0.69       979
+weighted avg       0.79      0.72      0.70       979
+
+2022-07-09 11:42:55,047 - text-only - INFO - --- Training is completed  ---
+2022-07-09 11:42:55,048 - text-only - INFO - Store full model.
+2022-07-09 11:42:55,192 - text-only - INFO - Stored data.
+2022-07-09 11:42:55,193 - text-only - INFO - Total Runtime:0.791 minutes
+2022-07-09 12:24:24,239 - text-only - INFO - --- Parameters are parsed for training ---
+2022-07-09 12:24:24,941 - text-only - INFO -  Standard training starts: TextModel-labeling:TriplePrediction
+2022-07-09 12:24:24,942 - text-only - INFO - TextModel(
+  (loss): BCELoss()
+  (sentence_embeddings_train): Embedding(1032, 2304)
+  (sentence_embeddings_test): Embedding(947, 2304)
+  (sentence_embeddings_valid): Embedding(50, 2304)
+  (sentence_classification_layer): Sequential(
+    (0): Linear(in_features=2304, out_features=2560, bias=True)
+    (1): BatchNorm1d(2560, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU()
+    (3): Dropout(p=0.5, inplace=False)
+    (4): Linear(in_features=2560, out_features=2560, bias=True)
+  )
+  (final_classification_layer): Sequential(
+    (0): Linear(in_features=2560, out_features=2560, bias=True)
+    (1): BatchNorm1d(2560, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU()
+    (3): Dropout(p=0.5, inplace=False)
+    (4): Linear(in_features=2560, out_features=1, bias=True)
+  )
+)
+2022-07-09 12:26:01,314 - text-only - INFO - Evaluation of Train data: TriplePrediction
+2022-07-09 12:26:01,315 - text-only - INFO - Num of triples 1032
+2022-07-09 12:26:01,447 - text-only - INFO - 0.6986434108527132
+2022-07-09 12:26:01,454 - text-only - INFO -               precision    recall  f1-score   support
+
+           0       0.64      0.97      0.77       532
+           1       0.94      0.41      0.57       500
+
+    accuracy                           0.70      1032
+   macro avg       0.79      0.69      0.67      1032
+weighted avg       0.78      0.70      0.67      1032
+
+2022-07-09 12:26:01,455 - text-only - INFO - Evaluation of Test data: TriplePrediction
+2022-07-09 12:26:01,455 - text-only - INFO - Num of triples 947
+2022-07-09 12:26:01,535 - text-only - INFO - 0.6821541710665259
+2022-07-09 12:26:01,542 - text-only - INFO -               precision    recall  f1-score   support
+
+           0       0.62      0.95      0.75       478
+           1       0.90      0.41      0.56       469
+
+    accuracy                           0.68       947
+   macro avg       0.76      0.68      0.65       947
+weighted avg       0.76      0.68      0.66       947
+
+2022-07-09 12:26:01,543 - text-only - INFO - --- Training is completed  ---
+2022-07-09 12:26:01,543 - text-only - INFO - Store full model.
+2022-07-09 12:26:01,704 - text-only - INFO - Stored data.
+2022-07-09 12:26:01,705 - text-only - INFO - Total Runtime:1.624 minutes
+2022-07-09 12:26:02,444 - text-only - INFO - --- Parameters are parsed for training ---
+2022-07-09 12:26:03,066 - text-only - INFO -  Standard training starts: TextModel-labeling:TriplePrediction
+2022-07-09 12:26:03,067 - text-only - INFO - TextModel(
+  (loss): BCELoss()
+  (sentence_embeddings_train): Embedding(999, 2304)
+  (sentence_embeddings_test): Embedding(935, 2304)
+  (sentence_embeddings_valid): Embedding(50, 2304)
+  (sentence_classification_layer): Sequential(
+    (0): Linear(in_features=2304, out_features=2560, bias=True)
+    (1): BatchNorm1d(2560, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU()
+    (3): Dropout(p=0.5, inplace=False)
+    (4): Linear(in_features=2560, out_features=2560, bias=True)
+  )
+  (final_classification_layer): Sequential(
+    (0): Linear(in_features=2560, out_features=2560, bias=True)
+    (1): BatchNorm1d(2560, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU()
+    (3): Dropout(p=0.5, inplace=False)
+    (4): Linear(in_features=2560, out_features=1, bias=True)
+  )
+)
+2022-07-09 12:27:51,668 - text-only - INFO - Evaluation of Train data: TriplePrediction
+2022-07-09 12:27:51,669 - text-only - INFO - Num of triples 999
+2022-07-09 12:27:51,795 - text-only - INFO - 0.7207207207207207
+2022-07-09 12:27:51,802 - text-only - INFO -               precision    recall  f1-score   support
+
+           0       0.64      1.00      0.78       499
+           1       1.00      0.44      0.61       500
+
+    accuracy                           0.72       999
+   macro avg       0.82      0.72      0.70       999
+weighted avg       0.82      0.72      0.70       999
+
+2022-07-09 12:27:51,803 - text-only - INFO - Evaluation of Test data: TriplePrediction
+2022-07-09 12:27:51,803 - text-only - INFO - Num of triples 935
+2022-07-09 12:27:51,879 - text-only - INFO - 0.704812834224599
+2022-07-09 12:27:51,886 - text-only - INFO -               precision    recall  f1-score   support
+
+           0       0.63      0.97      0.77       466
+           1       0.94      0.44      0.60       469
+
+    accuracy                           0.70       935
+   macro avg       0.78      0.71      0.68       935
+weighted avg       0.79      0.70      0.68       935
+
+2022-07-09 12:27:51,887 - text-only - INFO - --- Training is completed  ---
+2022-07-09 12:27:51,887 - text-only - INFO - Store full model.
+2022-07-09 12:27:52,031 - text-only - INFO - Stored data.
+2022-07-09 12:27:52,032 - text-only - INFO - Total Runtime:1.826 minutes
+2022-07-09 12:27:52,814 - text-only - INFO - --- Parameters are parsed for training ---
+2022-07-09 12:27:53,433 - text-only - INFO -  Standard training starts: TextModel-labeling:TriplePrediction
+2022-07-09 12:27:53,434 - text-only - INFO - TextModel(
+  (loss): BCELoss()
+  (sentence_embeddings_train): Embedding(1000, 2304)
+  (sentence_embeddings_test): Embedding(935, 2304)
+  (sentence_embeddings_valid): Embedding(50, 2304)
+  (sentence_classification_layer): Sequential(
+    (0): Linear(in_features=2304, out_features=2560, bias=True)
+    (1): BatchNorm1d(2560, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU()
+    (3): Dropout(p=0.5, inplace=False)
+    (4): Linear(in_features=2560, out_features=2560, bias=True)
+  )
+  (final_classification_layer): Sequential(
+    (0): Linear(in_features=2560, out_features=2560, bias=True)
+    (1): BatchNorm1d(2560, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU()
+    (3): Dropout(p=0.5, inplace=False)
+    (4): Linear(in_features=2560, out_features=1, bias=True)
+  )
+)
+2022-07-09 12:29:26,028 - text-only - INFO - Evaluation of Train data: TriplePrediction
+2022-07-09 12:29:26,030 - text-only - INFO - Num of triples 1000
+2022-07-09 12:29:26,137 - text-only - INFO - 0.721
+2022-07-09 12:29:26,144 - text-only - INFO -               precision    recall  f1-score   support
+
+           0       0.64      1.00      0.78       500
+           1       1.00      0.44      0.61       500
+
+    accuracy                           0.72      1000
+   macro avg       0.82      0.72      0.70      1000
+weighted avg       0.82      0.72      0.70      1000
+
+2022-07-09 12:29:26,145 - text-only - INFO - Evaluation of Test data: TriplePrediction
+2022-07-09 12:29:26,146 - text-only - INFO - Num of triples 935
+2022-07-09 12:29:26,219 - text-only - INFO - 0.704812834224599
+2022-07-09 12:29:26,226 - text-only - INFO -               precision    recall  f1-score   support
+
+           0       0.63      0.97      0.77       466
+           1       0.94      0.44      0.60       469
+
+    accuracy                           0.70       935
+   macro avg       0.78      0.71      0.68       935
+weighted avg       0.79      0.70      0.68       935
+
+2022-07-09 12:29:26,226 - text-only - INFO - --- Training is completed  ---
+2022-07-09 12:29:26,227 - text-only - INFO - Store full model.
+2022-07-09 12:29:26,376 - text-only - INFO - Stored data.
+2022-07-09 12:29:26,377 - text-only - INFO - Total Runtime:1.559 minutes
+2022-07-09 12:29:27,122 - text-only - INFO - --- Parameters are parsed for training ---
+2022-07-09 12:29:27,735 - text-only - INFO -  Standard training starts: TextModel-labeling:TriplePrediction
+2022-07-09 12:29:27,736 - text-only - INFO - TextModel(
+  (loss): BCELoss()
+  (sentence_embeddings_train): Embedding(990, 2304)
+  (sentence_embeddings_test): Embedding(939, 2304)
+  (sentence_embeddings_valid): Embedding(50, 2304)
+  (sentence_classification_layer): Sequential(
+    (0): Linear(in_features=2304, out_features=2560, bias=True)
+    (1): BatchNorm1d(2560, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU()
+    (3): Dropout(p=0.5, inplace=False)
+    (4): Linear(in_features=2560, out_features=2560, bias=True)
+  )
+  (final_classification_layer): Sequential(
+    (0): Linear(in_features=2560, out_features=2560, bias=True)
+    (1): BatchNorm1d(2560, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU()
+    (3): Dropout(p=0.5, inplace=False)
+    (4): Linear(in_features=2560, out_features=1, bias=True)
+  )
+)
+2022-07-09 12:31:00,906 - text-only - INFO - Evaluation of Train data: TriplePrediction
+2022-07-09 12:31:00,907 - text-only - INFO - Num of triples 990
+2022-07-09 12:31:01,008 - text-only - INFO - 0.7181818181818181
+2022-07-09 12:31:01,015 - text-only - INFO -               precision    recall  f1-score   support
+
+           0       0.64      1.00      0.78       490
+           1       1.00      0.44      0.61       500
+
+    accuracy                           0.72       990
+   macro avg       0.82      0.72      0.70       990
+weighted avg       0.82      0.72      0.69       990
+
+2022-07-09 12:31:01,016 - text-only - INFO - Evaluation of Test data: TriplePrediction
+2022-07-09 12:31:01,017 - text-only - INFO - Num of triples 939
+2022-07-09 12:31:01,085 - text-only - INFO - 0.7060702875399361
+2022-07-09 12:31:01,092 - text-only - INFO -               precision    recall  f1-score   support
+
+           0       0.64      0.97      0.77       470
+           1       0.94      0.44      0.60       469
+
+    accuracy                           0.71       939
+   macro avg       0.79      0.71      0.68       939
+weighted avg       0.79      0.71      0.68       939
+
+2022-07-09 12:31:01,093 - text-only - INFO - --- Training is completed  ---
+2022-07-09 12:31:01,094 - text-only - INFO - Store full model.
+2022-07-09 12:31:01,240 - text-only - INFO - Stored data.
+2022-07-09 12:31:01,241 - text-only - INFO - Total Runtime:1.569 minutes
+2022-07-09 12:31:01,995 - text-only - INFO - --- Parameters are parsed for training ---
+2022-07-09 12:31:02,640 - text-only - INFO -  Standard training starts: TextModel-labeling:TriplePrediction
+2022-07-09 12:31:02,641 - text-only - INFO - TextModel(
+  (loss): BCELoss()
+  (sentence_embeddings_train): Embedding(1025, 2304)
+  (sentence_embeddings_test): Embedding(972, 2304)
+  (sentence_embeddings_valid): Embedding(52, 2304)
+  (sentence_classification_layer): Sequential(
+    (0): Linear(in_features=2304, out_features=2560, bias=True)
+    (1): BatchNorm1d(2560, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU()
+    (3): Dropout(p=0.5, inplace=False)
+    (4): Linear(in_features=2560, out_features=2560, bias=True)
+  )
+  (final_classification_layer): Sequential(
+    (0): Linear(in_features=2560, out_features=2560, bias=True)
+    (1): BatchNorm1d(2560, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU()
+    (3): Dropout(p=0.5, inplace=False)
+    (4): Linear(in_features=2560, out_features=1, bias=True)
+  )
+)
+2022-07-09 12:32:36,572 - text-only - INFO - Evaluation of Train data: TriplePrediction
+2022-07-09 12:32:36,573 - text-only - INFO - Num of triples 1025
+2022-07-09 12:32:36,698 - text-only - INFO - 0.688780487804878
+2022-07-09 12:32:36,707 - text-only - INFO -               precision    recall  f1-score   support
+
+           0       0.62      0.98      0.76       525
+           1       0.96      0.38      0.54       500
+
+    accuracy                           0.69      1025
+   macro avg       0.79      0.68      0.65      1025
+weighted avg       0.79      0.69      0.66      1025
+
+2022-07-09 12:32:36,709 - text-only - INFO - Evaluation of Test data: TriplePrediction
+2022-07-09 12:32:36,710 - text-only - INFO - Num of triples 972
+2022-07-09 12:32:36,784 - text-only - INFO - 0.6790123456790124
+2022-07-09 12:32:36,791 - text-only - INFO -               precision    recall  f1-score   support
+
+           0       0.62      0.96      0.76       503
+           1       0.90      0.38      0.53       469
+
+    accuracy                           0.68       972
+   macro avg       0.76      0.67      0.64       972
+weighted avg       0.76      0.68      0.65       972
+
+2022-07-09 12:32:36,792 - text-only - INFO - --- Training is completed  ---
+2022-07-09 12:32:36,793 - text-only - INFO - Store full model.
+2022-07-09 12:32:36,943 - text-only - INFO - Stored data.
+2022-07-09 12:32:36,944 - text-only - INFO - Total Runtime:1.582 minutes
+2022-07-09 12:32:37,741 - text-only - INFO - --- Parameters are parsed for training ---
+2022-07-09 12:32:38,376 - text-only - INFO -  Standard training starts: TextModel-labeling:TriplePrediction
+2022-07-09 12:32:38,377 - text-only - INFO - TextModel(
+  (loss): BCELoss()
+  (sentence_embeddings_train): Embedding(1061, 2304)
+  (sentence_embeddings_test): Embedding(979, 2304)
+  (sentence_embeddings_valid): Embedding(52, 2304)
+  (sentence_classification_layer): Sequential(
+    (0): Linear(in_features=2304, out_features=2560, bias=True)
+    (1): BatchNorm1d(2560, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU()
+    (3): Dropout(p=0.5, inplace=False)
+    (4): Linear(in_features=2560, out_features=2560, bias=True)
+  )
+  (final_classification_layer): Sequential(
+    (0): Linear(in_features=2560, out_features=2560, bias=True)
+    (1): BatchNorm1d(2560, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU()
+    (3): Dropout(p=0.5, inplace=False)
+    (4): Linear(in_features=2560, out_features=1, bias=True)
+  )
+)
+2022-07-09 12:34:12,637 - text-only - INFO - Evaluation of Train data: TriplePrediction
+2022-07-09 12:34:12,639 - text-only - INFO - Num of triples 1061
+2022-07-09 12:34:12,760 - text-only - INFO - 0.7360980207351555
+2022-07-09 12:34:12,767 - text-only - INFO -               precision    recall  f1-score   support
+
+           0       0.67      1.00      0.80       561
+           1       1.00      0.44      0.61       500
+
+    accuracy                           0.74      1061
+   macro avg       0.83      0.72      0.71      1061
+weighted avg       0.82      0.74      0.71      1061
+
+2022-07-09 12:34:12,768 - text-only - INFO - Evaluation of Test data: TriplePrediction
+2022-07-09 12:34:12,769 - text-only - INFO - Num of triples 979
+2022-07-09 12:34:12,840 - text-only - INFO - 0.7191011235955056
+2022-07-09 12:34:12,847 - text-only - INFO -               precision    recall  f1-score   support
+
+           0       0.65      0.97      0.78       510
+           1       0.94      0.44      0.60       469
+
+    accuracy                           0.72       979
+   macro avg       0.80      0.71      0.69       979
+weighted avg       0.79      0.72      0.70       979
+
+2022-07-09 12:34:12,848 - text-only - INFO - --- Training is completed  ---
+2022-07-09 12:34:12,848 - text-only - INFO - Store full model.
+2022-07-09 12:34:13,001 - text-only - INFO - Stored data.
+2022-07-09 12:34:13,002 - text-only - INFO - Total Runtime:1.588 minutes
+2022-07-09 14:02:18,063 - text-only - INFO - --- Parameters are parsed for training ---
+2022-07-09 14:02:18,842 - text-only - INFO -  Standard training starts: TextModel-labeling:TriplePrediction
+2022-07-09 14:02:18,843 - text-only - INFO - TextModel(
+  (loss): BCELoss()
+  (sentence_embeddings_train): Embedding(1032, 2304)
+  (sentence_embeddings_test): Embedding(947, 2304)
+  (sentence_embeddings_valid): Embedding(50, 2304)
+  (sentence_classification_layer): Sequential(
+    (0): Linear(in_features=2304, out_features=2560, bias=True)
+    (1): BatchNorm1d(2560, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU()
+    (3): Dropout(p=0.5, inplace=False)
+    (4): Linear(in_features=2560, out_features=2560, bias=True)
+  )
+  (final_classification_layer): Sequential(
+    (0): Linear(in_features=2560, out_features=2560, bias=True)
+    (1): BatchNorm1d(2560, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU()
+    (3): Dropout(p=0.5, inplace=False)
+    (4): Linear(in_features=2560, out_features=1, bias=True)
+  )
+)
+2022-07-09 14:06:05,031 - text-only - INFO - Evaluation of Train data: TriplePrediction
+2022-07-09 14:06:05,032 - text-only - INFO - Num of triples 1032
+2022-07-09 14:06:05,140 - text-only - INFO - 0.6996124031007752
+2022-07-09 14:06:05,147 - text-only - INFO -               precision    recall  f1-score   support
+
+           0       0.64      0.98      0.77       532
+           1       0.95      0.40      0.56       500
+
+    accuracy                           0.70      1032
+   macro avg       0.79      0.69      0.67      1032
+weighted avg       0.79      0.70      0.67      1032
+
+2022-07-09 14:06:05,149 - text-only - INFO - Evaluation of Test data: TriplePrediction
+2022-07-09 14:06:05,149 - text-only - INFO - Num of triples 947
+2022-07-09 14:06:05,218 - text-only - INFO - 0.6832101372756072
+2022-07-09 14:06:05,224 - text-only - INFO -               precision    recall  f1-score   support
+
+           0       0.62      0.96      0.75       478
+           1       0.90      0.41      0.56       469
+
+    accuracy                           0.68       947
+   macro avg       0.76      0.68      0.66       947
+weighted avg       0.76      0.68      0.66       947
+
+2022-07-09 14:06:05,225 - text-only - INFO - --- Training is completed  ---
+2022-07-09 14:06:05,226 - text-only - INFO - Store full model.
+2022-07-09 14:06:05,379 - text-only - INFO - Stored data.
+2022-07-09 14:06:05,380 - text-only - INFO - Total Runtime:3.789 minutes
+2022-07-09 14:06:06,131 - text-only - INFO - --- Parameters are parsed for training ---
+2022-07-09 14:06:06,749 - text-only - INFO -  Standard training starts: TextModel-labeling:TriplePrediction
+2022-07-09 14:06:06,750 - text-only - INFO - TextModel(
+  (loss): BCELoss()
+  (sentence_embeddings_train): Embedding(999, 2304)
+  (sentence_embeddings_test): Embedding(935, 2304)
+  (sentence_embeddings_valid): Embedding(50, 2304)
+  (sentence_classification_layer): Sequential(
+    (0): Linear(in_features=2304, out_features=2560, bias=True)
+    (1): BatchNorm1d(2560, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU()
+    (3): Dropout(p=0.5, inplace=False)
+    (4): Linear(in_features=2560, out_features=2560, bias=True)
+  )
+  (final_classification_layer): Sequential(
+    (0): Linear(in_features=2560, out_features=2560, bias=True)
+    (1): BatchNorm1d(2560, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU()
+    (3): Dropout(p=0.5, inplace=False)
+    (4): Linear(in_features=2560, out_features=1, bias=True)
+  )
+)
+2022-07-09 14:09:53,574 - text-only - INFO - Evaluation of Train data: TriplePrediction
+2022-07-09 14:09:53,576 - text-only - INFO - Num of triples 999
+2022-07-09 14:09:53,682 - text-only - INFO - 0.7197197197197197
+2022-07-09 14:09:53,689 - text-only - INFO -               precision    recall  f1-score   support
+
+           0       0.64      1.00      0.78       499
+           1       1.00      0.44      0.61       500
+
+    accuracy                           0.72       999
+   macro avg       0.82      0.72      0.70       999
+weighted avg       0.82      0.72      0.70       999
+
+2022-07-09 14:09:53,690 - text-only - INFO - Evaluation of Test data: TriplePrediction
+2022-07-09 14:09:53,691 - text-only - INFO - Num of triples 935
+2022-07-09 14:09:53,758 - text-only - INFO - 0.704812834224599
+2022-07-09 14:09:53,764 - text-only - INFO -               precision    recall  f1-score   support
+
+           0       0.63      0.97      0.77       466
+           1       0.94      0.44      0.60       469
+
+    accuracy                           0.70       935
+   macro avg       0.78      0.71      0.68       935
+weighted avg       0.79      0.70      0.68       935
+
+2022-07-09 14:09:53,765 - text-only - INFO - --- Training is completed  ---
+2022-07-09 14:09:53,766 - text-only - INFO - Store full model.
+2022-07-09 14:09:53,916 - text-only - INFO - Stored data.
+2022-07-09 14:09:53,917 - text-only - INFO - Total Runtime:3.796 minutes
+2022-07-09 14:09:54,651 - text-only - INFO - --- Parameters are parsed for training ---
+2022-07-09 14:09:55,269 - text-only - INFO -  Standard training starts: TextModel-labeling:TriplePrediction
+2022-07-09 14:09:55,271 - text-only - INFO - TextModel(
+  (loss): BCELoss()
+  (sentence_embeddings_train): Embedding(1000, 2304)
+  (sentence_embeddings_test): Embedding(935, 2304)
+  (sentence_embeddings_valid): Embedding(50, 2304)
+  (sentence_classification_layer): Sequential(
+    (0): Linear(in_features=2304, out_features=2560, bias=True)
+    (1): BatchNorm1d(2560, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU()
+    (3): Dropout(p=0.5, inplace=False)
+    (4): Linear(in_features=2560, out_features=2560, bias=True)
+  )
+  (final_classification_layer): Sequential(
+    (0): Linear(in_features=2560, out_features=2560, bias=True)
+    (1): BatchNorm1d(2560, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU()
+    (3): Dropout(p=0.5, inplace=False)
+    (4): Linear(in_features=2560, out_features=1, bias=True)
+  )
+)
+2022-07-09 14:13:44,543 - text-only - INFO - Evaluation of Train data: TriplePrediction
+2022-07-09 14:13:44,544 - text-only - INFO - Num of triples 1000
+2022-07-09 14:13:44,651 - text-only - INFO - 0.721
+2022-07-09 14:13:44,658 - text-only - INFO -               precision    recall  f1-score   support
+
+           0       0.64      1.00      0.78       500
+           1       1.00      0.44      0.61       500
+
+    accuracy                           0.72      1000
+   macro avg       0.82      0.72      0.70      1000
+weighted avg       0.82      0.72      0.70      1000
+
+2022-07-09 14:13:44,659 - text-only - INFO - Evaluation of Test data: TriplePrediction
+2022-07-09 14:13:44,660 - text-only - INFO - Num of triples 935
+2022-07-09 14:13:44,728 - text-only - INFO - 0.704812834224599
+2022-07-09 14:13:44,734 - text-only - INFO -               precision    recall  f1-score   support
+
+           0       0.63      0.97      0.77       466
+           1       0.94      0.44      0.60       469
+
+    accuracy                           0.70       935
+   macro avg       0.78      0.71      0.68       935
+weighted avg       0.79      0.70      0.68       935
+
+2022-07-09 14:13:44,736 - text-only - INFO - --- Training is completed  ---
+2022-07-09 14:13:44,736 - text-only - INFO - Store full model.
+2022-07-09 14:13:44,888 - text-only - INFO - Stored data.
+2022-07-09 14:13:44,889 - text-only - INFO - Total Runtime:3.837 minutes
+2022-07-09 14:13:45,688 - text-only - INFO - --- Parameters are parsed for training ---
+2022-07-09 14:13:46,307 - text-only - INFO -  Standard training starts: TextModel-labeling:TriplePrediction
+2022-07-09 14:13:46,308 - text-only - INFO - TextModel(
+  (loss): BCELoss()
+  (sentence_embeddings_train): Embedding(990, 2304)
+  (sentence_embeddings_test): Embedding(939, 2304)
+  (sentence_embeddings_valid): Embedding(50, 2304)
+  (sentence_classification_layer): Sequential(
+    (0): Linear(in_features=2304, out_features=2560, bias=True)
+    (1): BatchNorm1d(2560, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU()
+    (3): Dropout(p=0.5, inplace=False)
+    (4): Linear(in_features=2560, out_features=2560, bias=True)
+  )
+  (final_classification_layer): Sequential(
+    (0): Linear(in_features=2560, out_features=2560, bias=True)
+    (1): BatchNorm1d(2560, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU()
+    (3): Dropout(p=0.5, inplace=False)
+    (4): Linear(in_features=2560, out_features=1, bias=True)
+  )
+)
+2022-07-09 14:17:34,256 - text-only - INFO - Evaluation of Train data: TriplePrediction
+2022-07-09 14:17:34,258 - text-only - INFO - Num of triples 990
+2022-07-09 14:17:34,366 - text-only - INFO - 0.7181818181818181
+2022-07-09 14:17:34,373 - text-only - INFO -               precision    recall  f1-score   support
+
+           0       0.64      1.00      0.78       490
+           1       1.00      0.44      0.61       500
+
+    accuracy                           0.72       990
+   macro avg       0.82      0.72      0.70       990
+weighted avg       0.82      0.72      0.69       990
+
+2022-07-09 14:17:34,375 - text-only - INFO - Evaluation of Test data: TriplePrediction
+2022-07-09 14:17:34,376 - text-only - INFO - Num of triples 939
+2022-07-09 14:17:34,443 - text-only - INFO - 0.7060702875399361
+2022-07-09 14:17:34,450 - text-only - INFO -               precision    recall  f1-score   support
+
+           0       0.64      0.97      0.77       470
+           1       0.94      0.44      0.60       469
+
+    accuracy                           0.71       939
+   macro avg       0.79      0.71      0.68       939
+weighted avg       0.79      0.71      0.68       939
+
+2022-07-09 14:17:34,451 - text-only - INFO - --- Training is completed  ---
+2022-07-09 14:17:34,452 - text-only - INFO - Store full model.
+2022-07-09 14:17:34,600 - text-only - INFO - Stored data.
+2022-07-09 14:17:34,601 - text-only - INFO - Total Runtime:3.815 minutes
+2022-07-09 14:17:35,386 - text-only - INFO - --- Parameters are parsed for training ---
+2022-07-09 14:17:36,038 - text-only - INFO -  Standard training starts: TextModel-labeling:TriplePrediction
+2022-07-09 14:17:36,039 - text-only - INFO - TextModel(
+  (loss): BCELoss()
+  (sentence_embeddings_train): Embedding(1025, 2304)
+  (sentence_embeddings_test): Embedding(972, 2304)
+  (sentence_embeddings_valid): Embedding(52, 2304)
+  (sentence_classification_layer): Sequential(
+    (0): Linear(in_features=2304, out_features=2560, bias=True)
+    (1): BatchNorm1d(2560, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU()
+    (3): Dropout(p=0.5, inplace=False)
+    (4): Linear(in_features=2560, out_features=2560, bias=True)
+  )
+  (final_classification_layer): Sequential(
+    (0): Linear(in_features=2560, out_features=2560, bias=True)
+    (1): BatchNorm1d(2560, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU()
+    (3): Dropout(p=0.5, inplace=False)
+    (4): Linear(in_features=2560, out_features=1, bias=True)
+  )
+)
+2022-07-09 14:21:22,088 - text-only - INFO - Evaluation of Train data: TriplePrediction
+2022-07-09 14:21:22,090 - text-only - INFO - Num of triples 1025
+2022-07-09 14:21:22,197 - text-only - INFO - 0.688780487804878
+2022-07-09 14:21:22,205 - text-only - INFO -               precision    recall  f1-score   support
+
+           0       0.63      0.97      0.76       525
+           1       0.92      0.40      0.55       500
+
+    accuracy                           0.69      1025
+   macro avg       0.77      0.68      0.66      1025
+weighted avg       0.77      0.69      0.66      1025
+
+2022-07-09 14:21:22,206 - text-only - INFO - Evaluation of Test data: TriplePrediction
+2022-07-09 14:21:22,207 - text-only - INFO - Num of triples 972
+2022-07-09 14:21:22,277 - text-only - INFO - 0.6790123456790124
+2022-07-09 14:21:22,284 - text-only - INFO -               precision    recall  f1-score   support
+
+           0       0.63      0.94      0.75       503
+           1       0.87      0.40      0.54       469
+
+    accuracy                           0.68       972
+   macro avg       0.75      0.67      0.65       972
+weighted avg       0.74      0.68      0.65       972
+
+2022-07-09 14:21:22,285 - text-only - INFO - --- Training is completed  ---
+2022-07-09 14:21:22,286 - text-only - INFO - Store full model.
+2022-07-09 14:21:22,430 - text-only - INFO - Stored data.
+2022-07-09 14:21:22,431 - text-only - INFO - Total Runtime:3.784 minutes
+2022-07-09 14:21:23,229 - text-only - INFO - --- Parameters are parsed for training ---
+2022-07-09 14:21:23,915 - text-only - INFO -  Standard training starts: TextModel-labeling:TriplePrediction
+2022-07-09 14:21:23,916 - text-only - INFO - TextModel(
+  (loss): BCELoss()
+  (sentence_embeddings_train): Embedding(1061, 2304)
+  (sentence_embeddings_test): Embedding(979, 2304)
+  (sentence_embeddings_valid): Embedding(52, 2304)
+  (sentence_classification_layer): Sequential(
+    (0): Linear(in_features=2304, out_features=2560, bias=True)
+    (1): BatchNorm1d(2560, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU()
+    (3): Dropout(p=0.5, inplace=False)
+    (4): Linear(in_features=2560, out_features=2560, bias=True)
+  )
+  (final_classification_layer): Sequential(
+    (0): Linear(in_features=2560, out_features=2560, bias=True)
+    (1): BatchNorm1d(2560, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU()
+    (3): Dropout(p=0.5, inplace=False)
+    (4): Linear(in_features=2560, out_features=1, bias=True)
+  )
+)
+2022-07-09 14:25:30,106 - text-only - INFO - Evaluation of Train data: TriplePrediction
+2022-07-09 14:25:30,108 - text-only - INFO - Num of triples 1061
+2022-07-09 14:25:30,217 - text-only - INFO - 0.7351555136663525
+2022-07-09 14:25:30,225 - text-only - INFO -               precision    recall  f1-score   support
+
+           0       0.67      1.00      0.80       561
+           1       0.99      0.44      0.61       500
+
+    accuracy                           0.74      1061
+   macro avg       0.83      0.72      0.71      1061
+weighted avg       0.82      0.74      0.71      1061
+
+2022-07-09 14:25:30,226 - text-only - INFO - Evaluation of Test data: TriplePrediction
+2022-07-09 14:25:30,227 - text-only - INFO - Num of triples 979
+2022-07-09 14:25:30,299 - text-only - INFO - 0.7160367722165475
+2022-07-09 14:25:30,306 - text-only - INFO -               precision    recall  f1-score   support
+
+           0       0.65      0.97      0.78       510
+           1       0.93      0.44      0.60       469
+
+    accuracy                           0.72       979
+   macro avg       0.79      0.70      0.69       979
+weighted avg       0.79      0.72      0.69       979
+
+2022-07-09 14:25:30,307 - text-only - INFO - --- Training is completed  ---
+2022-07-09 14:25:30,308 - text-only - INFO - Store full model.
+2022-07-09 14:25:30,470 - text-only - INFO - Stored data.
+2022-07-09 14:25:30,471 - text-only - INFO - Total Runtime:4.121 minutes

@@ -1,0 +1,250 @@
+2022-07-11 14:13:50,805 - path-only - INFO - --- Parameters are parsed for training ---
+2022-07-11 14:13:50,908 - path-only - INFO -  Standard training starts: PathModel-labeling:TriplePrediction
+2022-07-11 14:13:50,908 - path-only - INFO - PathModel(
+  (loss): BCELoss()
+  (copaal_veracity_score_train): Embedding(206, 1)
+  (copaal_veracity_score_test): Embedding(195, 1)
+  (copaal_veracity_score_valid): Embedding(11, 1)
+  (path_classification_layer): Sequential(
+    (0): Linear(in_features=1, out_features=2560, bias=True)
+    (1): BatchNorm1d(2560, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU()
+    (3): Dropout(p=0.5, inplace=False)
+    (4): Linear(in_features=2560, out_features=2560, bias=True)
+  )
+  (final_classification_layer): Sequential(
+    (0): Linear(in_features=2560, out_features=2560, bias=True)
+    (1): BatchNorm1d(2560, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU()
+    (3): Dropout(p=0.5, inplace=False)
+    (4): Linear(in_features=2560, out_features=1, bias=True)
+  )
+)
+2022-07-11 14:13:57,736 - path-only - INFO - Evaluation of Train data: TriplePrediction
+2022-07-11 14:13:57,736 - path-only - INFO - Num of triples 206
+2022-07-11 14:13:57,760 - path-only - INFO - 0.5776699029126213
+2022-07-11 14:13:57,766 - path-only - INFO -               precision    recall  f1-score   support
+
+           0       0.58      0.56      0.57       103
+           1       0.58      0.59      0.58       103
+
+    accuracy                           0.58       206
+   macro avg       0.58      0.58      0.58       206
+weighted avg       0.58      0.58      0.58       206
+
+2022-07-11 14:13:57,766 - path-only - INFO - Evaluation of Test data: TriplePrediction
+2022-07-11 14:13:57,766 - path-only - INFO - Num of triples 195
+2022-07-11 14:13:57,782 - path-only - INFO - 0.5692307692307692
+2022-07-11 14:13:57,788 - path-only - INFO -               precision    recall  f1-score   support
+
+           0       0.58      0.54      0.56        98
+           1       0.56      0.60      0.58        97
+
+    accuracy                           0.57       195
+   macro avg       0.57      0.57      0.57       195
+weighted avg       0.57      0.57      0.57       195
+
+2022-07-11 14:13:57,788 - path-only - INFO - --- Training is completed  ---
+2022-07-11 14:13:57,788 - path-only - INFO - Store full model.
+2022-07-11 14:13:57,865 - path-only - INFO - Stored data.
+2022-07-11 14:13:57,865 - path-only - INFO - Total Runtime:0.118 minutes
+2022-07-11 14:15:19,108 - path-only - INFO - --- Parameters are parsed for training ---
+2022-07-11 14:15:19,211 - path-only - INFO -  Standard training starts: PathModel-labeling:TriplePrediction
+2022-07-11 14:15:19,211 - path-only - INFO - PathModel(
+  (loss): BCELoss()
+  (copaal_veracity_score_train): Embedding(206, 1)
+  (copaal_veracity_score_test): Embedding(195, 1)
+  (copaal_veracity_score_valid): Embedding(11, 1)
+  (path_classification_layer): Sequential(
+    (0): Linear(in_features=1, out_features=2560, bias=True)
+    (1): BatchNorm1d(2560, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU()
+    (3): Dropout(p=0.5, inplace=False)
+    (4): Linear(in_features=2560, out_features=2560, bias=True)
+  )
+  (final_classification_layer): Sequential(
+    (0): Linear(in_features=2560, out_features=2560, bias=True)
+    (1): BatchNorm1d(2560, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU()
+    (3): Dropout(p=0.5, inplace=False)
+    (4): Linear(in_features=2560, out_features=1, bias=True)
+  )
+)
+2022-07-11 14:15:37,215 - path-only - INFO - Evaluation of Train data: TriplePrediction
+2022-07-11 14:15:37,215 - path-only - INFO - Num of triples 206
+2022-07-11 14:15:37,232 - path-only - INFO - 0.5
+2022-07-11 14:15:37,238 - path-only - INFO -               precision    recall  f1-score   support
+
+           0       0.50      1.00      0.67       103
+           1       0.00      0.00      0.00       103
+
+    accuracy                           0.50       206
+   macro avg       0.25      0.50      0.33       206
+weighted avg       0.25      0.50      0.33       206
+
+2022-07-11 14:15:37,238 - path-only - INFO - Evaluation of Test data: TriplePrediction
+2022-07-11 14:15:37,239 - path-only - INFO - Num of triples 195
+2022-07-11 14:15:37,253 - path-only - INFO - 0.5025641025641026
+2022-07-11 14:15:37,258 - path-only - INFO -               precision    recall  f1-score   support
+
+           0       0.50      1.00      0.67        98
+           1       0.00      0.00      0.00        97
+
+    accuracy                           0.50       195
+   macro avg       0.25      0.50      0.33       195
+weighted avg       0.25      0.50      0.34       195
+
+2022-07-11 14:15:37,259 - path-only - INFO - --- Training is completed  ---
+2022-07-11 14:15:37,259 - path-only - INFO - Store full model.
+2022-07-11 14:15:37,334 - path-only - INFO - Stored data.
+2022-07-11 14:15:37,334 - path-only - INFO - Total Runtime:0.304 minutes
+2022-07-11 14:18:35,246 - path-only - INFO - --- Parameters are parsed for training ---
+2022-07-11 14:18:35,338 - path-only - INFO -  Standard training starts: PathModel-labeling:TriplePrediction
+2022-07-11 14:18:35,338 - path-only - INFO - PathModel(
+  (loss): BCELoss()
+  (copaal_veracity_score_train): Embedding(206, 1)
+  (copaal_veracity_score_test): Embedding(195, 1)
+  (copaal_veracity_score_valid): Embedding(11, 1)
+  (path_classification_layer): Sequential(
+    (0): Linear(in_features=1, out_features=2560, bias=True)
+    (1): BatchNorm1d(2560, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU()
+    (3): Dropout(p=0.5, inplace=False)
+    (4): Linear(in_features=2560, out_features=2560, bias=True)
+  )
+  (final_classification_layer): Sequential(
+    (0): Linear(in_features=2560, out_features=2560, bias=True)
+    (1): BatchNorm1d(2560, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU()
+    (3): Dropout(p=0.5, inplace=False)
+    (4): Linear(in_features=2560, out_features=1, bias=True)
+  )
+)
+2022-07-11 14:19:10,463 - path-only - INFO - Evaluation of Train data: TriplePrediction
+2022-07-11 14:19:10,463 - path-only - INFO - Num of triples 206
+2022-07-11 14:19:10,480 - path-only - INFO - 0.616504854368932
+2022-07-11 14:19:10,485 - path-only - INFO -               precision    recall  f1-score   support
+
+           0       0.88      0.27      0.41       103
+           1       0.57      0.96      0.71       103
+
+    accuracy                           0.62       206
+   macro avg       0.72      0.62      0.56       206
+weighted avg       0.72      0.62      0.56       206
+
+2022-07-11 14:19:10,486 - path-only - INFO - Evaluation of Test data: TriplePrediction
+2022-07-11 14:19:10,486 - path-only - INFO - Num of triples 195
+2022-07-11 14:19:10,500 - path-only - INFO - 0.6
+2022-07-11 14:19:10,505 - path-only - INFO -               precision    recall  f1-score   support
+
+           0       0.86      0.24      0.38        98
+           1       0.56      0.96      0.70        97
+
+    accuracy                           0.60       195
+   macro avg       0.71      0.60      0.54       195
+weighted avg       0.71      0.60      0.54       195
+
+2022-07-11 14:19:10,505 - path-only - INFO - --- Training is completed  ---
+2022-07-11 14:19:10,505 - path-only - INFO - Store full model.
+2022-07-11 14:19:10,582 - path-only - INFO - Stored data.
+2022-07-11 14:19:10,582 - path-only - INFO - Total Runtime:0.589 minutes
+2022-07-11 14:24:48,054 - path-only - INFO - --- Parameters are parsed for training ---
+2022-07-11 14:24:48,147 - path-only - INFO -  Standard training starts: PathModel-labeling:TriplePrediction
+2022-07-11 14:24:48,147 - path-only - INFO - PathModel(
+  (loss): BCELoss()
+  (copaal_veracity_score_train): Embedding(206, 1)
+  (copaal_veracity_score_test): Embedding(195, 1)
+  (copaal_veracity_score_valid): Embedding(11, 1)
+  (path_classification_layer): Sequential(
+    (0): Linear(in_features=1, out_features=2560, bias=True)
+    (1): BatchNorm1d(2560, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU()
+    (3): Dropout(p=0.5, inplace=False)
+    (4): Linear(in_features=2560, out_features=2560, bias=True)
+  )
+  (final_classification_layer): Sequential(
+    (0): Linear(in_features=2560, out_features=2560, bias=True)
+    (1): BatchNorm1d(2560, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU()
+    (3): Dropout(p=0.5, inplace=False)
+    (4): Linear(in_features=2560, out_features=1, bias=True)
+  )
+)
+2022-07-11 14:25:58,709 - path-only - INFO - Evaluation of Train data: TriplePrediction
+2022-07-11 14:25:58,709 - path-only - INFO - Num of triples 206
+2022-07-11 14:25:58,726 - path-only - INFO - 0.6359223300970874
+2022-07-11 14:25:58,732 - path-only - INFO -               precision    recall  f1-score   support
+
+           0       0.62      0.68      0.65       103
+           1       0.65      0.59      0.62       103
+
+    accuracy                           0.64       206
+   macro avg       0.64      0.64      0.64       206
+weighted avg       0.64      0.64      0.64       206
+
+2022-07-11 14:25:58,732 - path-only - INFO - Evaluation of Test data: TriplePrediction
+2022-07-11 14:25:58,732 - path-only - INFO - Num of triples 195
+2022-07-11 14:25:58,746 - path-only - INFO - 0.6205128205128205
+2022-07-11 14:25:58,751 - path-only - INFO -               precision    recall  f1-score   support
+
+           0       0.62      0.64      0.63        98
+           1       0.62      0.60      0.61        97
+
+    accuracy                           0.62       195
+   macro avg       0.62      0.62      0.62       195
+weighted avg       0.62      0.62      0.62       195
+
+2022-07-11 14:25:58,751 - path-only - INFO - --- Training is completed  ---
+2022-07-11 14:25:58,751 - path-only - INFO - Store full model.
+2022-07-11 14:25:58,831 - path-only - INFO - Stored data.
+2022-07-11 14:25:58,831 - path-only - INFO - Total Runtime:1.180 minutes
+2022-07-11 14:39:20,000 - path-only - INFO - --- Parameters are parsed for training ---
+2022-07-11 14:39:20,092 - path-only - INFO -  Standard training starts: PathModel-labeling:TriplePrediction
+2022-07-11 14:39:20,093 - path-only - INFO - PathModel(
+  (loss): BCELoss()
+  (copaal_veracity_score_train): Embedding(206, 1)
+  (copaal_veracity_score_test): Embedding(195, 1)
+  (copaal_veracity_score_valid): Embedding(11, 1)
+  (path_classification_layer): Sequential(
+    (0): Linear(in_features=1, out_features=2560, bias=True)
+    (1): BatchNorm1d(2560, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU()
+    (3): Dropout(p=0.5, inplace=False)
+    (4): Linear(in_features=2560, out_features=2560, bias=True)
+  )
+  (final_classification_layer): Sequential(
+    (0): Linear(in_features=2560, out_features=2560, bias=True)
+    (1): BatchNorm1d(2560, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU()
+    (3): Dropout(p=0.5, inplace=False)
+    (4): Linear(in_features=2560, out_features=1, bias=True)
+  )
+)
+2022-07-11 14:42:18,734 - path-only - INFO - Evaluation of Train data: TriplePrediction
+2022-07-11 14:42:18,735 - path-only - INFO - Num of triples 206
+2022-07-11 14:42:18,752 - path-only - INFO - 0.6407766990291263
+2022-07-11 14:42:18,757 - path-only - INFO -               precision    recall  f1-score   support
+
+           0       0.63      0.69      0.66       103
+           1       0.66      0.59      0.62       103
+
+    accuracy                           0.64       206
+   macro avg       0.64      0.64      0.64       206
+weighted avg       0.64      0.64      0.64       206
+
+2022-07-11 14:42:18,758 - path-only - INFO - Evaluation of Test data: TriplePrediction
+2022-07-11 14:42:18,758 - path-only - INFO - Num of triples 195
+2022-07-11 14:42:18,771 - path-only - INFO - 0.6256410256410256
+2022-07-11 14:42:18,777 - path-only - INFO -               precision    recall  f1-score   support
+
+           0       0.62      0.65      0.64        98
+           1       0.63      0.60      0.61        97
+
+    accuracy                           0.63       195
+   macro avg       0.63      0.63      0.63       195
+weighted avg       0.63      0.63      0.63       195
+
+2022-07-11 14:42:18,777 - path-only - INFO - --- Training is completed  ---
+2022-07-11 14:42:18,777 - path-only - INFO - Store full model.
+2022-07-11 14:42:18,858 - path-only - INFO - Stored data.
+2022-07-11 14:42:18,858 - path-only - INFO - Total Runtime:2.981 minutes

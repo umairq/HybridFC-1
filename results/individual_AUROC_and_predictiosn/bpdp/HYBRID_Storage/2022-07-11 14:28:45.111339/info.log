@@ -1,0 +1,118 @@
+2022-07-11 14:28:45,112 - KGE-path-Hybrid - INFO - --- Parameters are parsed for training ---
+2022-07-11 14:28:45,300 - KGE-path-Hybrid - INFO -  Standard training starts: PathKGEHybridModel-labeling:TriplePrediction
+2022-07-11 14:28:45,300 - KGE-path-Hybrid - INFO - PathKGEHybridModel(
+  (loss): BCELoss()
+  (entity_embeddings): Embedding(250, 100)
+  (relation_embeddings): Embedding(2, 100)
+  (copaal_veracity_score_train): Embedding(206, 1)
+  (copaal_veracity_score_test): Embedding(195, 1)
+  (copaal_veracity_score_valid): Embedding(11, 1)
+  (kg_classification_layer): Sequential(
+    (0): Linear(in_features=300, out_features=2560, bias=True)
+    (1): BatchNorm1d(2560, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU()
+    (3): Dropout(p=0.5, inplace=False)
+    (4): Linear(in_features=2560, out_features=2560, bias=True)
+  )
+  (path_classification_layer): Sequential(
+    (0): Linear(in_features=1, out_features=2560, bias=True)
+    (1): BatchNorm1d(2560, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU()
+    (3): Dropout(p=0.5, inplace=False)
+    (4): Linear(in_features=2560, out_features=2560, bias=True)
+  )
+  (final_classification_layer): Sequential(
+    (0): Linear(in_features=5120, out_features=2560, bias=True)
+    (1): BatchNorm1d(2560, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU()
+    (3): Dropout(p=0.5, inplace=False)
+    (4): Linear(in_features=2560, out_features=1, bias=True)
+  )
+)
+2022-07-11 14:30:06,620 - KGE-path-Hybrid - INFO - Evaluation of Train data: TriplePrediction
+2022-07-11 14:30:06,621 - KGE-path-Hybrid - INFO - Num of triples 206
+2022-07-11 14:30:06,653 - KGE-path-Hybrid - INFO - 0.9660194174757282
+2022-07-11 14:30:06,659 - KGE-path-Hybrid - INFO -               precision    recall  f1-score   support
+
+           0       0.97      0.96      0.97       103
+           1       0.96      0.97      0.97       103
+
+    accuracy                           0.97       206
+   macro avg       0.97      0.97      0.97       206
+weighted avg       0.97      0.97      0.97       206
+
+2022-07-11 14:30:06,659 - KGE-path-Hybrid - INFO - Evaluation of Test data: TriplePrediction
+2022-07-11 14:30:06,660 - KGE-path-Hybrid - INFO - Num of triples 195
+2022-07-11 14:30:06,687 - KGE-path-Hybrid - INFO - 0.6
+2022-07-11 14:30:06,692 - KGE-path-Hybrid - INFO -               precision    recall  f1-score   support
+
+           0       0.61      0.56      0.59        98
+           1       0.59      0.64      0.61        97
+
+    accuracy                           0.60       195
+   macro avg       0.60      0.60      0.60       195
+weighted avg       0.60      0.60      0.60       195
+
+2022-07-11 14:30:06,692 - KGE-path-Hybrid - INFO - --- Training is completed  ---
+2022-07-11 14:30:06,693 - KGE-path-Hybrid - INFO - Store full model.
+2022-07-11 14:30:06,838 - KGE-path-Hybrid - INFO - Stored data.
+2022-07-11 14:30:06,838 - KGE-path-Hybrid - INFO - Total Runtime:1.362 minutes
+2022-07-11 14:48:57,456 - KGE-path-Hybrid - INFO - --- Parameters are parsed for training ---
+2022-07-11 14:48:57,644 - KGE-path-Hybrid - INFO -  Standard training starts: PathKGEHybridModel-labeling:TriplePrediction
+2022-07-11 14:48:57,644 - KGE-path-Hybrid - INFO - PathKGEHybridModel(
+  (loss): BCELoss()
+  (entity_embeddings): Embedding(250, 100)
+  (relation_embeddings): Embedding(2, 100)
+  (copaal_veracity_score_train): Embedding(206, 1)
+  (copaal_veracity_score_test): Embedding(195, 1)
+  (copaal_veracity_score_valid): Embedding(11, 1)
+  (kg_classification_layer): Sequential(
+    (0): Linear(in_features=300, out_features=2560, bias=True)
+    (1): BatchNorm1d(2560, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU()
+    (3): Dropout(p=0.5, inplace=False)
+    (4): Linear(in_features=2560, out_features=2560, bias=True)
+  )
+  (path_classification_layer): Sequential(
+    (0): Linear(in_features=1, out_features=2560, bias=True)
+    (1): BatchNorm1d(2560, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU()
+    (3): Dropout(p=0.5, inplace=False)
+    (4): Linear(in_features=2560, out_features=2560, bias=True)
+  )
+  (final_classification_layer): Sequential(
+    (0): Linear(in_features=5120, out_features=2560, bias=True)
+    (1): BatchNorm1d(2560, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU()
+    (3): Dropout(p=0.5, inplace=False)
+    (4): Linear(in_features=2560, out_features=1, bias=True)
+  )
+)
+2022-07-11 14:52:07,692 - KGE-path-Hybrid - INFO - Evaluation of Train data: TriplePrediction
+2022-07-11 14:52:07,692 - KGE-path-Hybrid - INFO - Num of triples 206
+2022-07-11 14:52:07,726 - KGE-path-Hybrid - INFO - 0.9902912621359223
+2022-07-11 14:52:07,732 - KGE-path-Hybrid - INFO -               precision    recall  f1-score   support
+
+           0       1.00      0.98      0.99       103
+           1       0.98      1.00      0.99       103
+
+    accuracy                           0.99       206
+   macro avg       0.99      0.99      0.99       206
+weighted avg       0.99      0.99      0.99       206
+
+2022-07-11 14:52:07,732 - KGE-path-Hybrid - INFO - Evaluation of Test data: TriplePrediction
+2022-07-11 14:52:07,732 - KGE-path-Hybrid - INFO - Num of triples 195
+2022-07-11 14:52:07,763 - KGE-path-Hybrid - INFO - 0.6051282051282051
+2022-07-11 14:52:07,768 - KGE-path-Hybrid - INFO -               precision    recall  f1-score   support
+
+           0       0.61      0.59      0.60        98
+           1       0.60      0.62      0.61        97
+
+    accuracy                           0.61       195
+   macro avg       0.61      0.61      0.61       195
+weighted avg       0.61      0.61      0.61       195
+
+2022-07-11 14:52:07,768 - KGE-path-Hybrid - INFO - --- Training is completed  ---
+2022-07-11 14:52:07,768 - KGE-path-Hybrid - INFO - Store full model.
+2022-07-11 14:52:07,915 - KGE-path-Hybrid - INFO - Stored data.
+2022-07-11 14:52:07,916 - KGE-path-Hybrid - INFO - Total Runtime:3.174 minutes

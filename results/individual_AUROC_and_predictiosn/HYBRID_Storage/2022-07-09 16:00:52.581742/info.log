@@ -1,0 +1,59 @@
+2022-07-09 16:00:52,582 - KGE-path-Hybrid - INFO - --- Parameters are parsed for training ---
+2022-07-09 16:00:52,795 - KGE-path-Hybrid - INFO -  Standard training starts: PathKGEHybridModel-labeling:TriplePrediction
+2022-07-09 16:00:52,797 - KGE-path-Hybrid - INFO - PathKGEHybridModel(
+  (loss): BCELoss()
+  (entity_embeddings): Embedding(1614, 100)
+  (relation_embeddings): Embedding(8, 100)
+  (copaal_veracity_score_train): Embedding(1061, 1)
+  (copaal_veracity_score_test): Embedding(979, 1)
+  (copaal_veracity_score_valid): Embedding(52, 1)
+  (kg_classification_layer): Sequential(
+    (0): Linear(in_features=300, out_features=2560, bias=True)
+    (1): BatchNorm1d(2560, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU()
+    (3): Dropout(p=0.5, inplace=False)
+    (4): Linear(in_features=2560, out_features=2560, bias=True)
+  )
+  (path_classification_layer): Sequential(
+    (0): Linear(in_features=1, out_features=2560, bias=True)
+    (1): BatchNorm1d(2560, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU()
+    (3): Dropout(p=0.5, inplace=False)
+    (4): Linear(in_features=2560, out_features=2560, bias=True)
+  )
+  (final_classification_layer): Sequential(
+    (0): Linear(in_features=5120, out_features=2560, bias=True)
+    (1): BatchNorm1d(2560, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU()
+    (3): Dropout(p=0.5, inplace=False)
+    (4): Linear(in_features=2560, out_features=1, bias=True)
+  )
+)
+2022-07-09 16:04:58,053 - KGE-path-Hybrid - INFO - Evaluation of Train data: TriplePrediction
+2022-07-09 16:04:58,055 - KGE-path-Hybrid - INFO - Num of triples 1061
+2022-07-09 16:04:58,191 - KGE-path-Hybrid - INFO - 0.9858623939679547
+2022-07-09 16:04:58,198 - KGE-path-Hybrid - INFO -               precision    recall  f1-score   support
+
+           0       0.99      0.99      0.99       561
+           1       0.99      0.98      0.98       500
+
+    accuracy                           0.99      1061
+   macro avg       0.99      0.99      0.99      1061
+weighted avg       0.99      0.99      0.99      1061
+
+2022-07-09 16:04:58,199 - KGE-path-Hybrid - INFO - Evaluation of Test data: TriplePrediction
+2022-07-09 16:04:58,200 - KGE-path-Hybrid - INFO - Num of triples 979
+2022-07-09 16:04:58,301 - KGE-path-Hybrid - INFO - 0.8886618998978549
+2022-07-09 16:04:58,307 - KGE-path-Hybrid - INFO -               precision    recall  f1-score   support
+
+           0       0.91      0.87      0.89       510
+           1       0.87      0.90      0.89       469
+
+    accuracy                           0.89       979
+   macro avg       0.89      0.89      0.89       979
+weighted avg       0.89      0.89      0.89       979
+
+2022-07-09 16:04:58,309 - KGE-path-Hybrid - INFO - --- Training is completed  ---
+2022-07-09 16:04:58,309 - KGE-path-Hybrid - INFO - Store full model.
+2022-07-09 16:04:58,547 - KGE-path-Hybrid - INFO - Stored data.
+2022-07-09 16:04:58,548 - KGE-path-Hybrid - INFO - Total Runtime:4.099 minutes

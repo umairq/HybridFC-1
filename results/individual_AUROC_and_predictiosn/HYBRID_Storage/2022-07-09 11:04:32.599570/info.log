@@ -1,0 +1,1593 @@
+2022-07-09 11:04:32,600 - text-KGE-Hybrid - INFO - --- Parameters are parsed for training ---
+2022-07-09 11:04:33,359 - text-KGE-Hybrid - INFO -  Standard training starts: TextKGEHybridModel-labeling:TriplePrediction
+2022-07-09 11:04:33,360 - text-KGE-Hybrid - INFO - TextKGEHybridModel(
+  (loss): BCELoss()
+  (entity_embeddings): Embedding(1503, 100)
+  (relation_embeddings): Embedding(8, 100)
+  (sentence_embeddings_train): Embedding(990, 2304)
+  (sentence_embeddings_test): Embedding(939, 2304)
+  (sentence_embeddings_valid): Embedding(50, 2304)
+  (kg_classification_layer): Sequential(
+    (0): Linear(in_features=300, out_features=2560, bias=True)
+    (1): BatchNorm1d(2560, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU()
+    (3): Dropout(p=0.5, inplace=False)
+    (4): Linear(in_features=2560, out_features=2560, bias=True)
+  )
+  (sentence_classification_layer): Sequential(
+    (0): Linear(in_features=2304, out_features=2560, bias=True)
+    (1): BatchNorm1d(2560, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU()
+    (3): Dropout(p=0.5, inplace=False)
+    (4): Linear(in_features=2560, out_features=2560, bias=True)
+  )
+  (final_classification_layer): Sequential(
+    (0): Linear(in_features=5120, out_features=2560, bias=True)
+    (1): BatchNorm1d(2560, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU()
+    (3): Dropout(p=0.5, inplace=False)
+    (4): Linear(in_features=2560, out_features=1, bias=True)
+  )
+)
+2022-07-09 11:04:43,994 - text-KGE-Hybrid - INFO - Evaluation of Train data: TriplePrediction
+2022-07-09 11:04:43,995 - text-KGE-Hybrid - INFO - Num of triples 990
+2022-07-09 11:04:44,156 - text-KGE-Hybrid - INFO - 0.7131313131313132
+2022-07-09 11:04:44,162 - text-KGE-Hybrid - INFO -               precision    recall  f1-score   support
+
+           0       0.67      0.82      0.74       490
+           1       0.78      0.61      0.68       500
+
+    accuracy                           0.71       990
+   macro avg       0.72      0.71      0.71       990
+weighted avg       0.72      0.71      0.71       990
+
+2022-07-09 11:04:44,163 - text-KGE-Hybrid - INFO - Evaluation of Test data: TriplePrediction
+2022-07-09 11:04:44,163 - text-KGE-Hybrid - INFO - Num of triples 939
+2022-07-09 11:04:44,279 - text-KGE-Hybrid - INFO - 0.6293929712460063
+2022-07-09 11:04:44,285 - text-KGE-Hybrid - INFO -               precision    recall  f1-score   support
+
+           0       0.61      0.74      0.67       470
+           1       0.66      0.52      0.58       469
+
+    accuracy                           0.63       939
+   macro avg       0.64      0.63      0.63       939
+weighted avg       0.64      0.63      0.63       939
+
+2022-07-09 11:04:44,286 - text-KGE-Hybrid - INFO - --- Training is completed  ---
+2022-07-09 11:04:44,286 - text-KGE-Hybrid - INFO - Store full model.
+2022-07-09 11:04:44,506 - text-KGE-Hybrid - INFO - Stored data.
+2022-07-09 11:04:44,506 - text-KGE-Hybrid - INFO - Total Runtime:0.198 minutes
+2022-07-09 11:04:46,323 - text-KGE-Hybrid - INFO - --- Parameters are parsed for training ---
+2022-07-09 11:04:47,112 - text-KGE-Hybrid - INFO -  Standard training starts: TextKGEHybridModel-labeling:TriplePrediction
+2022-07-09 11:04:47,113 - text-KGE-Hybrid - INFO - TextKGEHybridModel(
+  (loss): BCELoss()
+  (entity_embeddings): Embedding(1584, 100)
+  (relation_embeddings): Embedding(8, 100)
+  (sentence_embeddings_train): Embedding(1025, 2304)
+  (sentence_embeddings_test): Embedding(972, 2304)
+  (sentence_embeddings_valid): Embedding(52, 2304)
+  (kg_classification_layer): Sequential(
+    (0): Linear(in_features=300, out_features=2560, bias=True)
+    (1): BatchNorm1d(2560, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU()
+    (3): Dropout(p=0.5, inplace=False)
+    (4): Linear(in_features=2560, out_features=2560, bias=True)
+  )
+  (sentence_classification_layer): Sequential(
+    (0): Linear(in_features=2304, out_features=2560, bias=True)
+    (1): BatchNorm1d(2560, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU()
+    (3): Dropout(p=0.5, inplace=False)
+    (4): Linear(in_features=2560, out_features=2560, bias=True)
+  )
+  (final_classification_layer): Sequential(
+    (0): Linear(in_features=5120, out_features=2560, bias=True)
+    (1): BatchNorm1d(2560, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU()
+    (3): Dropout(p=0.5, inplace=False)
+    (4): Linear(in_features=2560, out_features=1, bias=True)
+  )
+)
+2022-07-09 11:04:58,327 - text-KGE-Hybrid - INFO - Evaluation of Train data: TriplePrediction
+2022-07-09 11:04:58,328 - text-KGE-Hybrid - INFO - Num of triples 1025
+2022-07-09 11:04:58,496 - text-KGE-Hybrid - INFO - 0.7219512195121951
+2022-07-09 11:04:58,502 - text-KGE-Hybrid - INFO -               precision    recall  f1-score   support
+
+           0       0.89      0.52      0.66       525
+           1       0.65      0.93      0.77       500
+
+    accuracy                           0.72      1025
+   macro avg       0.77      0.73      0.71      1025
+weighted avg       0.77      0.72      0.71      1025
+
+2022-07-09 11:04:58,502 - text-KGE-Hybrid - INFO - Evaluation of Test data: TriplePrediction
+2022-07-09 11:04:58,503 - text-KGE-Hybrid - INFO - Num of triples 972
+2022-07-09 11:04:58,627 - text-KGE-Hybrid - INFO - 0.6779835390946503
+2022-07-09 11:04:58,633 - text-KGE-Hybrid - INFO -               precision    recall  f1-score   support
+
+           0       0.82      0.48      0.61       503
+           1       0.62      0.89      0.73       469
+
+    accuracy                           0.68       972
+   macro avg       0.72      0.69      0.67       972
+weighted avg       0.72      0.68      0.67       972
+
+2022-07-09 11:04:58,634 - text-KGE-Hybrid - INFO - --- Training is completed  ---
+2022-07-09 11:04:58,634 - text-KGE-Hybrid - INFO - Store full model.
+2022-07-09 11:04:58,875 - text-KGE-Hybrid - INFO - Stored data.
+2022-07-09 11:04:58,875 - text-KGE-Hybrid - INFO - Total Runtime:0.209 minutes
+2022-07-09 11:05:00,827 - text-KGE-Hybrid - INFO - --- Parameters are parsed for training ---
+2022-07-09 11:05:01,617 - text-KGE-Hybrid - INFO -  Standard training starts: TextKGEHybridModel-labeling:TriplePrediction
+2022-07-09 11:05:01,618 - text-KGE-Hybrid - INFO - TextKGEHybridModel(
+  (loss): BCELoss()
+  (entity_embeddings): Embedding(1614, 100)
+  (relation_embeddings): Embedding(8, 100)
+  (sentence_embeddings_train): Embedding(1061, 2304)
+  (sentence_embeddings_test): Embedding(979, 2304)
+  (sentence_embeddings_valid): Embedding(52, 2304)
+  (kg_classification_layer): Sequential(
+    (0): Linear(in_features=300, out_features=2560, bias=True)
+    (1): BatchNorm1d(2560, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU()
+    (3): Dropout(p=0.5, inplace=False)
+    (4): Linear(in_features=2560, out_features=2560, bias=True)
+  )
+  (sentence_classification_layer): Sequential(
+    (0): Linear(in_features=2304, out_features=2560, bias=True)
+    (1): BatchNorm1d(2560, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU()
+    (3): Dropout(p=0.5, inplace=False)
+    (4): Linear(in_features=2560, out_features=2560, bias=True)
+  )
+  (final_classification_layer): Sequential(
+    (0): Linear(in_features=5120, out_features=2560, bias=True)
+    (1): BatchNorm1d(2560, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU()
+    (3): Dropout(p=0.5, inplace=False)
+    (4): Linear(in_features=2560, out_features=1, bias=True)
+  )
+)
+2022-07-09 11:05:14,104 - text-KGE-Hybrid - INFO - Evaluation of Train data: TriplePrediction
+2022-07-09 11:05:14,104 - text-KGE-Hybrid - INFO - Num of triples 1061
+2022-07-09 11:05:14,260 - text-KGE-Hybrid - INFO - 0.8030160226201697
+2022-07-09 11:05:14,266 - text-KGE-Hybrid - INFO -               precision    recall  f1-score   support
+
+           0       0.73      0.99      0.84       561
+           1       0.98      0.59      0.74       500
+
+    accuracy                           0.80      1061
+   macro avg       0.86      0.79      0.79      1061
+weighted avg       0.85      0.80      0.79      1061
+
+2022-07-09 11:05:14,267 - text-KGE-Hybrid - INFO - Evaluation of Test data: TriplePrediction
+2022-07-09 11:05:14,267 - text-KGE-Hybrid - INFO - Num of triples 979
+2022-07-09 11:05:14,392 - text-KGE-Hybrid - INFO - 0.7528089887640449
+2022-07-09 11:05:14,398 - text-KGE-Hybrid - INFO -               precision    recall  f1-score   support
+
+           0       0.69      0.96      0.80       510
+           1       0.92      0.53      0.67       469
+
+    accuracy                           0.75       979
+   macro avg       0.80      0.74      0.74       979
+weighted avg       0.80      0.75      0.74       979
+
+2022-07-09 11:05:14,398 - text-KGE-Hybrid - INFO - --- Training is completed  ---
+2022-07-09 11:05:14,398 - text-KGE-Hybrid - INFO - Store full model.
+2022-07-09 11:05:14,646 - text-KGE-Hybrid - INFO - Stored data.
+2022-07-09 11:05:14,647 - text-KGE-Hybrid - INFO - Total Runtime:0.230 minutes
+2022-07-09 11:18:28,355 - text-KGE-Hybrid - INFO - --- Parameters are parsed for training ---
+2022-07-09 11:18:29,222 - text-KGE-Hybrid - INFO -  Standard training starts: TextKGEHybridModel-labeling:TriplePrediction
+2022-07-09 11:18:29,223 - text-KGE-Hybrid - INFO - TextKGEHybridModel(
+  (loss): BCELoss()
+  (entity_embeddings): Embedding(1707, 100)
+  (relation_embeddings): Embedding(8, 100)
+  (sentence_embeddings_train): Embedding(1032, 2304)
+  (sentence_embeddings_test): Embedding(947, 2304)
+  (sentence_embeddings_valid): Embedding(50, 2304)
+  (kg_classification_layer): Sequential(
+    (0): Linear(in_features=300, out_features=2560, bias=True)
+    (1): BatchNorm1d(2560, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU()
+    (3): Dropout(p=0.5, inplace=False)
+    (4): Linear(in_features=2560, out_features=2560, bias=True)
+  )
+  (sentence_classification_layer): Sequential(
+    (0): Linear(in_features=2304, out_features=2560, bias=True)
+    (1): BatchNorm1d(2560, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU()
+    (3): Dropout(p=0.5, inplace=False)
+    (4): Linear(in_features=2560, out_features=2560, bias=True)
+  )
+  (final_classification_layer): Sequential(
+    (0): Linear(in_features=5120, out_features=2560, bias=True)
+    (1): BatchNorm1d(2560, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU()
+    (3): Dropout(p=0.5, inplace=False)
+    (4): Linear(in_features=2560, out_features=1, bias=True)
+  )
+)
+2022-07-09 11:18:54,880 - text-KGE-Hybrid - INFO - Evaluation of Train data: TriplePrediction
+2022-07-09 11:18:54,881 - text-KGE-Hybrid - INFO - Num of triples 1032
+2022-07-09 11:18:55,047 - text-KGE-Hybrid - INFO - 0.9486434108527132
+2022-07-09 11:18:55,053 - text-KGE-Hybrid - INFO -               precision    recall  f1-score   support
+
+           0       1.00      0.90      0.95       532
+           1       0.90      1.00      0.95       500
+
+    accuracy                           0.95      1032
+   macro avg       0.95      0.95      0.95      1032
+weighted avg       0.95      0.95      0.95      1032
+
+2022-07-09 11:18:55,054 - text-KGE-Hybrid - INFO - Evaluation of Test data: TriplePrediction
+2022-07-09 11:18:55,054 - text-KGE-Hybrid - INFO - Num of triples 947
+2022-07-09 11:18:55,178 - text-KGE-Hybrid - INFO - 0.9324181626187962
+2022-07-09 11:18:55,186 - text-KGE-Hybrid - INFO -               precision    recall  f1-score   support
+
+           0       1.00      0.87      0.93       478
+           1       0.88      1.00      0.94       469
+
+    accuracy                           0.93       947
+   macro avg       0.94      0.93      0.93       947
+weighted avg       0.94      0.93      0.93       947
+
+2022-07-09 11:18:55,186 - text-KGE-Hybrid - INFO - --- Training is completed  ---
+2022-07-09 11:18:55,186 - text-KGE-Hybrid - INFO - Store full model.
+2022-07-09 11:18:55,536 - text-KGE-Hybrid - INFO - Stored data.
+2022-07-09 11:18:55,536 - text-KGE-Hybrid - INFO - Total Runtime:0.453 minutes
+2022-07-09 11:18:57,365 - text-KGE-Hybrid - INFO - --- Parameters are parsed for training ---
+2022-07-09 11:18:58,116 - text-KGE-Hybrid - INFO -  Standard training starts: TextKGEHybridModel-labeling:TriplePrediction
+2022-07-09 11:18:58,117 - text-KGE-Hybrid - INFO - TextKGEHybridModel(
+  (loss): BCELoss()
+  (entity_embeddings): Embedding(1512, 100)
+  (relation_embeddings): Embedding(8, 100)
+  (sentence_embeddings_train): Embedding(999, 2304)
+  (sentence_embeddings_test): Embedding(935, 2304)
+  (sentence_embeddings_valid): Embedding(50, 2304)
+  (kg_classification_layer): Sequential(
+    (0): Linear(in_features=300, out_features=2560, bias=True)
+    (1): BatchNorm1d(2560, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU()
+    (3): Dropout(p=0.5, inplace=False)
+    (4): Linear(in_features=2560, out_features=2560, bias=True)
+  )
+  (sentence_classification_layer): Sequential(
+    (0): Linear(in_features=2304, out_features=2560, bias=True)
+    (1): BatchNorm1d(2560, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU()
+    (3): Dropout(p=0.5, inplace=False)
+    (4): Linear(in_features=2560, out_features=2560, bias=True)
+  )
+  (final_classification_layer): Sequential(
+    (0): Linear(in_features=5120, out_features=2560, bias=True)
+    (1): BatchNorm1d(2560, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU()
+    (3): Dropout(p=0.5, inplace=False)
+    (4): Linear(in_features=2560, out_features=1, bias=True)
+  )
+)
+2022-07-09 11:19:23,578 - text-KGE-Hybrid - INFO - Evaluation of Train data: TriplePrediction
+2022-07-09 11:19:23,579 - text-KGE-Hybrid - INFO - Num of triples 999
+2022-07-09 11:19:23,739 - text-KGE-Hybrid - INFO - 0.8088088088088088
+2022-07-09 11:19:23,746 - text-KGE-Hybrid - INFO -               precision    recall  f1-score   support
+
+           0       0.77      0.88      0.82       499
+           1       0.86      0.73      0.79       500
+
+    accuracy                           0.81       999
+   macro avg       0.82      0.81      0.81       999
+weighted avg       0.82      0.81      0.81       999
+
+2022-07-09 11:19:23,746 - text-KGE-Hybrid - INFO - Evaluation of Test data: TriplePrediction
+2022-07-09 11:19:23,747 - text-KGE-Hybrid - INFO - Num of triples 935
+2022-07-09 11:19:23,865 - text-KGE-Hybrid - INFO - 0.718716577540107
+2022-07-09 11:19:23,871 - text-KGE-Hybrid - INFO -               precision    recall  f1-score   support
+
+           0       0.69      0.78      0.73       466
+           1       0.75      0.66      0.70       469
+
+    accuracy                           0.72       935
+   macro avg       0.72      0.72      0.72       935
+weighted avg       0.72      0.72      0.72       935
+
+2022-07-09 11:19:23,872 - text-KGE-Hybrid - INFO - --- Training is completed  ---
+2022-07-09 11:19:23,872 - text-KGE-Hybrid - INFO - Store full model.
+2022-07-09 11:19:24,123 - text-KGE-Hybrid - INFO - Stored data.
+2022-07-09 11:19:24,123 - text-KGE-Hybrid - INFO - Total Runtime:0.446 minutes
+2022-07-09 11:19:25,919 - text-KGE-Hybrid - INFO - --- Parameters are parsed for training ---
+2022-07-09 11:19:26,678 - text-KGE-Hybrid - INFO -  Standard training starts: TextKGEHybridModel-labeling:TriplePrediction
+2022-07-09 11:19:26,679 - text-KGE-Hybrid - INFO - TextKGEHybridModel(
+  (loss): BCELoss()
+  (entity_embeddings): Embedding(1519, 100)
+  (relation_embeddings): Embedding(8, 100)
+  (sentence_embeddings_train): Embedding(1000, 2304)
+  (sentence_embeddings_test): Embedding(935, 2304)
+  (sentence_embeddings_valid): Embedding(50, 2304)
+  (kg_classification_layer): Sequential(
+    (0): Linear(in_features=300, out_features=2560, bias=True)
+    (1): BatchNorm1d(2560, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU()
+    (3): Dropout(p=0.5, inplace=False)
+    (4): Linear(in_features=2560, out_features=2560, bias=True)
+  )
+  (sentence_classification_layer): Sequential(
+    (0): Linear(in_features=2304, out_features=2560, bias=True)
+    (1): BatchNorm1d(2560, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU()
+    (3): Dropout(p=0.5, inplace=False)
+    (4): Linear(in_features=2560, out_features=2560, bias=True)
+  )
+  (final_classification_layer): Sequential(
+    (0): Linear(in_features=5120, out_features=2560, bias=True)
+    (1): BatchNorm1d(2560, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU()
+    (3): Dropout(p=0.5, inplace=False)
+    (4): Linear(in_features=2560, out_features=1, bias=True)
+  )
+)
+2022-07-09 11:19:53,296 - text-KGE-Hybrid - INFO - Evaluation of Train data: TriplePrediction
+2022-07-09 11:19:53,296 - text-KGE-Hybrid - INFO - Num of triples 1000
+2022-07-09 11:19:53,460 - text-KGE-Hybrid - INFO - 0.818
+2022-07-09 11:19:53,466 - text-KGE-Hybrid - INFO -               precision    recall  f1-score   support
+
+           0       0.87      0.74      0.80       500
+           1       0.78      0.89      0.83       500
+
+    accuracy                           0.82      1000
+   macro avg       0.83      0.82      0.82      1000
+weighted avg       0.83      0.82      0.82      1000
+
+2022-07-09 11:19:53,467 - text-KGE-Hybrid - INFO - Evaluation of Test data: TriplePrediction
+2022-07-09 11:19:53,467 - text-KGE-Hybrid - INFO - Num of triples 935
+2022-07-09 11:19:53,584 - text-KGE-Hybrid - INFO - 0.7026737967914438
+2022-07-09 11:19:53,590 - text-KGE-Hybrid - INFO -               precision    recall  f1-score   support
+
+           0       0.73      0.63      0.68       466
+           1       0.68      0.77      0.72       469
+
+    accuracy                           0.70       935
+   macro avg       0.71      0.70      0.70       935
+weighted avg       0.71      0.70      0.70       935
+
+2022-07-09 11:19:53,591 - text-KGE-Hybrid - INFO - --- Training is completed  ---
+2022-07-09 11:19:53,591 - text-KGE-Hybrid - INFO - Store full model.
+2022-07-09 11:19:53,842 - text-KGE-Hybrid - INFO - Stored data.
+2022-07-09 11:19:53,842 - text-KGE-Hybrid - INFO - Total Runtime:0.465 minutes
+2022-07-09 11:19:55,601 - text-KGE-Hybrid - INFO - --- Parameters are parsed for training ---
+2022-07-09 11:19:56,351 - text-KGE-Hybrid - INFO -  Standard training starts: TextKGEHybridModel-labeling:TriplePrediction
+2022-07-09 11:19:56,351 - text-KGE-Hybrid - INFO - TextKGEHybridModel(
+  (loss): BCELoss()
+  (entity_embeddings): Embedding(1503, 100)
+  (relation_embeddings): Embedding(8, 100)
+  (sentence_embeddings_train): Embedding(990, 2304)
+  (sentence_embeddings_test): Embedding(939, 2304)
+  (sentence_embeddings_valid): Embedding(50, 2304)
+  (kg_classification_layer): Sequential(
+    (0): Linear(in_features=300, out_features=2560, bias=True)
+    (1): BatchNorm1d(2560, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU()
+    (3): Dropout(p=0.5, inplace=False)
+    (4): Linear(in_features=2560, out_features=2560, bias=True)
+  )
+  (sentence_classification_layer): Sequential(
+    (0): Linear(in_features=2304, out_features=2560, bias=True)
+    (1): BatchNorm1d(2560, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU()
+    (3): Dropout(p=0.5, inplace=False)
+    (4): Linear(in_features=2560, out_features=2560, bias=True)
+  )
+  (final_classification_layer): Sequential(
+    (0): Linear(in_features=5120, out_features=2560, bias=True)
+    (1): BatchNorm1d(2560, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU()
+    (3): Dropout(p=0.5, inplace=False)
+    (4): Linear(in_features=2560, out_features=1, bias=True)
+  )
+)
+2022-07-09 11:20:23,180 - text-KGE-Hybrid - INFO - Evaluation of Train data: TriplePrediction
+2022-07-09 11:20:23,180 - text-KGE-Hybrid - INFO - Num of triples 990
+2022-07-09 11:20:23,338 - text-KGE-Hybrid - INFO - 0.807070707070707
+2022-07-09 11:20:23,344 - text-KGE-Hybrid - INFO -               precision    recall  f1-score   support
+
+           0       0.73      0.96      0.83       490
+           1       0.94      0.66      0.78       500
+
+    accuracy                           0.81       990
+   macro avg       0.84      0.81      0.80       990
+weighted avg       0.84      0.81      0.80       990
+
+2022-07-09 11:20:23,345 - text-KGE-Hybrid - INFO - Evaluation of Test data: TriplePrediction
+2022-07-09 11:20:23,345 - text-KGE-Hybrid - INFO - Num of triples 939
+2022-07-09 11:20:23,464 - text-KGE-Hybrid - INFO - 0.7401490947816827
+2022-07-09 11:20:23,470 - text-KGE-Hybrid - INFO -               precision    recall  f1-score   support
+
+           0       0.68      0.91      0.78       470
+           1       0.86      0.57      0.69       469
+
+    accuracy                           0.74       939
+   macro avg       0.77      0.74      0.73       939
+weighted avg       0.77      0.74      0.73       939
+
+2022-07-09 11:20:23,470 - text-KGE-Hybrid - INFO - --- Training is completed  ---
+2022-07-09 11:20:23,471 - text-KGE-Hybrid - INFO - Store full model.
+2022-07-09 11:20:23,713 - text-KGE-Hybrid - INFO - Stored data.
+2022-07-09 11:20:23,713 - text-KGE-Hybrid - INFO - Total Runtime:0.469 minutes
+2022-07-09 11:20:25,597 - text-KGE-Hybrid - INFO - --- Parameters are parsed for training ---
+2022-07-09 11:20:26,387 - text-KGE-Hybrid - INFO -  Standard training starts: TextKGEHybridModel-labeling:TriplePrediction
+2022-07-09 11:20:26,388 - text-KGE-Hybrid - INFO - TextKGEHybridModel(
+  (loss): BCELoss()
+  (entity_embeddings): Embedding(1584, 100)
+  (relation_embeddings): Embedding(8, 100)
+  (sentence_embeddings_train): Embedding(1025, 2304)
+  (sentence_embeddings_test): Embedding(972, 2304)
+  (sentence_embeddings_valid): Embedding(52, 2304)
+  (kg_classification_layer): Sequential(
+    (0): Linear(in_features=300, out_features=2560, bias=True)
+    (1): BatchNorm1d(2560, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU()
+    (3): Dropout(p=0.5, inplace=False)
+    (4): Linear(in_features=2560, out_features=2560, bias=True)
+  )
+  (sentence_classification_layer): Sequential(
+    (0): Linear(in_features=2304, out_features=2560, bias=True)
+    (1): BatchNorm1d(2560, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU()
+    (3): Dropout(p=0.5, inplace=False)
+    (4): Linear(in_features=2560, out_features=2560, bias=True)
+  )
+  (final_classification_layer): Sequential(
+    (0): Linear(in_features=5120, out_features=2560, bias=True)
+    (1): BatchNorm1d(2560, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU()
+    (3): Dropout(p=0.5, inplace=False)
+    (4): Linear(in_features=2560, out_features=1, bias=True)
+  )
+)
+2022-07-09 11:20:51,086 - text-KGE-Hybrid - INFO - Evaluation of Train data: TriplePrediction
+2022-07-09 11:20:51,087 - text-KGE-Hybrid - INFO - Num of triples 1025
+2022-07-09 11:20:51,256 - text-KGE-Hybrid - INFO - 0.7658536585365854
+2022-07-09 11:20:51,263 - text-KGE-Hybrid - INFO -               precision    recall  f1-score   support
+
+           0       0.75      0.81      0.78       525
+           1       0.79      0.72      0.75       500
+
+    accuracy                           0.77      1025
+   macro avg       0.77      0.76      0.76      1025
+weighted avg       0.77      0.77      0.77      1025
+
+2022-07-09 11:20:51,264 - text-KGE-Hybrid - INFO - Evaluation of Test data: TriplePrediction
+2022-07-09 11:20:51,264 - text-KGE-Hybrid - INFO - Num of triples 972
+2022-07-09 11:20:51,386 - text-KGE-Hybrid - INFO - 0.6934156378600823
+2022-07-09 11:20:51,392 - text-KGE-Hybrid - INFO -               precision    recall  f1-score   support
+
+           0       0.68      0.76      0.72       503
+           1       0.71      0.62      0.66       469
+
+    accuracy                           0.69       972
+   macro avg       0.70      0.69      0.69       972
+weighted avg       0.69      0.69      0.69       972
+
+2022-07-09 11:20:51,392 - text-KGE-Hybrid - INFO - --- Training is completed  ---
+2022-07-09 11:20:51,393 - text-KGE-Hybrid - INFO - Store full model.
+2022-07-09 11:20:51,629 - text-KGE-Hybrid - INFO - Stored data.
+2022-07-09 11:20:51,630 - text-KGE-Hybrid - INFO - Total Runtime:0.434 minutes
+2022-07-09 11:20:53,572 - text-KGE-Hybrid - INFO - --- Parameters are parsed for training ---
+2022-07-09 11:20:54,350 - text-KGE-Hybrid - INFO -  Standard training starts: TextKGEHybridModel-labeling:TriplePrediction
+2022-07-09 11:20:54,350 - text-KGE-Hybrid - INFO - TextKGEHybridModel(
+  (loss): BCELoss()
+  (entity_embeddings): Embedding(1614, 100)
+  (relation_embeddings): Embedding(8, 100)
+  (sentence_embeddings_train): Embedding(1061, 2304)
+  (sentence_embeddings_test): Embedding(979, 2304)
+  (sentence_embeddings_valid): Embedding(52, 2304)
+  (kg_classification_layer): Sequential(
+    (0): Linear(in_features=300, out_features=2560, bias=True)
+    (1): BatchNorm1d(2560, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU()
+    (3): Dropout(p=0.5, inplace=False)
+    (4): Linear(in_features=2560, out_features=2560, bias=True)
+  )
+  (sentence_classification_layer): Sequential(
+    (0): Linear(in_features=2304, out_features=2560, bias=True)
+    (1): BatchNorm1d(2560, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU()
+    (3): Dropout(p=0.5, inplace=False)
+    (4): Linear(in_features=2560, out_features=2560, bias=True)
+  )
+  (final_classification_layer): Sequential(
+    (0): Linear(in_features=5120, out_features=2560, bias=True)
+    (1): BatchNorm1d(2560, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU()
+    (3): Dropout(p=0.5, inplace=False)
+    (4): Linear(in_features=2560, out_features=1, bias=True)
+  )
+)
+2022-07-09 11:21:20,975 - text-KGE-Hybrid - INFO - Evaluation of Train data: TriplePrediction
+2022-07-09 11:21:20,976 - text-KGE-Hybrid - INFO - Num of triples 1061
+2022-07-09 11:21:21,123 - text-KGE-Hybrid - INFO - 0.9660697455230914
+2022-07-09 11:21:21,129 - text-KGE-Hybrid - INFO -               precision    recall  f1-score   support
+
+           0       0.99      0.94      0.97       561
+           1       0.94      0.99      0.96       500
+
+    accuracy                           0.97      1061
+   macro avg       0.97      0.97      0.97      1061
+weighted avg       0.97      0.97      0.97      1061
+
+2022-07-09 11:21:21,130 - text-KGE-Hybrid - INFO - Evaluation of Test data: TriplePrediction
+2022-07-09 11:21:21,130 - text-KGE-Hybrid - INFO - Num of triples 979
+2022-07-09 11:21:21,240 - text-KGE-Hybrid - INFO - 0.8937691521961185
+2022-07-09 11:21:21,247 - text-KGE-Hybrid - INFO -               precision    recall  f1-score   support
+
+           0       0.95      0.84      0.89       510
+           1       0.85      0.95      0.90       469
+
+    accuracy                           0.89       979
+   macro avg       0.90      0.90      0.89       979
+weighted avg       0.90      0.89      0.89       979
+
+2022-07-09 11:21:21,247 - text-KGE-Hybrid - INFO - --- Training is completed  ---
+2022-07-09 11:21:21,248 - text-KGE-Hybrid - INFO - Store full model.
+2022-07-09 11:21:21,495 - text-KGE-Hybrid - INFO - Stored data.
+2022-07-09 11:21:21,495 - text-KGE-Hybrid - INFO - Total Runtime:0.465 minutes
+2022-07-09 11:47:52,961 - text-KGE-Hybrid - INFO - --- Parameters are parsed for training ---
+2022-07-09 11:47:53,797 - text-KGE-Hybrid - INFO -  Standard training starts: TextKGEHybridModel-labeling:TriplePrediction
+2022-07-09 11:47:53,798 - text-KGE-Hybrid - INFO - TextKGEHybridModel(
+  (loss): BCELoss()
+  (entity_embeddings): Embedding(1707, 100)
+  (relation_embeddings): Embedding(8, 100)
+  (sentence_embeddings_train): Embedding(1032, 2304)
+  (sentence_embeddings_test): Embedding(947, 2304)
+  (sentence_embeddings_valid): Embedding(50, 2304)
+  (kg_classification_layer): Sequential(
+    (0): Linear(in_features=300, out_features=2560, bias=True)
+    (1): BatchNorm1d(2560, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU()
+    (3): Dropout(p=0.5, inplace=False)
+    (4): Linear(in_features=2560, out_features=2560, bias=True)
+  )
+  (sentence_classification_layer): Sequential(
+    (0): Linear(in_features=2304, out_features=2560, bias=True)
+    (1): BatchNorm1d(2560, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU()
+    (3): Dropout(p=0.5, inplace=False)
+    (4): Linear(in_features=2560, out_features=2560, bias=True)
+  )
+  (final_classification_layer): Sequential(
+    (0): Linear(in_features=5120, out_features=2560, bias=True)
+    (1): BatchNorm1d(2560, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU()
+    (3): Dropout(p=0.5, inplace=False)
+    (4): Linear(in_features=2560, out_features=1, bias=True)
+  )
+)
+2022-07-09 11:48:45,222 - text-KGE-Hybrid - INFO - Evaluation of Train data: TriplePrediction
+2022-07-09 11:48:45,222 - text-KGE-Hybrid - INFO - Num of triples 1032
+2022-07-09 11:48:45,390 - text-KGE-Hybrid - INFO - 0.9767441860465116
+2022-07-09 11:48:45,397 - text-KGE-Hybrid - INFO -               precision    recall  f1-score   support
+
+           0       1.00      0.95      0.98       532
+           1       0.95      1.00      0.98       500
+
+    accuracy                           0.98      1032
+   macro avg       0.98      0.98      0.98      1032
+weighted avg       0.98      0.98      0.98      1032
+
+2022-07-09 11:48:45,398 - text-KGE-Hybrid - INFO - Evaluation of Test data: TriplePrediction
+2022-07-09 11:48:45,398 - text-KGE-Hybrid - INFO - Num of triples 947
+2022-07-09 11:48:45,526 - text-KGE-Hybrid - INFO - 0.9577613516367476
+2022-07-09 11:48:45,532 - text-KGE-Hybrid - INFO -               precision    recall  f1-score   support
+
+           0       0.99      0.92      0.96       478
+           1       0.93      0.99      0.96       469
+
+    accuracy                           0.96       947
+   macro avg       0.96      0.96      0.96       947
+weighted avg       0.96      0.96      0.96       947
+
+2022-07-09 11:48:45,533 - text-KGE-Hybrid - INFO - --- Training is completed  ---
+2022-07-09 11:48:45,533 - text-KGE-Hybrid - INFO - Store full model.
+2022-07-09 11:48:45,803 - text-KGE-Hybrid - INFO - Stored data.
+2022-07-09 11:48:45,804 - text-KGE-Hybrid - INFO - Total Runtime:0.881 minutes
+2022-07-09 11:48:47,597 - text-KGE-Hybrid - INFO - --- Parameters are parsed for training ---
+2022-07-09 11:48:48,369 - text-KGE-Hybrid - INFO -  Standard training starts: TextKGEHybridModel-labeling:TriplePrediction
+2022-07-09 11:48:48,370 - text-KGE-Hybrid - INFO - TextKGEHybridModel(
+  (loss): BCELoss()
+  (entity_embeddings): Embedding(1512, 100)
+  (relation_embeddings): Embedding(8, 100)
+  (sentence_embeddings_train): Embedding(999, 2304)
+  (sentence_embeddings_test): Embedding(935, 2304)
+  (sentence_embeddings_valid): Embedding(50, 2304)
+  (kg_classification_layer): Sequential(
+    (0): Linear(in_features=300, out_features=2560, bias=True)
+    (1): BatchNorm1d(2560, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU()
+    (3): Dropout(p=0.5, inplace=False)
+    (4): Linear(in_features=2560, out_features=2560, bias=True)
+  )
+  (sentence_classification_layer): Sequential(
+    (0): Linear(in_features=2304, out_features=2560, bias=True)
+    (1): BatchNorm1d(2560, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU()
+    (3): Dropout(p=0.5, inplace=False)
+    (4): Linear(in_features=2560, out_features=2560, bias=True)
+  )
+  (final_classification_layer): Sequential(
+    (0): Linear(in_features=5120, out_features=2560, bias=True)
+    (1): BatchNorm1d(2560, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU()
+    (3): Dropout(p=0.5, inplace=False)
+    (4): Linear(in_features=2560, out_features=1, bias=True)
+  )
+)
+2022-07-09 11:49:39,922 - text-KGE-Hybrid - INFO - Evaluation of Train data: TriplePrediction
+2022-07-09 11:49:39,923 - text-KGE-Hybrid - INFO - Num of triples 999
+2022-07-09 11:49:40,106 - text-KGE-Hybrid - INFO - 0.8028028028028028
+2022-07-09 11:49:40,113 - text-KGE-Hybrid - INFO -               precision    recall  f1-score   support
+
+           0       0.83      0.76      0.79       499
+           1       0.78      0.84      0.81       500
+
+    accuracy                           0.80       999
+   macro avg       0.80      0.80      0.80       999
+weighted avg       0.80      0.80      0.80       999
+
+2022-07-09 11:49:40,113 - text-KGE-Hybrid - INFO - Evaluation of Test data: TriplePrediction
+2022-07-09 11:49:40,114 - text-KGE-Hybrid - INFO - Num of triples 935
+2022-07-09 11:49:40,234 - text-KGE-Hybrid - INFO - 0.7155080213903743
+2022-07-09 11:49:40,240 - text-KGE-Hybrid - INFO -               precision    recall  f1-score   support
+
+           0       0.73      0.68      0.70       466
+           1       0.70      0.75      0.73       469
+
+    accuracy                           0.72       935
+   macro avg       0.72      0.72      0.72       935
+weighted avg       0.72      0.72      0.72       935
+
+2022-07-09 11:49:40,241 - text-KGE-Hybrid - INFO - --- Training is completed  ---
+2022-07-09 11:49:40,241 - text-KGE-Hybrid - INFO - Store full model.
+2022-07-09 11:49:40,500 - text-KGE-Hybrid - INFO - Stored data.
+2022-07-09 11:49:40,501 - text-KGE-Hybrid - INFO - Total Runtime:0.882 minutes
+2022-07-09 11:49:42,306 - text-KGE-Hybrid - INFO - --- Parameters are parsed for training ---
+2022-07-09 11:49:43,053 - text-KGE-Hybrid - INFO -  Standard training starts: TextKGEHybridModel-labeling:TriplePrediction
+2022-07-09 11:49:43,054 - text-KGE-Hybrid - INFO - TextKGEHybridModel(
+  (loss): BCELoss()
+  (entity_embeddings): Embedding(1519, 100)
+  (relation_embeddings): Embedding(8, 100)
+  (sentence_embeddings_train): Embedding(1000, 2304)
+  (sentence_embeddings_test): Embedding(935, 2304)
+  (sentence_embeddings_valid): Embedding(50, 2304)
+  (kg_classification_layer): Sequential(
+    (0): Linear(in_features=300, out_features=2560, bias=True)
+    (1): BatchNorm1d(2560, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU()
+    (3): Dropout(p=0.5, inplace=False)
+    (4): Linear(in_features=2560, out_features=2560, bias=True)
+  )
+  (sentence_classification_layer): Sequential(
+    (0): Linear(in_features=2304, out_features=2560, bias=True)
+    (1): BatchNorm1d(2560, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU()
+    (3): Dropout(p=0.5, inplace=False)
+    (4): Linear(in_features=2560, out_features=2560, bias=True)
+  )
+  (final_classification_layer): Sequential(
+    (0): Linear(in_features=5120, out_features=2560, bias=True)
+    (1): BatchNorm1d(2560, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU()
+    (3): Dropout(p=0.5, inplace=False)
+    (4): Linear(in_features=2560, out_features=1, bias=True)
+  )
+)
+2022-07-09 11:50:55,402 - text-KGE-Hybrid - INFO - Evaluation of Train data: TriplePrediction
+2022-07-09 11:50:55,403 - text-KGE-Hybrid - INFO - Num of triples 1000
+2022-07-09 11:50:55,572 - text-KGE-Hybrid - INFO - 0.86
+2022-07-09 11:50:55,579 - text-KGE-Hybrid - INFO -               precision    recall  f1-score   support
+
+           0       0.82      0.92      0.87       500
+           1       0.91      0.80      0.85       500
+
+    accuracy                           0.86      1000
+   macro avg       0.87      0.86      0.86      1000
+weighted avg       0.87      0.86      0.86      1000
+
+2022-07-09 11:50:55,580 - text-KGE-Hybrid - INFO - Evaluation of Test data: TriplePrediction
+2022-07-09 11:50:55,580 - text-KGE-Hybrid - INFO - Num of triples 935
+2022-07-09 11:50:55,700 - text-KGE-Hybrid - INFO - 0.7486631016042781
+2022-07-09 11:50:55,707 - text-KGE-Hybrid - INFO -               precision    recall  f1-score   support
+
+           0       0.72      0.82      0.76       466
+           1       0.79      0.68      0.73       469
+
+    accuracy                           0.75       935
+   macro avg       0.75      0.75      0.75       935
+weighted avg       0.75      0.75      0.75       935
+
+2022-07-09 11:50:55,708 - text-KGE-Hybrid - INFO - --- Training is completed  ---
+2022-07-09 11:50:55,708 - text-KGE-Hybrid - INFO - Store full model.
+2022-07-09 11:50:55,962 - text-KGE-Hybrid - INFO - Stored data.
+2022-07-09 11:50:55,963 - text-KGE-Hybrid - INFO - Total Runtime:1.228 minutes
+2022-07-09 11:50:57,824 - text-KGE-Hybrid - INFO - --- Parameters are parsed for training ---
+2022-07-09 11:50:58,585 - text-KGE-Hybrid - INFO -  Standard training starts: TextKGEHybridModel-labeling:TriplePrediction
+2022-07-09 11:50:58,586 - text-KGE-Hybrid - INFO - TextKGEHybridModel(
+  (loss): BCELoss()
+  (entity_embeddings): Embedding(1503, 100)
+  (relation_embeddings): Embedding(8, 100)
+  (sentence_embeddings_train): Embedding(990, 2304)
+  (sentence_embeddings_test): Embedding(939, 2304)
+  (sentence_embeddings_valid): Embedding(50, 2304)
+  (kg_classification_layer): Sequential(
+    (0): Linear(in_features=300, out_features=2560, bias=True)
+    (1): BatchNorm1d(2560, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU()
+    (3): Dropout(p=0.5, inplace=False)
+    (4): Linear(in_features=2560, out_features=2560, bias=True)
+  )
+  (sentence_classification_layer): Sequential(
+    (0): Linear(in_features=2304, out_features=2560, bias=True)
+    (1): BatchNorm1d(2560, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU()
+    (3): Dropout(p=0.5, inplace=False)
+    (4): Linear(in_features=2560, out_features=2560, bias=True)
+  )
+  (final_classification_layer): Sequential(
+    (0): Linear(in_features=5120, out_features=2560, bias=True)
+    (1): BatchNorm1d(2560, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU()
+    (3): Dropout(p=0.5, inplace=False)
+    (4): Linear(in_features=2560, out_features=1, bias=True)
+  )
+)
+2022-07-09 11:51:49,776 - text-KGE-Hybrid - INFO - Evaluation of Train data: TriplePrediction
+2022-07-09 11:51:49,777 - text-KGE-Hybrid - INFO - Num of triples 990
+2022-07-09 11:51:49,941 - text-KGE-Hybrid - INFO - 0.8585858585858586
+2022-07-09 11:51:49,948 - text-KGE-Hybrid - INFO -               precision    recall  f1-score   support
+
+           0       0.81      0.94      0.87       490
+           1       0.93      0.78      0.85       500
+
+    accuracy                           0.86       990
+   macro avg       0.87      0.86      0.86       990
+weighted avg       0.87      0.86      0.86       990
+
+2022-07-09 11:51:49,949 - text-KGE-Hybrid - INFO - Evaluation of Test data: TriplePrediction
+2022-07-09 11:51:49,950 - text-KGE-Hybrid - INFO - Num of triples 939
+2022-07-09 11:51:50,073 - text-KGE-Hybrid - INFO - 0.7433439829605963
+2022-07-09 11:51:50,080 - text-KGE-Hybrid - INFO -               precision    recall  f1-score   support
+
+           0       0.71      0.82      0.76       470
+           1       0.79      0.66      0.72       469
+
+    accuracy                           0.74       939
+   macro avg       0.75      0.74      0.74       939
+weighted avg       0.75      0.74      0.74       939
+
+2022-07-09 11:51:50,080 - text-KGE-Hybrid - INFO - --- Training is completed  ---
+2022-07-09 11:51:50,081 - text-KGE-Hybrid - INFO - Store full model.
+2022-07-09 11:51:50,324 - text-KGE-Hybrid - INFO - Stored data.
+2022-07-09 11:51:50,324 - text-KGE-Hybrid - INFO - Total Runtime:0.875 minutes
+2022-07-09 11:51:52,147 - text-KGE-Hybrid - INFO - --- Parameters are parsed for training ---
+2022-07-09 11:51:52,938 - text-KGE-Hybrid - INFO -  Standard training starts: TextKGEHybridModel-labeling:TriplePrediction
+2022-07-09 11:51:52,939 - text-KGE-Hybrid - INFO - TextKGEHybridModel(
+  (loss): BCELoss()
+  (entity_embeddings): Embedding(1584, 100)
+  (relation_embeddings): Embedding(8, 100)
+  (sentence_embeddings_train): Embedding(1025, 2304)
+  (sentence_embeddings_test): Embedding(972, 2304)
+  (sentence_embeddings_valid): Embedding(52, 2304)
+  (kg_classification_layer): Sequential(
+    (0): Linear(in_features=300, out_features=2560, bias=True)
+    (1): BatchNorm1d(2560, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU()
+    (3): Dropout(p=0.5, inplace=False)
+    (4): Linear(in_features=2560, out_features=2560, bias=True)
+  )
+  (sentence_classification_layer): Sequential(
+    (0): Linear(in_features=2304, out_features=2560, bias=True)
+    (1): BatchNorm1d(2560, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU()
+    (3): Dropout(p=0.5, inplace=False)
+    (4): Linear(in_features=2560, out_features=2560, bias=True)
+  )
+  (final_classification_layer): Sequential(
+    (0): Linear(in_features=5120, out_features=2560, bias=True)
+    (1): BatchNorm1d(2560, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU()
+    (3): Dropout(p=0.5, inplace=False)
+    (4): Linear(in_features=2560, out_features=1, bias=True)
+  )
+)
+2022-07-09 11:52:42,631 - text-KGE-Hybrid - INFO - Evaluation of Train data: TriplePrediction
+2022-07-09 11:52:42,632 - text-KGE-Hybrid - INFO - Num of triples 1025
+2022-07-09 11:52:42,798 - text-KGE-Hybrid - INFO - 0.7951219512195122
+2022-07-09 11:52:42,805 - text-KGE-Hybrid - INFO -               precision    recall  f1-score   support
+
+           0       0.77      0.85      0.81       525
+           1       0.82      0.74      0.78       500
+
+    accuracy                           0.80      1025
+   macro avg       0.80      0.79      0.79      1025
+weighted avg       0.80      0.80      0.79      1025
+
+2022-07-09 11:52:42,805 - text-KGE-Hybrid - INFO - Evaluation of Test data: TriplePrediction
+2022-07-09 11:52:42,806 - text-KGE-Hybrid - INFO - Num of triples 972
+2022-07-09 11:52:42,926 - text-KGE-Hybrid - INFO - 0.7047325102880658
+2022-07-09 11:52:42,933 - text-KGE-Hybrid - INFO -               precision    recall  f1-score   support
+
+           0       0.70      0.75      0.72       503
+           1       0.71      0.66      0.68       469
+
+    accuracy                           0.70       972
+   macro avg       0.71      0.70      0.70       972
+weighted avg       0.70      0.70      0.70       972
+
+2022-07-09 11:52:42,934 - text-KGE-Hybrid - INFO - --- Training is completed  ---
+2022-07-09 11:52:42,934 - text-KGE-Hybrid - INFO - Store full model.
+2022-07-09 11:52:43,187 - text-KGE-Hybrid - INFO - Stored data.
+2022-07-09 11:52:43,188 - text-KGE-Hybrid - INFO - Total Runtime:0.851 minutes
+2022-07-09 11:52:45,191 - text-KGE-Hybrid - INFO - --- Parameters are parsed for training ---
+2022-07-09 11:52:45,967 - text-KGE-Hybrid - INFO -  Standard training starts: TextKGEHybridModel-labeling:TriplePrediction
+2022-07-09 11:52:45,968 - text-KGE-Hybrid - INFO - TextKGEHybridModel(
+  (loss): BCELoss()
+  (entity_embeddings): Embedding(1614, 100)
+  (relation_embeddings): Embedding(8, 100)
+  (sentence_embeddings_train): Embedding(1061, 2304)
+  (sentence_embeddings_test): Embedding(979, 2304)
+  (sentence_embeddings_valid): Embedding(52, 2304)
+  (kg_classification_layer): Sequential(
+    (0): Linear(in_features=300, out_features=2560, bias=True)
+    (1): BatchNorm1d(2560, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU()
+    (3): Dropout(p=0.5, inplace=False)
+    (4): Linear(in_features=2560, out_features=2560, bias=True)
+  )
+  (sentence_classification_layer): Sequential(
+    (0): Linear(in_features=2304, out_features=2560, bias=True)
+    (1): BatchNorm1d(2560, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU()
+    (3): Dropout(p=0.5, inplace=False)
+    (4): Linear(in_features=2560, out_features=2560, bias=True)
+  )
+  (final_classification_layer): Sequential(
+    (0): Linear(in_features=5120, out_features=2560, bias=True)
+    (1): BatchNorm1d(2560, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU()
+    (3): Dropout(p=0.5, inplace=False)
+    (4): Linear(in_features=2560, out_features=1, bias=True)
+  )
+)
+2022-07-09 11:53:37,076 - text-KGE-Hybrid - INFO - Evaluation of Train data: TriplePrediction
+2022-07-09 11:53:37,077 - text-KGE-Hybrid - INFO - Num of triples 1061
+2022-07-09 11:53:37,256 - text-KGE-Hybrid - INFO - 0.9632422243166824
+2022-07-09 11:53:37,263 - text-KGE-Hybrid - INFO -               precision    recall  f1-score   support
+
+           0       0.98      0.95      0.96       561
+           1       0.94      0.98      0.96       500
+
+    accuracy                           0.96      1061
+   macro avg       0.96      0.96      0.96      1061
+weighted avg       0.96      0.96      0.96      1061
+
+2022-07-09 11:53:37,264 - text-KGE-Hybrid - INFO - Evaluation of Test data: TriplePrediction
+2022-07-09 11:53:37,264 - text-KGE-Hybrid - INFO - Num of triples 979
+2022-07-09 11:53:37,386 - text-KGE-Hybrid - INFO - 0.8886618998978549
+2022-07-09 11:53:37,393 - text-KGE-Hybrid - INFO -               precision    recall  f1-score   support
+
+           0       0.94      0.84      0.89       510
+           1       0.84      0.95      0.89       469
+
+    accuracy                           0.89       979
+   macro avg       0.89      0.89      0.89       979
+weighted avg       0.89      0.89      0.89       979
+
+2022-07-09 11:53:37,393 - text-KGE-Hybrid - INFO - --- Training is completed  ---
+2022-07-09 11:53:37,394 - text-KGE-Hybrid - INFO - Store full model.
+2022-07-09 11:53:37,641 - text-KGE-Hybrid - INFO - Stored data.
+2022-07-09 11:53:37,642 - text-KGE-Hybrid - INFO - Total Runtime:0.874 minutes
+2022-07-09 12:43:46,653 - text-KGE-Hybrid - INFO - --- Parameters are parsed for training ---
+2022-07-09 12:43:47,482 - text-KGE-Hybrid - INFO -  Standard training starts: TextKGEHybridModel-labeling:TriplePrediction
+2022-07-09 12:43:47,483 - text-KGE-Hybrid - INFO - TextKGEHybridModel(
+  (loss): BCELoss()
+  (entity_embeddings): Embedding(1707, 100)
+  (relation_embeddings): Embedding(8, 100)
+  (sentence_embeddings_train): Embedding(1032, 2304)
+  (sentence_embeddings_test): Embedding(947, 2304)
+  (sentence_embeddings_valid): Embedding(50, 2304)
+  (kg_classification_layer): Sequential(
+    (0): Linear(in_features=300, out_features=2560, bias=True)
+    (1): BatchNorm1d(2560, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU()
+    (3): Dropout(p=0.5, inplace=False)
+    (4): Linear(in_features=2560, out_features=2560, bias=True)
+  )
+  (sentence_classification_layer): Sequential(
+    (0): Linear(in_features=2304, out_features=2560, bias=True)
+    (1): BatchNorm1d(2560, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU()
+    (3): Dropout(p=0.5, inplace=False)
+    (4): Linear(in_features=2560, out_features=2560, bias=True)
+  )
+  (final_classification_layer): Sequential(
+    (0): Linear(in_features=5120, out_features=2560, bias=True)
+    (1): BatchNorm1d(2560, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU()
+    (3): Dropout(p=0.5, inplace=False)
+    (4): Linear(in_features=2560, out_features=1, bias=True)
+  )
+)
+2022-07-09 12:45:29,453 - text-KGE-Hybrid - INFO - Evaluation of Train data: TriplePrediction
+2022-07-09 12:45:29,454 - text-KGE-Hybrid - INFO - Num of triples 1032
+2022-07-09 12:45:29,624 - text-KGE-Hybrid - INFO - 0.9912790697674418
+2022-07-09 12:45:29,630 - text-KGE-Hybrid - INFO -               precision    recall  f1-score   support
+
+           0       0.98      1.00      0.99       532
+           1       1.00      0.98      0.99       500
+
+    accuracy                           0.99      1032
+   macro avg       0.99      0.99      0.99      1032
+weighted avg       0.99      0.99      0.99      1032
+
+2022-07-09 12:45:29,631 - text-KGE-Hybrid - INFO - Evaluation of Test data: TriplePrediction
+2022-07-09 12:45:29,632 - text-KGE-Hybrid - INFO - Num of triples 947
+2022-07-09 12:45:29,752 - text-KGE-Hybrid - INFO - 0.9619852164730729
+2022-07-09 12:45:29,759 - text-KGE-Hybrid - INFO -               precision    recall  f1-score   support
+
+           0       0.95      0.98      0.96       478
+           1       0.98      0.94      0.96       469
+
+    accuracy                           0.96       947
+   macro avg       0.96      0.96      0.96       947
+weighted avg       0.96      0.96      0.96       947
+
+2022-07-09 12:45:29,760 - text-KGE-Hybrid - INFO - --- Training is completed  ---
+2022-07-09 12:45:29,760 - text-KGE-Hybrid - INFO - Store full model.
+2022-07-09 12:45:30,030 - text-KGE-Hybrid - INFO - Stored data.
+2022-07-09 12:45:30,031 - text-KGE-Hybrid - INFO - Total Runtime:1.723 minutes
+2022-07-09 12:45:31,825 - text-KGE-Hybrid - INFO - --- Parameters are parsed for training ---
+2022-07-09 12:45:32,577 - text-KGE-Hybrid - INFO -  Standard training starts: TextKGEHybridModel-labeling:TriplePrediction
+2022-07-09 12:45:32,578 - text-KGE-Hybrid - INFO - TextKGEHybridModel(
+  (loss): BCELoss()
+  (entity_embeddings): Embedding(1512, 100)
+  (relation_embeddings): Embedding(8, 100)
+  (sentence_embeddings_train): Embedding(999, 2304)
+  (sentence_embeddings_test): Embedding(935, 2304)
+  (sentence_embeddings_valid): Embedding(50, 2304)
+  (kg_classification_layer): Sequential(
+    (0): Linear(in_features=300, out_features=2560, bias=True)
+    (1): BatchNorm1d(2560, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU()
+    (3): Dropout(p=0.5, inplace=False)
+    (4): Linear(in_features=2560, out_features=2560, bias=True)
+  )
+  (sentence_classification_layer): Sequential(
+    (0): Linear(in_features=2304, out_features=2560, bias=True)
+    (1): BatchNorm1d(2560, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU()
+    (3): Dropout(p=0.5, inplace=False)
+    (4): Linear(in_features=2560, out_features=2560, bias=True)
+  )
+  (final_classification_layer): Sequential(
+    (0): Linear(in_features=5120, out_features=2560, bias=True)
+    (1): BatchNorm1d(2560, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU()
+    (3): Dropout(p=0.5, inplace=False)
+    (4): Linear(in_features=2560, out_features=1, bias=True)
+  )
+)
+2022-07-09 12:47:16,343 - text-KGE-Hybrid - INFO - Evaluation of Train data: TriplePrediction
+2022-07-09 12:47:16,344 - text-KGE-Hybrid - INFO - Num of triples 999
+2022-07-09 12:47:16,508 - text-KGE-Hybrid - INFO - 0.8748748748748749
+2022-07-09 12:47:16,515 - text-KGE-Hybrid - INFO -               precision    recall  f1-score   support
+
+           0       0.83      0.94      0.88       499
+           1       0.93      0.81      0.87       500
+
+    accuracy                           0.87       999
+   macro avg       0.88      0.87      0.87       999
+weighted avg       0.88      0.87      0.87       999
+
+2022-07-09 12:47:16,516 - text-KGE-Hybrid - INFO - Evaluation of Test data: TriplePrediction
+2022-07-09 12:47:16,517 - text-KGE-Hybrid - INFO - Num of triples 935
+2022-07-09 12:47:16,638 - text-KGE-Hybrid - INFO - 0.7315508021390374
+2022-07-09 12:47:16,645 - text-KGE-Hybrid - INFO -               precision    recall  f1-score   support
+
+           0       0.70      0.79      0.75       466
+           1       0.77      0.67      0.71       469
+
+    accuracy                           0.73       935
+   macro avg       0.74      0.73      0.73       935
+weighted avg       0.74      0.73      0.73       935
+
+2022-07-09 12:47:16,645 - text-KGE-Hybrid - INFO - --- Training is completed  ---
+2022-07-09 12:47:16,646 - text-KGE-Hybrid - INFO - Store full model.
+2022-07-09 12:47:16,920 - text-KGE-Hybrid - INFO - Stored data.
+2022-07-09 12:47:16,920 - text-KGE-Hybrid - INFO - Total Runtime:1.752 minutes
+2022-07-09 12:47:18,713 - text-KGE-Hybrid - INFO - --- Parameters are parsed for training ---
+2022-07-09 12:47:19,465 - text-KGE-Hybrid - INFO -  Standard training starts: TextKGEHybridModel-labeling:TriplePrediction
+2022-07-09 12:47:19,466 - text-KGE-Hybrid - INFO - TextKGEHybridModel(
+  (loss): BCELoss()
+  (entity_embeddings): Embedding(1519, 100)
+  (relation_embeddings): Embedding(8, 100)
+  (sentence_embeddings_train): Embedding(1000, 2304)
+  (sentence_embeddings_test): Embedding(935, 2304)
+  (sentence_embeddings_valid): Embedding(50, 2304)
+  (kg_classification_layer): Sequential(
+    (0): Linear(in_features=300, out_features=2560, bias=True)
+    (1): BatchNorm1d(2560, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU()
+    (3): Dropout(p=0.5, inplace=False)
+    (4): Linear(in_features=2560, out_features=2560, bias=True)
+  )
+  (sentence_classification_layer): Sequential(
+    (0): Linear(in_features=2304, out_features=2560, bias=True)
+    (1): BatchNorm1d(2560, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU()
+    (3): Dropout(p=0.5, inplace=False)
+    (4): Linear(in_features=2560, out_features=2560, bias=True)
+  )
+  (final_classification_layer): Sequential(
+    (0): Linear(in_features=5120, out_features=2560, bias=True)
+    (1): BatchNorm1d(2560, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU()
+    (3): Dropout(p=0.5, inplace=False)
+    (4): Linear(in_features=2560, out_features=1, bias=True)
+  )
+)
+2022-07-09 12:49:11,002 - text-KGE-Hybrid - INFO - Evaluation of Train data: TriplePrediction
+2022-07-09 12:49:11,003 - text-KGE-Hybrid - INFO - Num of triples 1000
+2022-07-09 12:49:11,172 - text-KGE-Hybrid - INFO - 0.854
+2022-07-09 12:49:11,179 - text-KGE-Hybrid - INFO -               precision    recall  f1-score   support
+
+           0       0.78      0.98      0.87       500
+           1       0.97      0.73      0.83       500
+
+    accuracy                           0.85      1000
+   macro avg       0.88      0.85      0.85      1000
+weighted avg       0.88      0.85      0.85      1000
+
+2022-07-09 12:49:11,180 - text-KGE-Hybrid - INFO - Evaluation of Test data: TriplePrediction
+2022-07-09 12:49:11,180 - text-KGE-Hybrid - INFO - Num of triples 935
+2022-07-09 12:49:11,307 - text-KGE-Hybrid - INFO - 0.7390374331550802
+2022-07-09 12:49:11,313 - text-KGE-Hybrid - INFO -               precision    recall  f1-score   support
+
+           0       0.69      0.88      0.77       466
+           1       0.83      0.60      0.70       469
+
+    accuracy                           0.74       935
+   macro avg       0.76      0.74      0.73       935
+weighted avg       0.76      0.74      0.73       935
+
+2022-07-09 12:49:11,314 - text-KGE-Hybrid - INFO - --- Training is completed  ---
+2022-07-09 12:49:11,315 - text-KGE-Hybrid - INFO - Store full model.
+2022-07-09 12:49:11,590 - text-KGE-Hybrid - INFO - Stored data.
+2022-07-09 12:49:11,591 - text-KGE-Hybrid - INFO - Total Runtime:1.881 minutes
+2022-07-09 12:49:13,456 - text-KGE-Hybrid - INFO - --- Parameters are parsed for training ---
+2022-07-09 12:49:14,239 - text-KGE-Hybrid - INFO -  Standard training starts: TextKGEHybridModel-labeling:TriplePrediction
+2022-07-09 12:49:14,240 - text-KGE-Hybrid - INFO - TextKGEHybridModel(
+  (loss): BCELoss()
+  (entity_embeddings): Embedding(1503, 100)
+  (relation_embeddings): Embedding(8, 100)
+  (sentence_embeddings_train): Embedding(990, 2304)
+  (sentence_embeddings_test): Embedding(939, 2304)
+  (sentence_embeddings_valid): Embedding(50, 2304)
+  (kg_classification_layer): Sequential(
+    (0): Linear(in_features=300, out_features=2560, bias=True)
+    (1): BatchNorm1d(2560, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU()
+    (3): Dropout(p=0.5, inplace=False)
+    (4): Linear(in_features=2560, out_features=2560, bias=True)
+  )
+  (sentence_classification_layer): Sequential(
+    (0): Linear(in_features=2304, out_features=2560, bias=True)
+    (1): BatchNorm1d(2560, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU()
+    (3): Dropout(p=0.5, inplace=False)
+    (4): Linear(in_features=2560, out_features=2560, bias=True)
+  )
+  (final_classification_layer): Sequential(
+    (0): Linear(in_features=5120, out_features=2560, bias=True)
+    (1): BatchNorm1d(2560, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU()
+    (3): Dropout(p=0.5, inplace=False)
+    (4): Linear(in_features=2560, out_features=1, bias=True)
+  )
+)
+2022-07-09 12:50:56,585 - text-KGE-Hybrid - INFO - Evaluation of Train data: TriplePrediction
+2022-07-09 12:50:56,586 - text-KGE-Hybrid - INFO - Num of triples 990
+2022-07-09 12:50:56,763 - text-KGE-Hybrid - INFO - 0.898989898989899
+2022-07-09 12:50:56,770 - text-KGE-Hybrid - INFO -               precision    recall  f1-score   support
+
+           0       0.89      0.90      0.90       490
+           1       0.90      0.89      0.90       500
+
+    accuracy                           0.90       990
+   macro avg       0.90      0.90      0.90       990
+weighted avg       0.90      0.90      0.90       990
+
+2022-07-09 12:50:56,771 - text-KGE-Hybrid - INFO - Evaluation of Test data: TriplePrediction
+2022-07-09 12:50:56,772 - text-KGE-Hybrid - INFO - Num of triples 939
+2022-07-09 12:50:56,894 - text-KGE-Hybrid - INFO - 0.7412140575079872
+2022-07-09 12:50:56,900 - text-KGE-Hybrid - INFO -               precision    recall  f1-score   support
+
+           0       0.74      0.74      0.74       470
+           1       0.74      0.74      0.74       469
+
+    accuracy                           0.74       939
+   macro avg       0.74      0.74      0.74       939
+weighted avg       0.74      0.74      0.74       939
+
+2022-07-09 12:50:56,901 - text-KGE-Hybrid - INFO - --- Training is completed  ---
+2022-07-09 12:50:56,902 - text-KGE-Hybrid - INFO - Store full model.
+2022-07-09 12:50:57,149 - text-KGE-Hybrid - INFO - Stored data.
+2022-07-09 12:50:57,150 - text-KGE-Hybrid - INFO - Total Runtime:1.728 minutes
+2022-07-09 12:50:58,977 - text-KGE-Hybrid - INFO - --- Parameters are parsed for training ---
+2022-07-09 12:50:59,776 - text-KGE-Hybrid - INFO -  Standard training starts: TextKGEHybridModel-labeling:TriplePrediction
+2022-07-09 12:50:59,835 - text-KGE-Hybrid - INFO - TextKGEHybridModel(
+  (loss): BCELoss()
+  (entity_embeddings): Embedding(1584, 100)
+  (relation_embeddings): Embedding(8, 100)
+  (sentence_embeddings_train): Embedding(1025, 2304)
+  (sentence_embeddings_test): Embedding(972, 2304)
+  (sentence_embeddings_valid): Embedding(52, 2304)
+  (kg_classification_layer): Sequential(
+    (0): Linear(in_features=300, out_features=2560, bias=True)
+    (1): BatchNorm1d(2560, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU()
+    (3): Dropout(p=0.5, inplace=False)
+    (4): Linear(in_features=2560, out_features=2560, bias=True)
+  )
+  (sentence_classification_layer): Sequential(
+    (0): Linear(in_features=2304, out_features=2560, bias=True)
+    (1): BatchNorm1d(2560, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU()
+    (3): Dropout(p=0.5, inplace=False)
+    (4): Linear(in_features=2560, out_features=2560, bias=True)
+  )
+  (final_classification_layer): Sequential(
+    (0): Linear(in_features=5120, out_features=2560, bias=True)
+    (1): BatchNorm1d(2560, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU()
+    (3): Dropout(p=0.5, inplace=False)
+    (4): Linear(in_features=2560, out_features=1, bias=True)
+  )
+)
+2022-07-09 12:52:40,002 - text-KGE-Hybrid - INFO - Evaluation of Train data: TriplePrediction
+2022-07-09 12:52:40,003 - text-KGE-Hybrid - INFO - Num of triples 1025
+2022-07-09 12:52:40,202 - text-KGE-Hybrid - INFO - 0.8536585365853658
+2022-07-09 12:52:40,210 - text-KGE-Hybrid - INFO -               precision    recall  f1-score   support
+
+           0       0.85      0.87      0.86       525
+           1       0.86      0.84      0.85       500
+
+    accuracy                           0.85      1025
+   macro avg       0.85      0.85      0.85      1025
+weighted avg       0.85      0.85      0.85      1025
+
+2022-07-09 12:52:40,211 - text-KGE-Hybrid - INFO - Evaluation of Test data: TriplePrediction
+2022-07-09 12:52:40,212 - text-KGE-Hybrid - INFO - Num of triples 972
+2022-07-09 12:52:40,332 - text-KGE-Hybrid - INFO - 0.7026748971193416
+2022-07-09 12:52:40,340 - text-KGE-Hybrid - INFO -               precision    recall  f1-score   support
+
+           0       0.71      0.72      0.71       503
+           1       0.69      0.69      0.69       469
+
+    accuracy                           0.70       972
+   macro avg       0.70      0.70      0.70       972
+weighted avg       0.70      0.70      0.70       972
+
+2022-07-09 12:52:40,341 - text-KGE-Hybrid - INFO - --- Training is completed  ---
+2022-07-09 12:52:40,341 - text-KGE-Hybrid - INFO - Store full model.
+2022-07-09 12:52:40,592 - text-KGE-Hybrid - INFO - Stored data.
+2022-07-09 12:52:40,593 - text-KGE-Hybrid - INFO - Total Runtime:1.694 minutes
+2022-07-09 12:52:42,550 - text-KGE-Hybrid - INFO - --- Parameters are parsed for training ---
+2022-07-09 12:52:43,393 - text-KGE-Hybrid - INFO -  Standard training starts: TextKGEHybridModel-labeling:TriplePrediction
+2022-07-09 12:52:43,394 - text-KGE-Hybrid - INFO - TextKGEHybridModel(
+  (loss): BCELoss()
+  (entity_embeddings): Embedding(1614, 100)
+  (relation_embeddings): Embedding(8, 100)
+  (sentence_embeddings_train): Embedding(1061, 2304)
+  (sentence_embeddings_test): Embedding(979, 2304)
+  (sentence_embeddings_valid): Embedding(52, 2304)
+  (kg_classification_layer): Sequential(
+    (0): Linear(in_features=300, out_features=2560, bias=True)
+    (1): BatchNorm1d(2560, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU()
+    (3): Dropout(p=0.5, inplace=False)
+    (4): Linear(in_features=2560, out_features=2560, bias=True)
+  )
+  (sentence_classification_layer): Sequential(
+    (0): Linear(in_features=2304, out_features=2560, bias=True)
+    (1): BatchNorm1d(2560, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU()
+    (3): Dropout(p=0.5, inplace=False)
+    (4): Linear(in_features=2560, out_features=2560, bias=True)
+  )
+  (final_classification_layer): Sequential(
+    (0): Linear(in_features=5120, out_features=2560, bias=True)
+    (1): BatchNorm1d(2560, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU()
+    (3): Dropout(p=0.5, inplace=False)
+    (4): Linear(in_features=2560, out_features=1, bias=True)
+  )
+)
+2022-07-09 12:54:24,611 - text-KGE-Hybrid - INFO - Evaluation of Train data: TriplePrediction
+2022-07-09 12:54:24,613 - text-KGE-Hybrid - INFO - Num of triples 1061
+2022-07-09 12:54:24,785 - text-KGE-Hybrid - INFO - 0.9255419415645617
+2022-07-09 12:54:24,792 - text-KGE-Hybrid - INFO -               precision    recall  f1-score   support
+
+           0       0.89      0.99      0.93       561
+           1       0.98      0.86      0.92       500
+
+    accuracy                           0.93      1061
+   macro avg       0.93      0.92      0.92      1061
+weighted avg       0.93      0.93      0.93      1061
+
+2022-07-09 12:54:24,793 - text-KGE-Hybrid - INFO - Evaluation of Test data: TriplePrediction
+2022-07-09 12:54:24,794 - text-KGE-Hybrid - INFO - Num of triples 979
+2022-07-09 12:54:24,916 - text-KGE-Hybrid - INFO - 0.8672114402451481
+2022-07-09 12:54:24,923 - text-KGE-Hybrid - INFO -               precision    recall  f1-score   support
+
+           0       0.84      0.92      0.88       510
+           1       0.90      0.81      0.85       469
+
+    accuracy                           0.87       979
+   macro avg       0.87      0.87      0.87       979
+weighted avg       0.87      0.87      0.87       979
+
+2022-07-09 12:54:24,924 - text-KGE-Hybrid - INFO - --- Training is completed  ---
+2022-07-09 12:54:24,925 - text-KGE-Hybrid - INFO - Store full model.
+2022-07-09 12:54:25,180 - text-KGE-Hybrid - INFO - Stored data.
+2022-07-09 12:54:25,181 - text-KGE-Hybrid - INFO - Total Runtime:1.711 minutes
+2022-07-09 14:48:12,521 - text-KGE-Hybrid - INFO - --- Parameters are parsed for training ---
+2022-07-09 14:48:13,370 - text-KGE-Hybrid - INFO -  Standard training starts: TextKGEHybridModel-labeling:TriplePrediction
+2022-07-09 14:48:13,371 - text-KGE-Hybrid - INFO - TextKGEHybridModel(
+  (loss): BCELoss()
+  (entity_embeddings): Embedding(1707, 100)
+  (relation_embeddings): Embedding(8, 100)
+  (sentence_embeddings_train): Embedding(1032, 2304)
+  (sentence_embeddings_test): Embedding(947, 2304)
+  (sentence_embeddings_valid): Embedding(50, 2304)
+  (kg_classification_layer): Sequential(
+    (0): Linear(in_features=300, out_features=2560, bias=True)
+    (1): BatchNorm1d(2560, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU()
+    (3): Dropout(p=0.5, inplace=False)
+    (4): Linear(in_features=2560, out_features=2560, bias=True)
+  )
+  (sentence_classification_layer): Sequential(
+    (0): Linear(in_features=2304, out_features=2560, bias=True)
+    (1): BatchNorm1d(2560, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU()
+    (3): Dropout(p=0.5, inplace=False)
+    (4): Linear(in_features=2560, out_features=2560, bias=True)
+  )
+  (final_classification_layer): Sequential(
+    (0): Linear(in_features=5120, out_features=2560, bias=True)
+    (1): BatchNorm1d(2560, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU()
+    (3): Dropout(p=0.5, inplace=False)
+    (4): Linear(in_features=2560, out_features=1, bias=True)
+  )
+)
+2022-07-09 14:52:23,570 - text-KGE-Hybrid - INFO - Evaluation of Train data: TriplePrediction
+2022-07-09 14:52:23,572 - text-KGE-Hybrid - INFO - Num of triples 1032
+2022-07-09 14:52:23,739 - text-KGE-Hybrid - INFO - 0.997093023255814
+2022-07-09 14:52:23,746 - text-KGE-Hybrid - INFO -               precision    recall  f1-score   support
+
+           0       1.00      0.99      1.00       532
+           1       0.99      1.00      1.00       500
+
+    accuracy                           1.00      1032
+   macro avg       1.00      1.00      1.00      1032
+weighted avg       1.00      1.00      1.00      1032
+
+2022-07-09 14:52:23,747 - text-KGE-Hybrid - INFO - Evaluation of Test data: TriplePrediction
+2022-07-09 14:52:23,748 - text-KGE-Hybrid - INFO - Num of triples 947
+2022-07-09 14:52:23,871 - text-KGE-Hybrid - INFO - 0.9799366420274551
+2022-07-09 14:52:23,878 - text-KGE-Hybrid - INFO -               precision    recall  f1-score   support
+
+           0       0.97      0.99      0.98       478
+           1       0.99      0.97      0.98       469
+
+    accuracy                           0.98       947
+   macro avg       0.98      0.98      0.98       947
+weighted avg       0.98      0.98      0.98       947
+
+2022-07-09 14:52:23,879 - text-KGE-Hybrid - INFO - --- Training is completed  ---
+2022-07-09 14:52:23,879 - text-KGE-Hybrid - INFO - Store full model.
+2022-07-09 14:52:24,166 - text-KGE-Hybrid - INFO - Stored data.
+2022-07-09 14:52:24,167 - text-KGE-Hybrid - INFO - Total Runtime:4.194 minutes
+2022-07-09 14:52:26,014 - text-KGE-Hybrid - INFO - --- Parameters are parsed for training ---
+2022-07-09 14:52:26,760 - text-KGE-Hybrid - INFO -  Standard training starts: TextKGEHybridModel-labeling:TriplePrediction
+2022-07-09 14:52:26,761 - text-KGE-Hybrid - INFO - TextKGEHybridModel(
+  (loss): BCELoss()
+  (entity_embeddings): Embedding(1512, 100)
+  (relation_embeddings): Embedding(8, 100)
+  (sentence_embeddings_train): Embedding(999, 2304)
+  (sentence_embeddings_test): Embedding(935, 2304)
+  (sentence_embeddings_valid): Embedding(50, 2304)
+  (kg_classification_layer): Sequential(
+    (0): Linear(in_features=300, out_features=2560, bias=True)
+    (1): BatchNorm1d(2560, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU()
+    (3): Dropout(p=0.5, inplace=False)
+    (4): Linear(in_features=2560, out_features=2560, bias=True)
+  )
+  (sentence_classification_layer): Sequential(
+    (0): Linear(in_features=2304, out_features=2560, bias=True)
+    (1): BatchNorm1d(2560, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU()
+    (3): Dropout(p=0.5, inplace=False)
+    (4): Linear(in_features=2560, out_features=2560, bias=True)
+  )
+  (final_classification_layer): Sequential(
+    (0): Linear(in_features=5120, out_features=2560, bias=True)
+    (1): BatchNorm1d(2560, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU()
+    (3): Dropout(p=0.5, inplace=False)
+    (4): Linear(in_features=2560, out_features=1, bias=True)
+  )
+)
+2022-07-09 14:56:33,965 - text-KGE-Hybrid - INFO - Evaluation of Train data: TriplePrediction
+2022-07-09 14:56:33,966 - text-KGE-Hybrid - INFO - Num of triples 999
+2022-07-09 14:56:34,126 - text-KGE-Hybrid - INFO - 0.8998998998998999
+2022-07-09 14:56:34,133 - text-KGE-Hybrid - INFO -               precision    recall  f1-score   support
+
+           0       0.88      0.93      0.90       499
+           1       0.92      0.87      0.90       500
+
+    accuracy                           0.90       999
+   macro avg       0.90      0.90      0.90       999
+weighted avg       0.90      0.90      0.90       999
+
+2022-07-09 14:56:34,134 - text-KGE-Hybrid - INFO - Evaluation of Test data: TriplePrediction
+2022-07-09 14:56:34,135 - text-KGE-Hybrid - INFO - Num of triples 935
+2022-07-09 14:56:34,254 - text-KGE-Hybrid - INFO - 0.720855614973262
+2022-07-09 14:56:34,261 - text-KGE-Hybrid - INFO -               precision    recall  f1-score   support
+
+           0       0.70      0.78      0.74       466
+           1       0.75      0.66      0.70       469
+
+    accuracy                           0.72       935
+   macro avg       0.72      0.72      0.72       935
+weighted avg       0.72      0.72      0.72       935
+
+2022-07-09 14:56:34,262 - text-KGE-Hybrid - INFO - --- Training is completed  ---
+2022-07-09 14:56:34,263 - text-KGE-Hybrid - INFO - Store full model.
+2022-07-09 14:56:34,516 - text-KGE-Hybrid - INFO - Stored data.
+2022-07-09 14:56:34,517 - text-KGE-Hybrid - INFO - Total Runtime:4.142 minutes
+2022-07-09 14:56:36,314 - text-KGE-Hybrid - INFO - --- Parameters are parsed for training ---
+2022-07-09 14:56:37,063 - text-KGE-Hybrid - INFO -  Standard training starts: TextKGEHybridModel-labeling:TriplePrediction
+2022-07-09 14:56:37,064 - text-KGE-Hybrid - INFO - TextKGEHybridModel(
+  (loss): BCELoss()
+  (entity_embeddings): Embedding(1519, 100)
+  (relation_embeddings): Embedding(8, 100)
+  (sentence_embeddings_train): Embedding(1000, 2304)
+  (sentence_embeddings_test): Embedding(935, 2304)
+  (sentence_embeddings_valid): Embedding(50, 2304)
+  (kg_classification_layer): Sequential(
+    (0): Linear(in_features=300, out_features=2560, bias=True)
+    (1): BatchNorm1d(2560, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU()
+    (3): Dropout(p=0.5, inplace=False)
+    (4): Linear(in_features=2560, out_features=2560, bias=True)
+  )
+  (sentence_classification_layer): Sequential(
+    (0): Linear(in_features=2304, out_features=2560, bias=True)
+    (1): BatchNorm1d(2560, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU()
+    (3): Dropout(p=0.5, inplace=False)
+    (4): Linear(in_features=2560, out_features=2560, bias=True)
+  )
+  (final_classification_layer): Sequential(
+    (0): Linear(in_features=5120, out_features=2560, bias=True)
+    (1): BatchNorm1d(2560, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU()
+    (3): Dropout(p=0.5, inplace=False)
+    (4): Linear(in_features=2560, out_features=1, bias=True)
+  )
+)
+2022-07-09 15:01:11,809 - text-KGE-Hybrid - INFO - Evaluation of Train data: TriplePrediction
+2022-07-09 15:01:11,811 - text-KGE-Hybrid - INFO - Num of triples 1000
+2022-07-09 15:01:11,990 - text-KGE-Hybrid - INFO - 0.929
+2022-07-09 15:01:11,997 - text-KGE-Hybrid - INFO -               precision    recall  f1-score   support
+
+           0       0.90      0.96      0.93       500
+           1       0.96      0.90      0.93       500
+
+    accuracy                           0.93      1000
+   macro avg       0.93      0.93      0.93      1000
+weighted avg       0.93      0.93      0.93      1000
+
+2022-07-09 15:01:11,998 - text-KGE-Hybrid - INFO - Evaluation of Test data: TriplePrediction
+2022-07-09 15:01:11,999 - text-KGE-Hybrid - INFO - Num of triples 935
+2022-07-09 15:01:12,122 - text-KGE-Hybrid - INFO - 0.7390374331550802
+2022-07-09 15:01:12,129 - text-KGE-Hybrid - INFO -               precision    recall  f1-score   support
+
+           0       0.71      0.80      0.75       466
+           1       0.77      0.68      0.72       469
+
+    accuracy                           0.74       935
+   macro avg       0.74      0.74      0.74       935
+weighted avg       0.74      0.74      0.74       935
+
+2022-07-09 15:01:12,130 - text-KGE-Hybrid - INFO - --- Training is completed  ---
+2022-07-09 15:01:12,131 - text-KGE-Hybrid - INFO - Store full model.
+2022-07-09 15:01:12,371 - text-KGE-Hybrid - INFO - Stored data.
+2022-07-09 15:01:12,372 - text-KGE-Hybrid - INFO - Total Runtime:4.601 minutes
+2022-07-09 15:01:14,184 - text-KGE-Hybrid - INFO - --- Parameters are parsed for training ---
+2022-07-09 15:01:14,947 - text-KGE-Hybrid - INFO -  Standard training starts: TextKGEHybridModel-labeling:TriplePrediction
+2022-07-09 15:01:14,949 - text-KGE-Hybrid - INFO - TextKGEHybridModel(
+  (loss): BCELoss()
+  (entity_embeddings): Embedding(1503, 100)
+  (relation_embeddings): Embedding(8, 100)
+  (sentence_embeddings_train): Embedding(990, 2304)
+  (sentence_embeddings_test): Embedding(939, 2304)
+  (sentence_embeddings_valid): Embedding(50, 2304)
+  (kg_classification_layer): Sequential(
+    (0): Linear(in_features=300, out_features=2560, bias=True)
+    (1): BatchNorm1d(2560, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU()
+    (3): Dropout(p=0.5, inplace=False)
+    (4): Linear(in_features=2560, out_features=2560, bias=True)
+  )
+  (sentence_classification_layer): Sequential(
+    (0): Linear(in_features=2304, out_features=2560, bias=True)
+    (1): BatchNorm1d(2560, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU()
+    (3): Dropout(p=0.5, inplace=False)
+    (4): Linear(in_features=2560, out_features=2560, bias=True)
+  )
+  (final_classification_layer): Sequential(
+    (0): Linear(in_features=5120, out_features=2560, bias=True)
+    (1): BatchNorm1d(2560, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU()
+    (3): Dropout(p=0.5, inplace=False)
+    (4): Linear(in_features=2560, out_features=1, bias=True)
+  )
+)
+2022-07-09 15:05:22,245 - text-KGE-Hybrid - INFO - Evaluation of Train data: TriplePrediction
+2022-07-09 15:05:22,247 - text-KGE-Hybrid - INFO - Num of triples 990
+2022-07-09 15:05:22,406 - text-KGE-Hybrid - INFO - 0.9121212121212121
+2022-07-09 15:05:22,413 - text-KGE-Hybrid - INFO -               precision    recall  f1-score   support
+
+           0       0.86      0.98      0.92       490
+           1       0.97      0.85      0.91       500
+
+    accuracy                           0.91       990
+   macro avg       0.92      0.91      0.91       990
+weighted avg       0.92      0.91      0.91       990
+
+2022-07-09 15:05:22,415 - text-KGE-Hybrid - INFO - Evaluation of Test data: TriplePrediction
+2022-07-09 15:05:22,416 - text-KGE-Hybrid - INFO - Num of triples 939
+2022-07-09 15:05:22,534 - text-KGE-Hybrid - INFO - 0.7263045793397231
+2022-07-09 15:05:22,541 - text-KGE-Hybrid - INFO -               precision    recall  f1-score   support
+
+           0       0.69      0.83      0.75       470
+           1       0.78      0.63      0.70       469
+
+    accuracy                           0.73       939
+   macro avg       0.74      0.73      0.72       939
+weighted avg       0.74      0.73      0.72       939
+
+2022-07-09 15:05:22,542 - text-KGE-Hybrid - INFO - --- Training is completed  ---
+2022-07-09 15:05:22,543 - text-KGE-Hybrid - INFO - Store full model.
+2022-07-09 15:05:22,801 - text-KGE-Hybrid - INFO - Stored data.
+2022-07-09 15:05:22,802 - text-KGE-Hybrid - INFO - Total Runtime:4.144 minutes
+2022-07-09 15:05:24,608 - text-KGE-Hybrid - INFO - --- Parameters are parsed for training ---
+2022-07-09 15:05:25,396 - text-KGE-Hybrid - INFO -  Standard training starts: TextKGEHybridModel-labeling:TriplePrediction
+2022-07-09 15:05:25,455 - text-KGE-Hybrid - INFO - TextKGEHybridModel(
+  (loss): BCELoss()
+  (entity_embeddings): Embedding(1584, 100)
+  (relation_embeddings): Embedding(8, 100)
+  (sentence_embeddings_train): Embedding(1025, 2304)
+  (sentence_embeddings_test): Embedding(972, 2304)
+  (sentence_embeddings_valid): Embedding(52, 2304)
+  (kg_classification_layer): Sequential(
+    (0): Linear(in_features=300, out_features=2560, bias=True)
+    (1): BatchNorm1d(2560, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU()
+    (3): Dropout(p=0.5, inplace=False)
+    (4): Linear(in_features=2560, out_features=2560, bias=True)
+  )
+  (sentence_classification_layer): Sequential(
+    (0): Linear(in_features=2304, out_features=2560, bias=True)
+    (1): BatchNorm1d(2560, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU()
+    (3): Dropout(p=0.5, inplace=False)
+    (4): Linear(in_features=2560, out_features=2560, bias=True)
+  )
+  (final_classification_layer): Sequential(
+    (0): Linear(in_features=5120, out_features=2560, bias=True)
+    (1): BatchNorm1d(2560, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU()
+    (3): Dropout(p=0.5, inplace=False)
+    (4): Linear(in_features=2560, out_features=1, bias=True)
+  )
+)
+2022-07-09 15:09:29,584 - text-KGE-Hybrid - INFO - Evaluation of Train data: TriplePrediction
+2022-07-09 15:09:29,586 - text-KGE-Hybrid - INFO - Num of triples 1025
+2022-07-09 15:09:29,752 - text-KGE-Hybrid - INFO - 0.8673170731707317
+2022-07-09 15:09:29,760 - text-KGE-Hybrid - INFO -               precision    recall  f1-score   support
+
+           0       0.85      0.90      0.87       525
+           1       0.89      0.83      0.86       500
+
+    accuracy                           0.87      1025
+   macro avg       0.87      0.87      0.87      1025
+weighted avg       0.87      0.87      0.87      1025
+
+2022-07-09 15:09:29,761 - text-KGE-Hybrid - INFO - Evaluation of Test data: TriplePrediction
+2022-07-09 15:09:29,762 - text-KGE-Hybrid - INFO - Num of triples 972
+2022-07-09 15:09:29,886 - text-KGE-Hybrid - INFO - 0.7232510288065843
+2022-07-09 15:09:29,894 - text-KGE-Hybrid - INFO -               precision    recall  f1-score   support
+
+           0       0.73      0.74      0.74       503
+           1       0.72      0.70      0.71       469
+
+    accuracy                           0.72       972
+   macro avg       0.72      0.72      0.72       972
+weighted avg       0.72      0.72      0.72       972
+
+2022-07-09 15:09:29,895 - text-KGE-Hybrid - INFO - --- Training is completed  ---
+2022-07-09 15:09:29,896 - text-KGE-Hybrid - INFO - Store full model.
+2022-07-09 15:09:30,148 - text-KGE-Hybrid - INFO - Stored data.
+2022-07-09 15:09:30,149 - text-KGE-Hybrid - INFO - Total Runtime:4.092 minutes
+2022-07-09 15:09:32,099 - text-KGE-Hybrid - INFO - --- Parameters are parsed for training ---
+2022-07-09 15:09:32,875 - text-KGE-Hybrid - INFO -  Standard training starts: TextKGEHybridModel-labeling:TriplePrediction
+2022-07-09 15:09:32,876 - text-KGE-Hybrid - INFO - TextKGEHybridModel(
+  (loss): BCELoss()
+  (entity_embeddings): Embedding(1614, 100)
+  (relation_embeddings): Embedding(8, 100)
+  (sentence_embeddings_train): Embedding(1061, 2304)
+  (sentence_embeddings_test): Embedding(979, 2304)
+  (sentence_embeddings_valid): Embedding(52, 2304)
+  (kg_classification_layer): Sequential(
+    (0): Linear(in_features=300, out_features=2560, bias=True)
+    (1): BatchNorm1d(2560, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU()
+    (3): Dropout(p=0.5, inplace=False)
+    (4): Linear(in_features=2560, out_features=2560, bias=True)
+  )
+  (sentence_classification_layer): Sequential(
+    (0): Linear(in_features=2304, out_features=2560, bias=True)
+    (1): BatchNorm1d(2560, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU()
+    (3): Dropout(p=0.5, inplace=False)
+    (4): Linear(in_features=2560, out_features=2560, bias=True)
+  )
+  (final_classification_layer): Sequential(
+    (0): Linear(in_features=5120, out_features=2560, bias=True)
+    (1): BatchNorm1d(2560, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU()
+    (3): Dropout(p=0.5, inplace=False)
+    (4): Linear(in_features=2560, out_features=1, bias=True)
+  )
+)
+2022-07-09 15:14:08,400 - text-KGE-Hybrid - INFO - Evaluation of Train data: TriplePrediction
+2022-07-09 15:14:08,402 - text-KGE-Hybrid - INFO - Num of triples 1061
+2022-07-09 15:14:08,584 - text-KGE-Hybrid - INFO - 0.9896324222431668
+2022-07-09 15:14:08,591 - text-KGE-Hybrid - INFO -               precision    recall  f1-score   support
+
+           0       0.99      0.99      0.99       561
+           1       0.98      0.99      0.99       500
+
+    accuracy                           0.99      1061
+   macro avg       0.99      0.99      0.99      1061
+weighted avg       0.99      0.99      0.99      1061
+
+2022-07-09 15:14:08,593 - text-KGE-Hybrid - INFO - Evaluation of Test data: TriplePrediction
+2022-07-09 15:14:08,593 - text-KGE-Hybrid - INFO - Num of triples 979
+2022-07-09 15:14:08,719 - text-KGE-Hybrid - INFO - 0.9193054136874361
+2022-07-09 15:14:08,726 - text-KGE-Hybrid - INFO -               precision    recall  f1-score   support
+
+           0       0.94      0.90      0.92       510
+           1       0.90      0.94      0.92       469
+
+    accuracy                           0.92       979
+   macro avg       0.92      0.92      0.92       979
+weighted avg       0.92      0.92      0.92       979
+
+2022-07-09 15:14:08,728 - text-KGE-Hybrid - INFO - --- Training is completed  ---
+2022-07-09 15:14:08,728 - text-KGE-Hybrid - INFO - Store full model.
+2022-07-09 15:14:08,973 - text-KGE-Hybrid - INFO - Stored data.
+2022-07-09 15:14:08,974 - text-KGE-Hybrid - INFO - Total Runtime:4.615 minutes
